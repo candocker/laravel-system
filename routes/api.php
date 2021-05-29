@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use Larabase\Helpers\ResourceManager;
+use Framework\Baseapp\Helpers\ResourceManager;
 
 $middlewareAuth = [
     App\Middleware\JWTAuthMiddleware::class,
@@ -13,20 +13,19 @@ $middlewareBackend = array_merge($middlewareAuth, [
     App\Middleware\PermissionMiddleware::class,
 ]);
 
-
-$routes = ResourceManager->initRouteDatas();
-Router::addGroup('', function () use ($middlewareBackend, $routes) {
+$routes = ResourceManager::initRouteDatas();
+/*Router::addGroup('', function () use ($middlewareBackend, $routes) {
     foreach ($routes as $rCode => $rMethods) {
         foreach ($rMethods as $action => $data) {
             echo implode(',', $data['method']) . '==' . $data['path'] . '==' . $data['callback'] . "\n";
             Router::addRoute($data['method'], $data['path'], $data['callback'], ['middleware' => $middlewareBackend, 'routeCode' => $data['code']]);
         }
     }
-});
+});*/
 
 
-Route::match(['OPTIONS', 'GET', 'POST', 'HEAD'], '/', 'App\Controllers\IndexController@index');
-Route::get('/captcha', 'App\Controllers\CommonController@captcha');
+Route::match(['OPTIONS', 'GET', 'POST', 'HEAD'], '/', '\App\Http\Controllers\IndexController@index');
+/*Route::get('/captcha', 'App\Controllers\CommonController@captcha');
 Route::get('/send-code', 'App\Controllers\CommonController@sendCode');
 Route::get('/validate-code', 'App\Controllers\CommonController@validateCode');
 
@@ -44,9 +43,9 @@ Route::get('/my-routes', 'App\Controllers\EntranceController@myRoutes', ['middle
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
-});
+});*/
 
-$authAttributes = [
+/*$authAttributes = [
     'prefix' => '',
     //'namespace' => 'auth:api',
     'namespace' => 'Auth',
@@ -67,7 +66,4 @@ $authAttributes['middleware'] = ['api', 'auth:api'];
 Route::group($authAttributes, function() {
     Route::get('myinfo', 'UserController@myinfo');
     Route::post('logout', 'UserController@logout'); // 注销当前用户
-});
-
-
-
+});*/

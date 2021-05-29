@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Framework\Baseapp\Helpers\ResourceManager;
 
     Route::any('/captcha-test', function() {
         if (request()->getMethod() == 'POST') {

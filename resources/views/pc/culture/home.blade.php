@@ -1,5 +1,5 @@
 @extends('layouts.culture')
-@inject('culturePresenter', 'App\Presenters\Infocms\CulturePresenter')
+@inject('culturePresenter', 'ModuleInfocms\Presenters\Infocms\CulturePresenter')
 @php
 $categoryTrees = $culturePresenter->getCategoryTrees();
 @endphp
