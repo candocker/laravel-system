@@ -105,7 +105,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-        'ResourceManager' => Framework\Baseapp\Helpers\ResourceManager::class,
+        'ResourceContainer' => Framework\Baseapp\Helpers\ResourceContainer::class,
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
 
     ],

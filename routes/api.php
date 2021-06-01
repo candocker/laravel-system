@@ -3,17 +3,17 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use Framework\Baseapp\Helpers\ResourceManager;
+use Framework\Baseapp\Helpers\ResourceContainer;
 
 $middlewareAuth = [
-    App\Middleware\JWTAuthMiddleware::class,
+    //App\Middleware\JWTAuthMiddleware::class,
 ];
 $middlewareBackend = array_merge($middlewareAuth, [
-    App\Middleware\BackendMiddleware::class,
-    App\Middleware\PermissionMiddleware::class,
+    //App\Middleware\BackendMiddleware::class,
+    //App\Middleware\PermissionMiddleware::class,
 ]);
 
-$routes = ResourceManager::initRouteDatas();
+$routes = app()->make(ResourceContainer::class)->initRouteDatas();
 /*Router::addGroup('', function () use ($middlewareBackend, $routes) {
     foreach ($routes as $rCode => $rMethods) {
         foreach ($rMethods as $action => $data) {
@@ -23,27 +23,39 @@ $routes = ResourceManager::initRouteDatas();
     }
 });*/
 
+foreach ($routes as $app => $aRoutes) {
+    foreach ($aRoutes as $resourceCode => $rRoutes) {
+        foreach ($rRoutes as $routeCode => $routeData) {
+            Route::group($middlewareAuth, function() use ($routeData) {
+                //echo implode(',', $routeData['method']) . '==' . $routeData['path'] . '==' . $routeData['callback'] . "\n";
+                Route::match($routeData['method'], $routeData['path'], $routeData['callback']);
+            });
+        }
+    }
+}
+//exit();
+
 
 Route::match(['OPTIONS', 'GET', 'POST', 'HEAD'], '/', '\App\Http\Controllers\IndexController@index');
-/*Route::get('/captcha', 'App\Controllers\CommonController@captcha');
-Route::get('/send-code', 'App\Controllers\CommonController@sendCode');
-Route::get('/validate-code', 'App\Controllers\CommonController@validateCode');
+Route::get('/captcha', '\ModulePassport\Controllers\CommonController@captcha');
+Route::get('/send-code', '\ModulePassport\Controllers\CommonController@sendCode');
+Route::get('/validate-code', '\ModulePassport\Controllers\CommonController@validateCode');
 
-Route::addRoute(['GET', 'POST'], '/logout', 'App\Controllers\EntranceController@logout');
+Route::addRoute(['GET', 'POST'], '/logout', '\ModulePassport\Controllers\EntranceController@logout');
 
-Route::post('/signup', 'App\Controllers\EntranceController@signup');
-Route::post('/signupin', 'App\Controllers\EntranceController@signupin');
-Route::post('/token', 'App\Controllers\EntranceController@token');
-Route::post('/signin', 'App\Controllers\EntranceController@signin');
+Route::post('/signup', '\ModulePassport\Controllers\EntranceController@signup');
+Route::post('/signupin', '\ModulePassport\Controllers\EntranceController@signupin');
+Route::post('/passport/token', '\ModulePassport\Controllers\EntranceController@token');
+Route::post('/signin', '\ModulePassport\Controllers\EntranceController@signin');
 
-Route::get('/myinfo', 'App\Controllers\UserController@myinfo', ['middleware' => $middlewareAuth]);
-Route::post('/refresh_token', 'App\Controllers\EntranceController@refreshToken', ['middleware' => $middlewareAuth]);
-Route::get('/my-routes', 'App\Controllers\EntranceController@myRoutes', ['middleware' => $middlewareBackend]);
+Route::get('/myinfo', '\ModulePassport\Controllers\UserController@myinfo', ['middleware' => $middlewareAuth]);
+Route::post('/refresh_token', '\ModulePassport\Controllers\EntranceController@refreshToken', ['middleware' => $middlewareAuth]);
+Route::get('/my-routes', '\ModulePassport\Controllers\EntranceController@myRoutes', ['middleware' => $middlewareBackend]);
 
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
-});*/
+});
 
 /*$authAttributes = [
     'prefix' => '',

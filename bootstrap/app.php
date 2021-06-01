@@ -41,6 +41,11 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$app->singleton(
+    Framework\Baseapp\Helpers\ResourceContainer::class,
+    Framework\Baseapp\Helpers\ResourceContainer::class,
+);
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
