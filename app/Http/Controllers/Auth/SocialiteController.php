@@ -14,7 +14,7 @@ use App\Models\User;
 use Auth;
 use Socialite;
 
-class AuthLoginController extends Controller
+class SocialiteController extends Controller
 {
     protected $allow = ['github', 'qq', 'weibo'];
 
@@ -253,13 +253,9 @@ class AuthLoginController extends Controller
 
         return back()->with('status', '解绑成功');
     }
-}
-<?php
 
-namespace App\Http\Controllers\Auth;
 
-class AuthController extends Controller
-{
+//class AuthController extends Controller
     /**
      * Redirect the user to the GitHub authentication page.
      *

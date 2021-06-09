@@ -1,5 +1,5 @@
 @extends('layouts.culture')
-@inject('culturePresenter', 'ModuleInfocms\Presenters\Infocms\CulturePresenter')
+@inject('culturePresenter', 'ModuleInfocms\Presenters\CulturePresenter')
 @php
 $categoryTrees = $culturePresenter->getCategoryTrees();
 @endphp
@@ -295,8 +295,8 @@ $categoryTrees = $culturePresenter->getCategoryTrees();
         <h2><a href='{{$pData->getUrl()}}'><strong>{{$pData['name']}}</strong></a></h2>
         <span>
         @foreach ($pData['subInfos'] as $subKey => $subData)
-            <a href='news/list_161.html' target='_self'>高清书法</a>&nbsp;|&nbsp;
-				<a href='news/list_162.html' target='_self'>投稿作品</a>
+            <a href='{{$subData->getUrl()}}'>{{$subData['name']}}</a>&nbsp;|&nbsp;
+        @endforeach
         </span>
     </div>
     <div class='content1'>

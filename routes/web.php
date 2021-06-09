@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Framework\Baseapp\Helpers\ResourceManager;
+use Framework\Baseapp\Helpers\ResourceContainer;
+
+$resourceContainer = app()->make(ResourceContainer::class);
 
     Route::any('/captcha-test', function() {
         if (request()->getMethod() == 'POST') {
@@ -59,9 +61,9 @@ foreach ($routes as $domain => $domainRoutes) {
     if ($currentHost != $domain) {
         continue;
     }
-    Route::domain(config('app.' . $currentHost . 'Domain'))->group(function () use ($domain, $domainRoutes) {
+    Route::domain(config('app.' . $currentHost . 'Domain'))->group(function () use ($domain, $domainRoutes, $resourceContainer) {
         foreach ($domainRoutes['routes'] as $route) {
-            ResourceManager::setRoute($route, $domain, $domainRoutes);
+            $resourceContainer->setRoute($route, $domain, $domainRoutes);
         }
     });
 }

@@ -3,7 +3,7 @@
 $info = $datas['info'] ;
 $cultureCategory = $info->cultureCategory;
 @endphp
-@inject('culturePresenter', 'App\Presenters\Infocms\CulturePresenter')
+@inject('culturePresenter', 'ModuleInfocms\Presenters\CulturePresenter')
 @section('subnav')
 <div class="mainMenu">
     <div class="subnav">

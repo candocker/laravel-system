@@ -1,4 +1,4 @@
-@inject('brandPresenter', 'App\Presenters\Infocms\BrandPresenter')
+@inject('brandPresenter', 'ModuleInfocms\Presenters\BrandPresenter')
 <div class="blockinfo productcol " id="pos_productlist">
     <div class="blocktitle font26 ccc style1 ">
         <span class="color1">

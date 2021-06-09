@@ -1,4 +1,4 @@
-@inject('brandPresenter', 'App\Presenters\Infocms\BrandPresenter')
+@inject('brandPresenter', 'ModuleInfocms\Presenters\BrandPresenter')
 <div id="brandlogo" class="">
     <div class="midinfo">
         <div class="img">

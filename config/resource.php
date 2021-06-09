@@ -37,9 +37,13 @@ return [
     'resource' => 'ModulePassport\\Resources\\AttachmentVideo',
     'collection' => 'ModulePassport\\Resources\\AttachmentVideoCollection',
   ],
+  'passport-redis' => 
+  [
+    'service' => 'Framework\\Baseapp\\Services\\RedisService',
+  ],
   'passport-easysms' => 
   [
-    'service' => 'Swoolecan\\Baseapp\\Services\\EasysmsService',
+    'service' => 'Framework\\Baseapp\\Services\\EasysmsService',
   ],
   'passport-entrance' => 
   [

@@ -1,7 +1,7 @@
 @php
 $colors = ['#0000ff;', '#ff0000;', '#FF0000;', '#008000;', ''];
 @endphp
-@inject('culturePresenter', 'App\Presenters\Infocms\CulturePresenter')
+@inject('culturePresenter', 'ModuleInfocms\Presenters\CulturePresenter')
 <div class="areaR">
     <div class="hotRank">
         <div class="title"><h2>{{$currentCategory['name']}}</h2></div>

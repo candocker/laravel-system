@@ -26,9 +26,9 @@ $routes = app()->make(ResourceContainer::class)->initRouteDatas();
 foreach ($routes as $app => $aRoutes) {
     foreach ($aRoutes as $resourceCode => $rRoutes) {
         foreach ($rRoutes as $routeCode => $routeData) {
-            Route::group($middlewareAuth, function() use ($routeData) {
-                //echo implode(',', $routeData['method']) . '==' . $routeData['path'] . '==' . $routeData['callback'] . "\n";
-                Route::match($routeData['method'], $routeData['path'], $routeData['callback']);
+            Route::group($middlewareAuth, function() use ($routeData, $app) {
+                //echo implode(',', $routeData['method']) . '==' . '/' . $app . $routeData['path'] . '==' . $routeData['callback'] . "\n";
+                Route::match($routeData['method'], '/' . $app . $routeData['path'], $routeData['callback']);
             });
         }
     }

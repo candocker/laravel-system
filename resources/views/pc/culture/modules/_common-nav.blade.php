@@ -1,4 +1,4 @@
-@inject('culturePresenter', 'App\Presenters\Infocms\CulturePresenter')
+@inject('culturePresenter', 'ModuleInfocms\Presenters\CulturePresenter')
 @php
 $categoryTrees = $culturePresenter->getCategoryTrees();
 @endphp

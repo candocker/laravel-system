@@ -6,11 +6,11 @@
     "type": "project",
     "require": {
         "php": "^7.4",
-        "canmodule/passport": "dev-main",
         "canmodule/infocms": "dev-master",
-        "swoolecan/laravel-baseapp": "dev-master"
-    },
-    "require-dev": {
+        "canmodule/passport": "dev-laravel",
+        "laravel/telescope": "^4.4",
+        "swoolecan/laravel-baseapp": "dev-master",
+        "symfony/translation": "^5.3"
     },
     "autoload": {
         "psr-4": {
