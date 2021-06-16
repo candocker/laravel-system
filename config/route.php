@@ -11,7 +11,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/attachment-infos',
+        'path' => '/attachment-infos',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentInfoController@listinfo',
       ),
       'view' => 
@@ -21,7 +21,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/attachment-infos/{id:\\d+}',
+        'path' => '/attachment-infos/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentInfoController@view',
       ),
     ),
@@ -34,7 +34,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/attachment-paths',
+        'path' => '/attachment-paths',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentPathController@add',
       ),
       'create' => 
@@ -44,7 +44,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/attachment-paths/create',
+        'path' => '/attachment-paths/create',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentPathController@create',
       ),
       'delete' => 
@@ -54,7 +54,7 @@ return array (
         array (
           0 => 'DELETE',
         ),
-        'path' => '/passport/attachment-paths[/[{id}]]',
+        'path' => '/attachment-paths[/[{id}]]',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentPathController@delete',
       ),
       'listinfo' => 
@@ -64,7 +64,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/attachment-paths',
+        'path' => '/attachment-paths',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentPathController@listinfo',
       ),
       'path' => 
@@ -74,7 +74,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/attachment-paths/path',
+        'path' => '/attachment-paths/path',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentPathController@path',
       ),
       'update' => 
@@ -84,7 +84,7 @@ return array (
         array (
           0 => 'PUT',
         ),
-        'path' => '/passport/attachment-paths[/[{id}]]',
+        'path' => '/attachment-paths[/[{id}]]',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentPathController@update',
       ),
       'view' => 
@@ -94,7 +94,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/attachment-paths/{id:\\d+}',
+        'path' => '/attachment-paths/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentPathController@view',
       ),
     ),
@@ -107,7 +107,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/attachment-videos',
+        'path' => '/attachment-videos',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentVideoController@listinfo',
       ),
       'view' => 
@@ -117,7 +117,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/attachment-videos/{id:\\d+}',
+        'path' => '/attachment-videos/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentVideoController@view',
       ),
     ),
@@ -130,7 +130,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/attachments',
+        'path' => '/attachments',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentController@add',
       ),
       'delete' => 
@@ -140,7 +140,7 @@ return array (
         array (
           0 => 'DELETE',
         ),
-        'path' => '/passport/attachments[/[{id}]]',
+        'path' => '/attachments[/[{id}]]',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentController@delete',
       ),
       'listinfo' => 
@@ -150,7 +150,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/attachments',
+        'path' => '/attachments',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentController@listinfo',
       ),
       'update' => 
@@ -160,7 +160,7 @@ return array (
         array (
           0 => 'PUT',
         ),
-        'path' => '/passport/attachments[/[{id}]]',
+        'path' => '/attachments[/[{id}]]',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentController@update',
       ),
       'upload' => 
@@ -170,7 +170,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/attachments/upload',
+        'path' => '/attachments/upload',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentController@upload',
       ),
       'view' => 
@@ -180,7 +180,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/attachments/{id:\\d+}',
+        'path' => '/attachments/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\AttachmentController@view',
       ),
     ),
@@ -193,7 +193,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/managerlogs',
+        'path' => '/managerlogs',
         'callback' => '\\ModulePassport\\Controllers\\ManagerlogController@listinfo',
       ),
   ),*/
@@ -206,7 +206,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/managers',
+        'path' => '/managers',
         'callback' => '\\ModulePassport\\Controllers\\ManagerController@add',
       ),
       'delete' => 
@@ -216,7 +216,7 @@ return array (
         array (
           0 => 'DELETE',
         ),
-        'path' => '/passport/managers/{id:\\d+}',
+        'path' => '/managers/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\ManagerController@delete',
       ),
       'listinfo' => 
@@ -226,7 +226,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/managers',
+        'path' => '/managers',
         'callback' => '\\ModulePassport\\Controllers\\ManagerController@listinfo',
       ),
       'update' => 
@@ -236,7 +236,7 @@ return array (
         array (
           0 => 'PUT',
         ),
-        'path' => '/passport/managers/{id:\\d+}',
+        'path' => '/managers/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\ManagerController@update',
       ),
       'view' => 
@@ -246,7 +246,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/managers/{id:\\d+}',
+        'path' => '/managers/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\ManagerController@view',
       ),
     ),
@@ -259,7 +259,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/permissions',
+        'path' => '/permissions',
         'callback' => '\\ModulePassport\\Controllers\\PermissionController@add',
       ),
       'cache' => 
@@ -269,7 +269,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/permissions/cache',
+        'path' => '/permissions/cache',
         'callback' => '\\ModulePassport\\Controllers\\PermissionController@cache',
       ),
       'delete' => 
@@ -279,7 +279,7 @@ return array (
         array (
           0 => 'DELETE',
         ),
-        'path' => '/passport/permissions/{code}',
+        'path' => '/permissions/{code}',
         'callback' => '\\ModulePassport\\Controllers\\PermissionController@delete',
       ),
       'listinfo' => 
@@ -289,7 +289,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/permissions',
+        'path' => '/permissions',
         'callback' => '\\ModulePassport\\Controllers\\PermissionController@listinfo',
       ),
       'listinfo-tree' => 
@@ -299,7 +299,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/permissions/listinfo-tree',
+        'path' => '/permissions/listinfo-tree',
         'callback' => '\\ModulePassport\\Controllers\\PermissionController@listinfoTree',
       ),
       'update' => 
@@ -309,7 +309,7 @@ return array (
         array (
           0 => 'PUT',
         ),
-        'path' => '/passport/permissions/{code}',
+        'path' => '/permissions/{code}',
         'callback' => '\\ModulePassport\\Controllers\\PermissionController@update',
       ),
       'view' => 
@@ -319,7 +319,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/permissions/{code}',
+        'path' => '/permissions/{code}',
         'callback' => '\\ModulePassport\\Controllers\\PermissionController@view',
       ),
     ),
@@ -332,7 +332,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/regions',
+        'path' => '/regions',
         'callback' => '\\ModulePassport\\Controllers\\RegionController@add',
       ),
       'cache' => 
@@ -342,7 +342,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/regions/cache',
+        'path' => '/regions/cache',
         'callback' => '\\ModulePassport\\Controllers\\RegionController@cache',
       ),
       'delete' => 
@@ -352,7 +352,7 @@ return array (
         array (
           0 => 'DELETE',
         ),
-        'path' => '/passport/regions/{code}',
+        'path' => '/regions/{code}',
         'callback' => '\\ModulePassport\\Controllers\\RegionController@delete',
       ),
       'listinfo' => 
@@ -362,7 +362,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/regions',
+        'path' => '/regions',
         'callback' => '\\ModulePassport\\Controllers\\RegionController@listinfo',
       ),
       'update' => 
@@ -372,7 +372,7 @@ return array (
         array (
           0 => 'PUT',
         ),
-        'path' => '/passport/regions/{code}',
+        'path' => '/regions/{code}',
         'callback' => '\\ModulePassport\\Controllers\\RegionController@update',
       ),
       'view' => 
@@ -382,7 +382,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/regions/{code}',
+        'path' => '/regions/{code}',
         'callback' => '\\ModulePassport\\Controllers\\RegionController@view',
       ),
     ),
@@ -395,7 +395,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/resources',
+        'path' => '/resources',
         'callback' => '\\ModulePassport\\Controllers\\ResourceController@add',
       ),
       'cache' => 
@@ -405,7 +405,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/resources/cache',
+        'path' => '/resources/cache',
         'callback' => '\\ModulePassport\\Controllers\\ResourceController@cache',
       ),
       'delete' => 
@@ -415,7 +415,7 @@ return array (
         array (
           0 => 'DELETE',
         ),
-        'path' => '/passport/resources/{code}',
+        'path' => '/resources/{code}',
         'callback' => '\\ModulePassport\\Controllers\\ResourceController@delete',
       ),
       'listinfo' => 
@@ -425,7 +425,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/resources',
+        'path' => '/resources',
         'callback' => '\\ModulePassport\\Controllers\\ResourceController@listinfo',
       ),
       'update' => 
@@ -435,7 +435,7 @@ return array (
         array (
           0 => 'PUT',
         ),
-        'path' => '/passport/resources/{code}',
+        'path' => '/resources/{code}',
         'callback' => '\\ModulePassport\\Controllers\\ResourceController@update',
       ),
       'view' => 
@@ -445,7 +445,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/resources/{code}',
+        'path' => '/resources/{code}',
         'callback' => '\\ModulePassport\\Controllers\\ResourceController@view',
       ),
     ),
@@ -458,7 +458,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/roles',
+        'path' => '/roles',
         'callback' => '\\ModulePassport\\Controllers\\RoleController@add',
       ),
       'delete' => 
@@ -468,7 +468,7 @@ return array (
         array (
           0 => 'DELETE',
         ),
-        'path' => '/passport/roles/{code}',
+        'path' => '/roles/{code}',
         'callback' => '\\ModulePassport\\Controllers\\RoleController@delete',
       ),
       'listinfo' => 
@@ -478,7 +478,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/roles',
+        'path' => '/roles',
         'callback' => '\\ModulePassport\\Controllers\\RoleController@listinfo',
       ),
       'update' => 
@@ -488,7 +488,7 @@ return array (
         array (
           0 => 'PUT',
         ),
-        'path' => '/passport/roles/{code}',
+        'path' => '/roles/{code}',
         'callback' => '\\ModulePassport\\Controllers\\RoleController@update',
       ),
     ),
@@ -501,7 +501,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/users',
+        'path' => '/users',
         'callback' => '\\ModulePassport\\Controllers\\UserController@add',
       ),
       'delete' => 
@@ -511,7 +511,7 @@ return array (
         array (
           0 => 'DELETE',
         ),
-        'path' => '/passport/users/{id:\\d+}',
+        'path' => '/users/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\UserController@delete',
       ),
       'listinfo' => 
@@ -521,7 +521,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/users',
+        'path' => '/users',
         'callback' => '\\ModulePassport\\Controllers\\UserController@listinfo',
       ),
       'update' => 
@@ -531,7 +531,7 @@ return array (
         array (
           0 => 'POST',
         ),
-        'path' => '/passport/users/{id:\\d+}',
+        'path' => '/users/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\UserController@update',
       ),
       'view' => 
@@ -541,7 +541,7 @@ return array (
         array (
           0 => 'GET',
         ),
-        'path' => '/passport/users/{id:\\d+}',
+        'path' => '/users/{id:\\d+}',
         'callback' => '\\ModulePassport\\Controllers\\UserController@view',
       ),
     ),

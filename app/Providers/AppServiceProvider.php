@@ -25,6 +25,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-		View::share('commonAssetUrl', config('app.assetUrl'));
+        View::share('commonAssetUrl', config('app.assetUrl'));
+
+        \Validator::extend('mobile', 'Framework\Baseapp\Rules\Mobile@passes');
+        \Validator::replacer('mobile', function($message, $attribute, $rule, $parameters) {
+            return 'The ' . $attribute . ' must be mobile.';
+        });
     }
 }

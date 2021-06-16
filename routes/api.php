@@ -6,7 +6,12 @@ use Illuminate\Support\Facades\Route;
 use Framework\Baseapp\Helpers\ResourceContainer;
 
 $middlewareAuth = [
-    //App\Middleware\JWTAuthMiddleware::class,
+    'auth:api',
+    Framework\Baseapp\Middleware\AuthUserMiddleware::class,
+
+    //Framework\Baseapp\Helpers\ResourceContainer::class,
+    //Framework\Baseapp\Middleware\AuthenticateMiddleware::class,
+    //Framework\Baseapp\Middleware\AutoRenewJwtToken::class,
 ];
 $middlewareBackend = array_merge($middlewareAuth, [
     //App\Middleware\BackendMiddleware::class,
@@ -24,6 +29,9 @@ $routes = app()->make(ResourceContainer::class)->initRouteDatas();
 });*/
 
 foreach ($routes as $app => $aRoutes) {
+    if ($app == 'third') {
+        continue;
+    }
     foreach ($aRoutes as $resourceCode => $rRoutes) {
         foreach ($rRoutes as $routeCode => $routeData) {
             Route::group($middlewareAuth, function() use ($routeData, $app) {
@@ -37,18 +45,20 @@ foreach ($routes as $app => $aRoutes) {
 
 
 Route::match(['OPTIONS', 'GET', 'POST', 'HEAD'], '/', '\App\Http\Controllers\IndexController@index');
-Route::get('/captcha', '\ModulePassport\Controllers\CommonController@captcha');
-Route::get('/send-code', '\ModulePassport\Controllers\CommonController@sendCode');
-Route::get('/validate-code', '\ModulePassport\Controllers\CommonController@validateCode');
+Route::get('/passport/captcha', '\ModulePassport\Controllers\CommonController@captcha');
+Route::get('/passport/validate-captcha', '\ModulePassport\Controllers\CommonController@validateCaptcha');
+Route::get('/passport/send-code', '\ModulePassport\Controllers\CommonController@sendCode');
+Route::get('/passport/validate-code', '\ModulePassport\Controllers\CommonController@validateCode');
 
-Route::addRoute(['GET', 'POST'], '/logout', '\ModulePassport\Controllers\EntranceController@logout');
+Route::addRoute(['GET', 'POST'], '/passport/logout', '\ModulePassport\Controllers\EntranceController@logout');
 
 Route::post('/signup', '\ModulePassport\Controllers\EntranceController@signup');
 Route::post('/signupin', '\ModulePassport\Controllers\EntranceController@signupin');
 Route::post('/passport/token', '\ModulePassport\Controllers\EntranceController@token');
 Route::post('/signin', '\ModulePassport\Controllers\EntranceController@signin');
 
-Route::get('/myinfo', '\ModulePassport\Controllers\UserController@myinfo', ['middleware' => $middlewareAuth]);
+Route::middleware($middlewareAuth)->get('/passport/myinfo', '\ModulePassport\Controllers\UserController@myinfo');
+//Route::get('/passport/myinfo', '\ModulePassport\Controllers\UserController@myinfo');
 Route::post('/refresh_token', '\ModulePassport\Controllers\EntranceController@refreshToken', ['middleware' => $middlewareAuth]);
 Route::get('/my-routes', '\ModulePassport\Controllers\EntranceController@myRoutes', ['middleware' => $middlewareBackend]);
 

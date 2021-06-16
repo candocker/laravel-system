@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f37fad2a8a2b8d109d0000a2fde009fa",
+    "content-hash": "1cc85de6b6a392b5b5e1a08fa2485da3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -252,23 +252,22 @@
             "time": "2021-01-20T22:51:39+00:00"
         },
         {
-            "name": "canmodule/infocms",
-            "version": "dev-master",
+            "name": "candocker/infocms",
+            "version": "dev-laravel",
             "source": {
                 "type": "git",
-                "url": "https://github.com/canmodule/infocms.git",
-                "reference": "545790f471fc3db9def927745ab819b12e8d6fb8"
+                "url": "https://github.com/candocker/infocms.git",
+                "reference": "d38eb5714a9a75f3dced2047820bb88353177c51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/canmodule/infocms/zipball/545790f471fc3db9def927745ab819b12e8d6fb8",
-                "reference": "545790f471fc3db9def927745ab819b12e8d6fb8",
+                "url": "https://api.github.com/repos/candocker/infocms/zipball/d38eb5714a9a75f3dced2047820bb88353177c51",
+                "reference": "d38eb5714a9a75f3dced2047820bb88353177c51",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.3.0"
             },
-            "default-branch": true,
             "type": "project",
             "autoload": {
                 "psr-4": {
@@ -290,23 +289,23 @@
                 "user"
             ],
             "support": {
-                "issues": "https://github.com/canmodule/infocms/issues",
-                "source": "https://github.com/canmodule/infocms/tree/master"
+                "issues": "https://github.com/candocker/infocms/issues",
+                "source": "https://github.com/candocker/infocms/tree/laravel"
             },
-            "time": "2021-05-29T03:30:00+00:00"
+            "time": "2021-06-12T06:16:43+00:00"
         },
         {
-            "name": "canmodule/passport",
+            "name": "candocker/passport",
             "version": "dev-laravel",
             "source": {
                 "type": "git",
-                "url": "https://github.com/canmodule/passport.git",
-                "reference": "afce22b283ab96bc5721cb59883e383ca7cf0f25"
+                "url": "https://github.com/candocker/passport.git",
+                "reference": "0ff7bb72e9ba4bd625398b74205ce262437c4570"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/canmodule/passport/zipball/afce22b283ab96bc5721cb59883e383ca7cf0f25",
-                "reference": "afce22b283ab96bc5721cb59883e383ca7cf0f25",
+                "url": "https://api.github.com/repos/candocker/passport/zipball/0ff7bb72e9ba4bd625398b74205ce262437c4570",
+                "reference": "0ff7bb72e9ba4bd625398b74205ce262437c4570",
                 "shasum": ""
             },
             "require": {
@@ -333,10 +332,10 @@
                 "user"
             ],
             "support": {
-                "issues": "https://github.com/canmodule/passport/issues",
-                "source": "https://github.com/canmodule/passport/tree/laravel"
+                "issues": "https://github.com/candocker/passport/issues",
+                "source": "https://github.com/candocker/passport/tree/laravel"
             },
-            "time": "2021-06-07T12:19:32+00:00"
+            "time": "2021-06-12T06:41:43+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -3161,16 +3160,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v2.4.4",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "33101c83b75728651b9e668a4559f97def7c9138"
+                "reference": "5cffdbfe4204e0d932cde6f8c9bdf63f0928b4d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/33101c83b75728651b9e668a4559f97def7c9138",
-                "reference": "33101c83b75728651b9e668a4559f97def7c9138",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/5cffdbfe4204e0d932cde6f8c9bdf63f0928b4d4",
+                "reference": "5cffdbfe4204e0d932cde6f8c9bdf63f0928b4d4",
                 "shasum": ""
             },
             "require": {
@@ -3221,7 +3220,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v2.4.4"
+                "source": "https://github.com/livewire/livewire/tree/2.5.0"
             },
             "funding": [
                 {
@@ -3229,7 +3228,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-28T15:31:15+00:00"
+            "time": "2021-06-14T22:25:45+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -3727,16 +3726,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.48.1",
+            "version": "2.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "8d1f50f1436fb4b05e7127360483dd9c6e73da16"
+                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8d1f50f1436fb4b05e7127360483dd9c6e73da16",
-                "reference": "8d1f50f1436fb4b05e7127360483dd9c6e73da16",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/93d9db91c0235c486875d22f1e08b50bdf3e6eee",
+                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee",
                 "shasum": ""
             },
             "require": {
@@ -3816,7 +3815,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T22:08:38+00:00"
+            "time": "2021-06-02T07:31:40+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -6260,12 +6259,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoolecan/foundation.git",
-                "reference": "40ecfc0ab598ea109162fd3e3ae4903458acbcdc"
+                "reference": "d41d492dc160dc06ce39c5d1246cbc2a9527c343"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swoolecan/foundation/zipball/40ecfc0ab598ea109162fd3e3ae4903458acbcdc",
-                "reference": "40ecfc0ab598ea109162fd3e3ae4903458acbcdc",
+                "url": "https://api.github.com/repos/swoolecan/foundation/zipball/d41d492dc160dc06ce39c5d1246cbc2a9527c343",
+                "reference": "d41d492dc160dc06ce39c5d1246cbc2a9527c343",
                 "shasum": ""
             },
             "require": {
@@ -6306,20 +6305,20 @@
                 "issues": "https://github.com/swoolecan/foundation/issues",
                 "source": "https://github.com/swoolecan/foundation/tree/main"
             },
-            "time": "2021-06-07T12:28:18+00:00"
+            "time": "2021-06-11T06:48:36+00:00"
         },
         {
             "name": "swoolecan/laravel-baseapp",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoolecan/laravel-baseapp.git",
-                "reference": "97b01ec857c8720979657090dc23b4e34de6dd6a"
+                "reference": "7472a4748c9d5b0c0caadde74f52bd448276405c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swoolecan/laravel-baseapp/zipball/97b01ec857c8720979657090dc23b4e34de6dd6a",
-                "reference": "97b01ec857c8720979657090dc23b4e34de6dd6a",
+                "url": "https://api.github.com/repos/swoolecan/laravel-baseapp/zipball/7472a4748c9d5b0c0caadde74f52bd448276405c",
+                "reference": "7472a4748c9d5b0c0caadde74f52bd448276405c",
                 "shasum": ""
             },
             "require": {
@@ -6392,9 +6391,9 @@
             ],
             "support": {
                 "issues": "https://github.com/swoolecan/laravel-baseapp/issues",
-                "source": "https://github.com/swoolecan/laravel-baseapp/tree/master"
+                "source": "https://github.com/swoolecan/laravel-baseapp/tree/main"
             },
-            "time": "2021-06-08T03:37:51+00:00"
+            "time": "2021-06-11T06:18:19+00:00"
         },
         {
             "name": "symfony/cache",
@@ -9458,8 +9457,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "canmodule/infocms": 20,
-        "canmodule/passport": 20,
+        "candocker/infocms": 20,
+        "candocker/passport": 20,
         "swoolecan/laravel-baseapp": 20
     },
     "prefer-stable": true,
