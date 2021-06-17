@@ -14,9 +14,10 @@ $middlewareAuth = [
     //Framework\Baseapp\Middleware\AutoRenewJwtToken::class,
 ];
 $middlewareBackend = array_merge($middlewareAuth, [
-    //App\Middleware\BackendMiddleware::class,
-    //App\Middleware\PermissionMiddleware::class,
+    Framework\Baseapp\Middleware\BackendMiddleware::class,
+    Framework\Baseapp\Middleware\PermissionMiddleware::class,
 ]);
+//print_r($middlewareBackend);exit();
 
 $routes = app()->make(ResourceContainer::class)->initRouteDatas();
 foreach ($routes as $app => $aRoutes) {
@@ -27,7 +28,7 @@ foreach ($routes as $app => $aRoutes) {
         foreach ($rRoutes as $routeCode => $routeData) {
             Route::group($middlewareAuth, function() use ($routeData, $app) {
                 //echo implode(',', $routeData['method']) . '==' . '/' . $app . $routeData['path'] . '==' . $routeData['callback'] . "\n";
-                Route::match($routeData['method'], '/' . $app . $routeData['path'], $routeData['callback']);
+                Route::match($routeData['method'], '/' . $app . $routeData['path'], $routeData['callback'])->name($routeData['code']);
             });
         }
     }
@@ -48,4 +49,4 @@ Route::post('/passport/signin', '\ModulePassport\Controllers\EntranceController@
 
 Route::middleware($middlewareAuth)->get('/passport/myinfo', '\ModulePassport\Controllers\UserController@myinfo');
 Route::middleware($middlewareAuth)->post('/passport/refresh-token', '\ModulePassport\Controllers\EntranceController@refresh');
-Route::middleware($middlewareAuth)->get('/passport/my-routes', '\ModulePassport\Controllers\EntranceController@myRoutes', ['middleware' => $middlewareBackend]);
+Route::middleware($middlewareBackend)->get('/passport/my-routes', '\ModulePassport\Controllers\EntranceController@myRoutes');
