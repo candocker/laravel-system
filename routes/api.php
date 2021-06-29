@@ -7,6 +7,7 @@ use Framework\Baseapp\Helpers\ResourceContainer;
 
 $middlewareAuth = [
     'auth:api',
+    'cors',
     Framework\Baseapp\Middleware\AuthUserMiddleware::class,
 
     //Framework\Baseapp\Helpers\ResourceContainer::class,
@@ -26,7 +27,7 @@ foreach ($routes as $app => $aRoutes) {
     }
     foreach ($aRoutes as $resourceCode => $rRoutes) {
         foreach ($rRoutes as $routeCode => $routeData) {
-            Route::group($middlewareAuth, function() use ($routeData, $app) {
+            Route::group($middlewareBackend, function() use ($routeData, $app) {
                 //echo implode(',', $routeData['method']) . '==' . '/' . $app . $routeData['path'] . '==' . $routeData['callback'] . "\n";
                 Route::match($routeData['method'], '/' . $app . $routeData['path'], $routeData['callback'])->name($routeData['code']);
             });
