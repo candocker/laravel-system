@@ -6,8 +6,10 @@
     "type": "project",
     "require": {
         "php": "^7.4",
+        "candocker/culture": "dev-main",
         "candocker/infocms": "dev-laravel",
         "candocker/passport": "dev-laravel",
+        "grandt/phpepub": "4.0.7.1",
         "laravel/telescope": "^4.4",
         "swoolecan/laravel-baseapp": "dev-main",
         "symfony/translation": "^5.3"

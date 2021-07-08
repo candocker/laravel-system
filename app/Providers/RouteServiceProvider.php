@@ -43,7 +43,23 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         $this->mapWebRoutes();
+        $this->mapCultureRoutes();
         $this->mapApiRoutes();
+    }
+
+    /**
+     * Define the "culture" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapCultureRoutes()
+    {
+        Route::prefix('')
+            ->middleware('api')
+            //->namespace($this->namespace)
+            ->group(base_path('routes/culture.php'));
     }
 
     /**
