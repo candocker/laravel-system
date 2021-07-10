@@ -13,7 +13,9 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        'Framework\Baseapp\Commands\GenResourceCommand',
+        'ModuleBigdata\Commands\DataSyncCommand',
+        'ModuleCulture\Commands\GeneratorEpubCommand',
     ];
 
     /**
@@ -25,6 +27,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+        $schedule->command('data:sync order')->everyMinute();
     }
 
     /**

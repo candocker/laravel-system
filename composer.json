@@ -6,6 +6,7 @@
     "type": "project",
     "require": {
         "php": "^7.4",
+        "candocker/bigdata": "dev-main",
         "candocker/culture": "dev-main",
         "candocker/infocms": "dev-laravel",
         "candocker/passport": "dev-laravel",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63c621beea7c04cf58e66a2bd84fd22f",
+    "content-hash": "dccce490a596c4d8ba622a7400f09d9f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -250,6 +250,50 @@
                 }
             ],
             "time": "2021-01-20T22:51:39+00:00"
+        },
+        {
+            "name": "candocker/bigdata",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/candocker/bigdata.git",
+                "reference": "eab1a80b84f5958a392aa7d0d93b66d6918be993"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/candocker/bigdata/zipball/eab1a80b84f5958a392aa7d0d93b66d6918be993",
+                "reference": "eab1a80b84f5958a392aa7d0d93b66d6918be993",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "default-branch": true,
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "ModuleBigdata\\": "app/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A application of bigdata",
+            "keywords": [
+                "BigData",
+                "application",
+                "permission",
+                "php",
+                "resource",
+                "role",
+                "user"
+            ],
+            "support": {
+                "issues": "https://github.com/candocker/bigdata/issues",
+                "source": "https://github.com/candocker/bigdata/tree/main"
+            },
+            "time": "2021-07-09T01:56:59+00:00"
         },
         {
             "name": "candocker/culture",
@@ -9824,6 +9868,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "candocker/bigdata": 20,
         "candocker/culture": 20,
         "candocker/infocms": 20,
         "candocker/passport": 20,

@@ -63,6 +63,46 @@ return [
             ]) : [],
         ],
 
+        'dsource' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_DSOURCE_HOST', '127.0.0.1'),
+            'port' => env('DB_DSOURCE_PORT', '3306'),
+            'database' => env('DB_DSOURCE_DATABASE', 'forge'),
+            'username' => env('DB_DSOURCE_USERNAME', 'forge'),
+            'password' => env('DB_DSOURCE_PASSWORD', ''),
+            'unix_socket' => env('DB_DSOURCE_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => env('DB_DSOURCE_PREFIX', ''),
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
+        'bigdata' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_BIGDATA_HOST', '127.0.0.1'),
+            'port' => env('DB_BIGDATA_PORT', '3306'),
+            'database' => env('DB_BIGDATA_DATABASE', 'forge'),
+            'username' => env('DB_BIGDATA_USERNAME', 'forge'),
+            'password' => env('DB_BIGDATA_PASSWORD', ''),
+            'unix_socket' => env('DB_BIGDATA_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => env('DB_BIGDATA_PREFIX', ''),
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
         'culture' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
