@@ -44,6 +44,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->mapWebRoutes();
         $this->mapCultureRoutes();
+        $this->mapBigdataRoutes();
         $this->mapApiRoutes();
     }
 
@@ -60,6 +61,21 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             //->namespace($this->namespace)
             ->group(base_path('routes/culture.php'));
+    }
+
+    /**
+     * Define the "bigdata" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapBigdataRoutes()
+    {
+        Route::prefix('')
+            ->middleware('api')
+            //->namespace($this->namespace)
+            ->group(base_path('routes/bigdata.php'));
     }
 
     /**

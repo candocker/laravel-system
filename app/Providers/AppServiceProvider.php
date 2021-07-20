@@ -26,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         View::share('commonAssetUrl', config('app.assetUrl'));
+        \ModulePassport\Models\AttachmentPath::observe(\ModulePassport\Observers\AttachmentPathObserver::class);
 
         \Validator::extend('mobile', 'Framework\Baseapp\Rules\Mobile@passes');
         \Validator::replacer('mobile', function($message, $attribute, $rule, $parameters) {

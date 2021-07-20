@@ -83,6 +83,46 @@ return [
             ]) : [],
         ],
 
+        'serp' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_SERP_HOST', '127.0.0.1'),
+            'port' => env('DB_SERP_PORT', '3306'),
+            'database' => env('DB_SERP_DATABASE', 'forge'),
+            'username' => env('DB_SERP_USERNAME', 'forge'),
+            'password' => env('DB_SERP_PASSWORD', ''),
+            'unix_socket' => env('DB_SERP_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => env('DB_SERP_PREFIX', ''),
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
+        'sedu' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_SEDU_HOST', '127.0.0.1'),
+            'port' => env('DB_SEDU_PORT', '3306'),
+            'database' => env('DB_SEDU_DATABASE', 'forge'),
+            'username' => env('DB_SEDU_USERNAME', 'forge'),
+            'password' => env('DB_SEDU_PASSWORD', ''),
+            'unix_socket' => env('DB_SEDU_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => env('DB_SEDU_PREFIX', ''),
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
         'bigdata' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
