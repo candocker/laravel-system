@@ -6,11 +6,13 @@
     "type": "project",
     "require": {
         "php": "^7.4",
+        "aliyuncs/oss-sdk-php": "^2.4",
         "candocker/bigdata": "dev-main",
         "candocker/culture": "dev-main",
         "candocker/infocms": "dev-laravel",
         "candocker/passport": "dev-laravel",
         "grandt/phpepub": "4.0.7.1",
+        "jacobcyl/ali-oss-storage": "^2.1",
         "laravel/telescope": "^4.4",
         "swoolecan/laravel-baseapp": "dev-main",
         "symfony/translation": "^5.3"

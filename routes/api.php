@@ -51,3 +51,6 @@ Route::post('/passport/signin', '\ModulePassport\Controllers\EntranceController@
 Route::middleware($middlewareAuth)->get('/passport/myinfo', '\ModulePassport\Controllers\UserController@myinfo');
 Route::middleware($middlewareAuth)->post('/passport/refresh-token', '\ModulePassport\Controllers\EntranceController@refresh');
 Route::middleware($middlewareBackend)->get('/passport/my-routes', '\ModulePassport\Controllers\EntranceController@myRoutes');
+
+Route::get('/passport/oss-{action}', '\ModulePassport\Controllers\CommonController@oss');
+Route::get('/passport/create-resource', '\ModulePassport\Controllers\CommonController@createResource');
