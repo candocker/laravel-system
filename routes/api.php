@@ -21,6 +21,7 @@ $middlewareBackend = array_merge($middlewareAuth, [
 //print_r($middlewareBackend);exit();
 
 $routes = app()->make(ResourceContainer::class)->initRouteDatas();
+//print_R($routes);
 foreach ($routes as $app => $aRoutes) {
     if ($app == 'third') {
         continue;
@@ -54,3 +55,4 @@ Route::middleware($middlewareBackend)->get('/passport/my-routes', '\ModulePasspo
 
 Route::get('/passport/oss-{action}', '\ModulePassport\Controllers\CommonController@oss');
 Route::get('/passport/create-resource', '\ModulePassport\Controllers\CommonController@createResource');
+Route::get('/passport/test', '\ModulePassport\Controllers\TestController@test');

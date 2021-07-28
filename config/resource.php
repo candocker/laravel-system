@@ -39,7 +39,7 @@ return [
   ],
   'passport-redis' => 
   [
-    'service' => 'Framework\\Baseapp\\Services\\RedisService',
+    'service' => 'ModulePassport\\Services\\RedisService',
   ],
   'passport-easysms' => 
   [
