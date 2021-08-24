@@ -23,9 +23,6 @@ $middlewareBackend = array_merge($middlewareAuth, [
 $routes = app()->make(ResourceContainer::class)->initRouteDatas();
 //print_R($routes);
 foreach ($routes as $app => $aRoutes) {
-    if ($app == 'third') {
-        continue;
-    }
     foreach ($aRoutes as $resourceCode => $rRoutes) {
         foreach ($rRoutes as $routeCode => $routeData) {
             Route::group($middlewareBackend, function() use ($routeData, $app) {
@@ -54,5 +51,4 @@ Route::middleware($middlewareAuth)->post('/passport/refresh-token', '\ModulePass
 Route::middleware($middlewareBackend)->get('/passport/my-routes', '\ModulePassport\Controllers\EntranceController@myRoutes');
 
 Route::get('/passport/oss-{action}', '\ModulePassport\Controllers\CommonController@oss');
-Route::get('/passport/create-resource', '\ModulePassport\Controllers\CommonController@createResource');
 Route::get('/passport/test', '\ModulePassport\Controllers\TestController@test');

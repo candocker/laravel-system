@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0790157295381d33c8d3f7f59e93901f",
+    "content-hash": "11df73ba12f8fde4adedae9641412f81",
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
@@ -297,6 +297,47 @@
             "time": "2021-01-20T22:51:39+00:00"
         },
         {
+            "name": "candocker/bench",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/candocker/bench.git",
+                "reference": "68745b6f029da79eac7f88c33fb77ebf3f374958"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/candocker/bench/zipball/68745b6f029da79eac7f88c33fb77ebf3f374958",
+                "reference": "68745b6f029da79eac7f88c33fb77ebf3f374958",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "default-branch": true,
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "ModuleBench\\": "app/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A application of bench",
+            "keywords": [
+                "application",
+                "bench",
+                "php",
+                "resource"
+            ],
+            "support": {
+                "issues": "https://github.com/candocker/bench/issues",
+                "source": "https://github.com/candocker/bench/tree/main"
+            },
+            "time": "2021-08-17T06:44:55+00:00"
+        },
+        {
             "name": "candocker/bigdata",
             "version": "dev-main",
             "source": {
@@ -469,6 +510,129 @@
                 "source": "https://github.com/candocker/passport/tree/laravel"
             },
             "time": "2021-06-12T06:41:43+00:00"
+        },
+        {
+            "name": "candocker/paytrade",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/candocker/paytrade.git",
+                "reference": "6b82f2c60242151d079f744e8bb6436af1be5738"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/candocker/paytrade/zipball/6b82f2c60242151d079f744e8bb6436af1be5738",
+                "reference": "6b82f2c60242151d079f744e8bb6436af1be5738",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "default-branch": true,
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "ModulePaytrade\\": "app/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A application of paytrade",
+            "keywords": [
+                "application",
+                "paytrade",
+                "php",
+                "resource"
+            ],
+            "support": {
+                "issues": "https://github.com/candocker/paytrade/issues",
+                "source": "https://github.com/candocker/paytrade/tree/main"
+            },
+            "time": "2021-08-17T06:50:54+00:00"
+        },
+        {
+            "name": "candocker/shop",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/candocker/shop.git",
+                "reference": "0f0ac50550d84e2974a131880c471d70624c1189"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/candocker/shop/zipball/0f0ac50550d84e2974a131880c471d70624c1189",
+                "reference": "0f0ac50550d84e2974a131880c471d70624c1189",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "default-branch": true,
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "ModuleShop\\": "app/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A application of shop",
+            "keywords": [
+                "application",
+                "php",
+                "resource",
+                "shop"
+            ],
+            "support": {
+                "issues": "https://github.com/candocker/shop/issues",
+                "source": "https://github.com/candocker/shop/tree/main"
+            },
+            "time": "2021-08-17T06:24:22+00:00"
+        },
+        {
+            "name": "candocker/third",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/candocker/third.git",
+                "reference": "eba3900b793f73817170a815a5763f94301ec7e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/candocker/third/zipball/eba3900b793f73817170a815a5763f94301ec7e0",
+                "reference": "eba3900b793f73817170a815a5763f94301ec7e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "default-branch": true,
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "ModuleThird\\": "app/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A application of third",
+            "keywords": [
+                "application",
+                "php",
+                "resource",
+                "third"
+            ],
+            "support": {
+                "issues": "https://github.com/candocker/third/issues",
+                "source": "https://github.com/candocker/third/tree/main"
+            },
+            "time": "2021-08-24T08:43:35+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -9968,10 +10132,14 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "candocker/bench": 20,
         "candocker/bigdata": 20,
         "candocker/culture": 20,
         "candocker/infocms": 20,
         "candocker/passport": 20,
+        "candocker/paytrade": 20,
+        "candocker/shop": 20,
+        "candocker/third": 20,
         "swoolecan/laravel-baseapp": 20
     },
     "prefer-stable": true,
