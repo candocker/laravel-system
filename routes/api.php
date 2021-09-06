@@ -36,7 +36,7 @@ foreach ($routes as $app => $aRoutes) {
 Route::match(['OPTIONS', 'GET', 'POST', 'HEAD'], '/', '\App\Http\Controllers\IndexController@index');
 Route::get('/passport/captcha', '\ModulePassport\Controllers\CommonController@captcha');
 Route::get('/passport/validate-captcha', '\ModulePassport\Controllers\CommonController@validateCaptcha');
-Route::get('/passport/send-code', '\ModulePassport\Controllers\CommonController@sendCode');
+Route::post('/passport/send-code', '\ModulePassport\Controllers\CommonController@sendCode');
 Route::get('/passport/validate-code', '\ModulePassport\Controllers\CommonController@validateCode');
 
 Route::addRoute(['GET', 'POST'], '/passport/logout', '\ModulePassport\Controllers\EntranceController@logout');
@@ -52,3 +52,21 @@ Route::middleware($middlewareBackend)->get('/passport/my-routes', '\ModulePasspo
 
 Route::get('/passport/oss-{action}', '\ModulePassport\Controllers\CommonController@oss');
 Route::get('/passport/test', '\ModulePassport\Controllers\TestController@test');
+
+
+
+/*Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});*/
+
+/*$authAttributes = [
+    'prefix' => '',
+    'namespace' => 'Auth',
+    //'middleware' => 'cors',
+];
+
+Route::group($authAttributes, function() {
+    Route::post('login', 'AuthController@login');//->name('login'); // 用户名、密码登录接口
+    Route::post('refresh', 'AuthController@refresh');
+    Route::get('register', 'RegisterController@register');
+});*/

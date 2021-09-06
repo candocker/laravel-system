@@ -7,6 +7,7 @@
     "require": {
         "php": "^7.4",
         "aliyuncs/oss-sdk-php": "^2.4",
+        "arcanedev/log-viewer": "~8.1.0",
         "candocker/bench": "dev-main",
         "candocker/bigdata": "dev-main",
         "candocker/culture": "dev-main",

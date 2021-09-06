@@ -22,8 +22,8 @@ Route::middleware($middleware)->get('/culture/categories/home', '\ModuleCulture\
 Route::middleware($middleware)->get('/culture/chapters/epub', '\ModuleCulture\Controllers\ChapterController@epub');
 Route::middleware($middlewareAuth)->post('/culture/chapter-records/record', '\ModuleCulture\Controllers\ChapterRecordController@record');
 //Route::middleware($middlewareAuth)->any('/culture/chapter-records/record1', '\ModuleCulture\Controllers\ChapterRecordController@record');
-Route::middleware($middlewareAuth)->get('/culture/shelfs/mylist', '\ModuleCulture\Controllers\ShelfController@mylist');
-Route::middleware($middlewareAuth)->delete('/culture/shelfs/destroy', '\ModuleCulture\Controllers\ShelfController@destroy');
+Route::middleware($middlewareAuth)->get('/culture/shelves/mylist', '\ModuleCulture\Controllers\ShelfController@mylist');
+Route::middleware($middlewareAuth)->delete('/culture/shelves/destroy', '\ModuleCulture\Controllers\ShelfController@destroy');
 Route::middleware($middlewareAuth)->any('/culture/shelf-books/record', '\ModuleCulture\Controllers\ShelfBookController@record');
 Route::middleware($middlewareAuth)->any('/culture/shelf-books/updata', '\ModuleCulture\Controllers\ShelfBookController@updata');
 Route::middleware($middlewareAuth)->any('/culture/book-records/my-record', '\ModuleCulture\Controllers\BookRecordController@myRecord');
