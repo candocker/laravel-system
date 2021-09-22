@@ -21,13 +21,14 @@
 {{--@include('modules.toolbar._top', $datas)
 @include('modules.toolbar._header', $datas)--}}
 {{--<?php echo $this->render('_nav', ['pCode' => $pCode, 'sorts' => $sorts]); ?>
-<?php echo $this->render('_commend'); ?>--}}
-@include('modules.toolbar._nav', $datas)
+<?php echo $this->render('_commend'); ?>
+@include('modules.toolbar._nav', $datas)--}}
 <div class="content">
     <div class="container">
         <div class="row">
-            {{--<?php echo $this->render('_nav-left', ['sortData' => $sortData, 'subInfos' => $subInfos]); ?>
-            <?php echo $this->render('_content', ['subInfos' => $subInfos]); ?>--}}
+            {{--@include('modules.toolbar._nav-left', $datas)--}}
+            {{--<?php echo $this->render('_nav-left', ['sortData' => $sortData, 'subInfos' => $subInfos]); ?>--}}
+            @include('modules.toolbar._content', $datas)
         </div>
     </div>
 </div>

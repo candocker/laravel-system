@@ -1,15 +1,13 @@
 <div class="header-bar">
     <div class="container">
         <div class="bar-left">
-            @foreach ($datas as $code => $subData)
             <ul class="">
-                @foreach ($datas['subInfos'] as $code => $subData)
+            @foreach ($datas as $code => $subData)
 				<li class="menu-item">
-					<a rel="bookmark" href="/toolbar_{{$sort}}.html" style="color:red">{{$pData['name']}}</a>
+					<a rel="bookmark" href="/toolbar_{{$code}}.html" style="color:red">{{$subData['name']}}</a>
                 </li>
-                @endforeach
-            </ul>
             @endforeach
+            </ul>
         </div>
         <!--<div class="bar-right ">
             <span>特别推荐</span>
