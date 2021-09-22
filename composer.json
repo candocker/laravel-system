@@ -19,6 +19,8 @@
         "grandt/phpepub": "4.0.7.1",
         "jacobcyl/ali-oss-storage": "^2.1",
         "laravel/telescope": "^4.4",
+        "maatwebsite/excel": "^3.1",
+        "overtrue/pinyin": "~4.0",
         "swoolecan/laravel-baseapp": "dev-main",
         "symfony/translation": "^5.3"
     },

@@ -44,6 +44,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->mapWebRoutes();
         $this->mapCultureRoutes();
+        $this->mapInfocmsRoutes();
         $this->mapBigdataRoutes();
         $this->mapApiRoutes();
     }
@@ -61,6 +62,13 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             //->namespace($this->namespace)
             ->group(base_path('routes/culture.php'));
+    }
+
+    protected function mapInfocmsRoutes()
+    {
+        Route::prefix('')
+            ->middleware('api')
+            ->group(base_path('routes/infocms.php'));
     }
 
     /**
