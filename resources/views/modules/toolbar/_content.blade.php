@@ -1,8 +1,5 @@
-<h1>ddd</h1>
-@foreach ($datas as $code => $subData)
 <div class="col-md-11">
-    <h2>{{$subData['name']}}</h2>
-    @foreach ($subData['subInfos'] as $subInfo)
+    @foreach ($subInfos as $subInfo)
 	<div class="part" id="{{$subInfo['code']}}" data-title="{{$subInfo['name']}}">
         <h2 class="has_link ">
             <strong>
@@ -35,4 +32,3 @@
 	<?php //echo $this->render('_content-footer'); ?>--}}
     <div class="content-linkto "></div>
 </div>
-@endforeach

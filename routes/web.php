@@ -48,6 +48,7 @@ foreach ($routes as $domain => $domainRoutes) {
 }
 
 Route::get('/tool', '\ModuleInfocms\Controllers\Web\ToolController@tool')->name('tool.tool');
+Route::get('/toolbar_{sort}', '\ModuleInfocms\Controllers\Web\ToolController@tool')->name('tool.tool');
 /*Route::get('/movies/{id}', 'MoviesController@show')->name('movies.show');
 Route::get('/tv/{id}', 'TvController@show')->name('tv.show');
 Route::get('/actors', 'ActorsController@index')->name('actors.index');

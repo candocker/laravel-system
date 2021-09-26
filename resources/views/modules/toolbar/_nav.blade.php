@@ -2,9 +2,9 @@
     <div class="container">
         <div class="bar-left">
             <ul class="">
-            @foreach ($datas as $code => $subData)
+            @foreach ($sorts as $code => $subData)
 				<li class="menu-item">
-					<a rel="bookmark" href="/toolbar_{{$code}}.html" style="color:red">{{$subData['name']}}</a>
+					<a rel="bookmark" href="/toolbar_{{$code}}" @if ($code == $pCode) style="color:red"@endif>{{$subData['name']}}</a>
                 </li>
             @endforeach
             </ul>
