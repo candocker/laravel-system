@@ -17,7 +17,7 @@
 							<h3 class="app-title">{{$tool['name']}}</h3>
                         </a>
                         <a href="http://123.meibp.com/506.html" target="_blank" title="《微信公众平台》">
-					    <a href="{{$tool['website']}}" target="_blank" title="{{$tool['name']}}">
+					    <a href="{{$tool['website']}}" target="_blank" title="{{$tool['description']}}">
 						    <p class="app-detail">{{$tool['description']}}</p>
                         </a>
                         <div class="app-nums"><span></span></div>
