@@ -114,11 +114,14 @@ return [
 
     'uploadUrl' => env('UPLOAD_URL', null),
     'assetUrl' => env('ASSET_URL', ''),
-    'subjectDomain' => env('SUBJECT_DOMAIN', ''),
-    'brandDomain' => env('BRAND_DOMAIN', ''),
-    'guideDomain' => env('GUIDE_DOMAIN', ''),
-    'petDomain' => env('PET_DOMAIN', ''),
+    //'subjectDomain' => env('SUBJECT_DOMAIN', ''),
+    //'brandDomain' => env('BRAND_DOMAIN', ''),
+    //'guideDomain' => env('GUIDE_DOMAIN', ''),
+    //'petDomain' => env('PET_DOMAIN', ''),
     'humanDomain' => env('HUMAN_DOMAIN', ''),
-    'cultureDomain' => env('CULTURE_DOMAIN', ''),
+    //'cultureDomain' => env('CULTURE_DOMAIN', ''),
+    'bookDomain' => env('BOOK_DOMAIN', ''),
+    'topicDomain' => env('TOPIC_DOMAIN', ''),
+    'calligraphyDomain' => env('CALLIGRAPHY_DOMAIN', ''),
 
 ];

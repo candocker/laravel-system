@@ -6,7 +6,7 @@ use Framework\Baseapp\Helpers\ResourceContainer;
 $resourceContainer = app()->make(ResourceContainer::class);
 
 $routes = [
-    'subject' => [
+    /*'subject' => [
         'routes' => ['', 'human', 'info', 'knowledge', 'product', 'shop', 'store', 'league'],
     ],
     'brand' => [
@@ -18,13 +18,17 @@ $routes = [
     'guide' => [
         'routes' => ['', 'vote', 'show-store-{id}', 'show-knowledge-{id}', 'show-shop-{id}', 'show-league-{id}', 'show-human-{id}', 'show-info-{id}'],
     ],
-    'human' => [
-        'routes' => ['', '{code}'],
-        '{code}' => ['action' => 'view'],
-    ],
     'culture' => [
         'routes' => ['', 'listinfo', 'list/{code}/{page?}', 'show-{id}', 'test'],
         'list/{code}/{page?}' => ['action' => 'listinfo'],
+    ],*/
+    'book' => [
+        'routes' => ['', 'category', '{code}'],
+        '{code}' => ['action' => 'view'],
+    ],
+    'human' => [
+        'routes' => ['', '{code}'],
+        '{code}' => ['action' => 'view'],
     ],
 ];
 $currentHost = false;

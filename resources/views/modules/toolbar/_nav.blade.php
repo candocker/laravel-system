@@ -1,13 +1,16 @@
 <div class="header-bar">
     <div class="container">
         <div class="bar-left">
+            @foreach ($sorts as $sortDatas)
             <ul class="">
-            @foreach ($sorts as $code => $subData)
+            <li></li>
+            @foreach ($sortDatas as $code => $subData)
 				<li class="menu-item">
 					<a rel="bookmark" href="/toolbar_{{$code}}" @if ($code == $pCode) style="color:red"@endif>{{$subData['name']}}</a>
                 </li>
             @endforeach
             </ul>
+            @endforeach
         </div>
         <!--<div class="bar-right ">
             <span>特别推荐</span>
