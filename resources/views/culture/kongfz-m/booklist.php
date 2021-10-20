@@ -1,4 +1,3 @@
-<?php class Yii { public static function getAlias($var) { return "http://39.106.102.45/filesys/spider/pages"; } } ?>
 <!DOCTYPE html>
 <html ng-app="searchShop" style="background:#fff;">
 
@@ -13,12 +12,12 @@
 <meta name="format-detection" content="telephone=no,email=no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link rel="canonical" href="https://book.kongfz.com/Cminguo/" />
-<link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/css/30791-1795.css" />
-<link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/css/4a1be-2227.css" />
-<!-- <script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/m-reactive.js"></script> -->
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/66/m-reactive.js"></script>
-<link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/css/c7944-2777.css" />
-<link rel="stylesheet" type="text/css" href="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/css/022b9-3880.css" />
+<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/kongfz/m/css/30791-1795.css" />
+<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/kongfz/m/css/4a1be-2227.css" />
+<!-- <script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/m-reactive.js"></script> -->
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/66/m-reactive.js"></script>
+<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/kongfz/m/css/c7944-2777.css" />
+<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/kongfz/m/css/022b9-3880.css" />
 <script type="text/javascript">document.write('<s' + 'cript src="https://m.kongfz.com/shop/ajax/getmshopheader/?mt=' + Math.random() + '"></' + 'script>');</script>
 <script type="text/javascript">window.PAGE || (window.PAGE = {});
     PAGE.search = {
@@ -44,7 +43,7 @@ right: 0;
 top: 25vh;
 z-index:10;
 padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
-    <img class="download_icon" style="position: absolute;right: 6px;top: 9px;height: 10px;" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/5e34a-8785.png" /></div>
+    <img class="download_icon" style="position: absolute;right: 6px;top: 9px;height: 10px;" src="{{$commonAssetUrl}}/kongfz/m/img/5e34a-8785.png" /></div>
 <!--列表搜索页-->
 <div class="kfz-layout search_product">
     <div kfz-header url="/search/template/mobile2/common/header/search-header.html" search-word="" input-val=""></div>
@@ -390,7 +389,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/12820/4038675393/">
                 <a href="https://mbook.kongfz.com/12820/4038675393/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/60c70-4024.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/60c70-4024.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">中国共产党年表</p>
                         <p class="m_t10 clearfix">
@@ -412,7 +411,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/12820/4038682953/">
                 <a href="https://mbook.kongfz.com/12820/4038682953/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/7ea24-2498.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/7ea24-2498.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">中国共产党的三十年学习参考提纲</p>
                         <p class="m_t10 clearfix">
@@ -434,7 +433,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/27958/4038696691/">
                 <a href="https://mbook.kongfz.com/27958/4038696691/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/084e4-6440.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/084e4-6440.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">建设全国农业教育计划大纲</p>
                         <p class="m_t10 clearfix">
@@ -456,7 +455,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/20137/4038695645/">
                 <a href="https://mbook.kongfz.com/20137/4038695645/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/cba28-7248.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/cba28-7248.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">《宋拓定武本兰亭序》1933年北平故宫博物院印行， 大开本线装一册</p>
                         <p class="m_t10 clearfix">
@@ -478,7 +477,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/20137/4038691640/">
                 <a href="https://mbook.kongfz.com/20137/4038691640/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/08085-6520.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/08085-6520.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">（英汉汉英）翻译举例</p>
                         <p class="m_t10 clearfix">
@@ -500,7 +499,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/200591/4038667392/">
                 <a href="https://mbook.kongfz.com/200591/4038667392/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/ae711-7057.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/ae711-7057.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">（日本侵华史料）《满洲建国十周年庆祝-满洲国国宝展览会目录》 现货包快递</p>
                         <p class="m_t10 clearfix">
@@ -522,7 +521,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/20137/4038687491/">
                 <a href="https://mbook.kongfz.com/20137/4038687491/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/cfef9-3404.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/cfef9-3404.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">古文辞类纂 第2、3册合售</p>
                         <p class="m_t10 clearfix">
@@ -544,7 +543,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/20137/4038685139/">
                 <a href="https://mbook.kongfz.com/20137/4038685139/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/788d7-9528.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/788d7-9528.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">中西四书 【精装，1927年出版】</p>
                         <p class="m_t10 clearfix">
@@ -566,7 +565,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/8204/4038681772/">
                 <a href="https://mbook.kongfz.com/8204/4038681772/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/ba90b-1821.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/ba90b-1821.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">钱南园书正气歌 民国版</p>
                         <p class="m_t10 clearfix">
@@ -588,7 +587,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/12895/4038677829/">
                 <a href="https://mbook.kongfz.com/12895/4038677829/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/99d92-1738.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/99d92-1738.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">疑为木活字印刷的《初级小学国语常识课本第六册》</p>
                         <p class="m_t10 clearfix">
@@ -610,7 +609,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/27958/4038675548/">
                 <a href="https://mbook.kongfz.com/27958/4038675548/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/3ecb5-5612.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/3ecb5-5612.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">四川中心农事试验场：农艺科事业计划大纲</p>
                         <p class="m_t10 clearfix">
@@ -632,7 +631,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/1937/4038673834/">
                 <a href="https://mbook.kongfz.com/1937/4038673834/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/dcd6e-9778.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/dcd6e-9778.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">1940年中国北京印：佛经典籍 精装本一厚册 汉英对照 版画197页前有嘉庆戌辰秋和硕豫亲王裕丰敬刊</p>
                         <p class="m_t10 clearfix">
@@ -654,7 +653,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/27958/4038657378/">
                 <a href="https://mbook.kongfz.com/27958/4038657378/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/0656e-6133.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/0656e-6133.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">南京金陵大学农林科售品目录</p>
                         <p class="m_t10 clearfix">
@@ -676,7 +675,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/434208/4038650178/">
                 <a href="https://mbook.kongfz.com/434208/4038650178/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/f0ff0-5303.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/f0ff0-5303.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国三十五年大连大众书店新人生观</p>
                         <p class="m_t10 clearfix">
@@ -698,7 +697,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/322775/4038648453/">
                 <a href="https://mbook.kongfz.com/322775/4038648453/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/d4b39-9281.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/d4b39-9281.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">（中华民国三十三年五月十三日教育部批准发行）汉译斯盖倪三氏新解析几何学（中华民国三十三年十月十二版）</p>
                         <p class="m_t10 clearfix">
@@ -720,7 +719,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/240656/4038647016/">
                 <a href="https://mbook.kongfz.com/240656/4038647016/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/63dc3-7401.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/63dc3-7401.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">四言杂志</p>
                         <p class="m_t10 clearfix">
@@ -742,7 +741,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13649/4038639899/">
                 <a href="https://mbook.kongfz.com/13649/4038639899/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/33007-2755.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/33007-2755.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">农村社会</p>
                         <p class="m_t10 clearfix">
@@ -764,7 +763,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/563229/4038636972/">
                 <a href="https://mbook.kongfz.com/563229/4038636972/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/0f60f-5889.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/0f60f-5889.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">伤寒微旨论 旅社备要方 两册一本 民国1914年 本人tb店名为：古海沉浮，欢迎各位书友来看！！！谢谢！！！</p>
                         <p class="m_t10 clearfix">
@@ -786,7 +785,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/171525/4038632826/">
                 <a href="https://mbook.kongfz.com/171525/4038632826/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/eae57-7299.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/eae57-7299.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国佛经：太上感应篇说咏全本，(内附：关胜帝君觉世真经）一篇</p>
                         <p class="m_t10 clearfix">
@@ -808,7 +807,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/277649/4038562349/">
                 <a href="https://mbook.kongfz.com/277649/4038562349/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/72e01-3175.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/72e01-3175.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">安徽公共卫生学创始人，安徽医学院公共卫生学院，首任院长，第三届全国人大代表，中华医学会卫生学会理事、合肥分会主任蒋本沂先生旧藏 Anatomy of The Human Body（人体解剖学）自己翻译的书名，可能不准，具体还请买家自鉴，详情见商品品相描述，售出后不退不换</p>
                         <p class="m_t10 clearfix">
@@ -830,7 +829,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/12176/4038615316/">
                 <a href="https://mbook.kongfz.com/12176/4038615316/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/31257-4307.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/31257-4307.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">密尔格拉得（原配护封）1953年</p>
                         <p class="m_t10 clearfix">
@@ -852,7 +851,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/22117/4038612448/">
                 <a href="https://mbook.kongfz.com/22117/4038612448/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/4befc-1046.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/4befc-1046.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国36年算命书《牙牌神数八种》</p>
                         <p class="m_t10 clearfix">
@@ -874,7 +873,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/565253/4038608082/">
                 <a href="https://mbook.kongfz.com/565253/4038608082/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/1ef6d-9080.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/1ef6d-9080.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">实用中医内科学</p>
                         <p class="m_t10 clearfix">
@@ -896,7 +895,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/17184/4038600538/">
                 <a href="https://mbook.kongfz.com/17184/4038600538/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/82391-8279.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/82391-8279.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">精品 好事多磨</p>
                         <p class="m_t10 clearfix">
@@ -918,7 +917,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13244/2972112154/">
                 <a href="https://mbook.kongfz.com/13244/2972112154/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/797ca-1092.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/797ca-1092.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国十年版 应用武术体操</p>
                         <p class="m_t10 clearfix">
@@ -940,7 +939,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13244/2972110327/">
                 <a href="https://mbook.kongfz.com/13244/2972110327/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/cee25-6604.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/cee25-6604.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国二十六年五月：金城银行创立二十年纪念刊 精装</p>
                         <p class="m_t10 clearfix">
@@ -962,7 +961,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13244/2972103662/">
                 <a href="https://mbook.kongfz.com/13244/2972103662/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/bf2d4-6364.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/bf2d4-6364.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国二十九年线装版 不费钱最真确之长寿法：近八品</p>
                         <p class="m_t10 clearfix">
@@ -984,7 +983,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13244/4038590381/">
                 <a href="https://mbook.kongfz.com/13244/4038590381/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/230ea-7622.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/230ea-7622.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国线装精校医宗金鉴外科：共十六卷 订成一册</p>
                         <p class="m_t10 clearfix">
@@ -1006,7 +1005,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13244/4038588651/">
                 <a href="https://mbook.kongfz.com/13244/4038588651/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/24789-4909.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/24789-4909.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国七年版线装 重订验方新编：18卷全订成一册</p>
                         <p class="m_t10 clearfix">
@@ -1028,7 +1027,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13244/2972096081/">
                 <a href="https://mbook.kongfz.com/13244/2972096081/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/33cf6-8713.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/33cf6-8713.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国三十五年版 普通新尺牍</p>
                         <p class="m_t10 clearfix">
@@ -1050,7 +1049,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/171525/4038586684/">
                 <a href="https://mbook.kongfz.com/171525/4038586684/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/a14ac-2717.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/a14ac-2717.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国二十五年佛经：感应篇直讲</p>
                         <p class="m_t10 clearfix">
@@ -1072,7 +1071,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13244/2972093473/">
                 <a href="https://mbook.kongfz.com/13244/2972093473/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/13057-9503.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/13057-9503.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国版 因是子游记</p>
                         <p class="m_t10 clearfix">
@@ -1094,7 +1093,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13244/4038584228/">
                 <a href="https://mbook.kongfz.com/13244/4038584228/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/24ea6-3289.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/24ea6-3289.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国二十三年版《性的卫生》 一册全！性欲与人生！尤学周编</p>
                         <p class="m_t10 clearfix">
@@ -1116,7 +1115,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/13244/2972091298/">
                 <a href="https://mbook.kongfz.com/13244/2972091298/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/9638e-2212.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/9638e-2212.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国三十八年版 婚姻生活指导</p>
                         <p class="m_t10 clearfix">
@@ -1138,7 +1137,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/22117/4038575977/">
                 <a href="https://mbook.kongfz.com/22117/4038575977/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/919c7-2492.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/919c7-2492.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国语文教材，彩图</p>
                         <p class="m_t10 clearfix">
@@ -1160,7 +1159,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/22117/4038562084/">
                 <a href="https://mbook.kongfz.com/22117/4038562084/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/2d0a2-1869.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/2d0a2-1869.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国30年《佛学研究十八篇》（上下全）</p>
                         <p class="m_t10 clearfix">
@@ -1182,7 +1181,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/171525/4038561012/">
                 <a href="https://mbook.kongfz.com/171525/4038561012/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/79019-1139.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/79019-1139.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国二十年佛经：佛祖心镫贯注 禅净双勖合编</p>
                         <p class="m_t10 clearfix">
@@ -1204,7 +1203,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/20137/4038560836/">
                 <a href="https://mbook.kongfz.com/20137/4038560836/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/94e85-6684.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/94e85-6684.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">英语发音（开明青年英语丛书）</p>
                         <p class="m_t10 clearfix">
@@ -1226,7 +1225,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/20137/4038560398/">
                 <a href="https://mbook.kongfz.com/20137/4038560398/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/a6236-7942.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/a6236-7942.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">开明青年英语丛书------英语图解法</p>
                         <p class="m_t10 clearfix">
@@ -1248,7 +1247,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/134381/4038540041/">
                 <a href="https://mbook.kongfz.com/134381/4038540041/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/4580c-2671.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/4580c-2671.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">正三元杨公祖师</p>
                         <p class="m_t10 clearfix">
@@ -1270,7 +1269,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/14155/4038530883/">
                 <a href="https://mbook.kongfz.com/14155/4038530883/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/ca0b2-4282.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/ca0b2-4282.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">红色文献，，1949年郭化若，，在延安时期编写的(军事辩证法)。</p>
                         <p class="m_t10 clearfix">
@@ -1292,7 +1291,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/14155/4038520614/">
                 <a href="https://mbook.kongfz.com/14155/4038520614/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/b8f85-4820.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/b8f85-4820.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">红色文献，，1949年版本，，我自已。</p>
                         <p class="m_t10 clearfix">
@@ -1314,7 +1313,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/14155/4038507385/">
                 <a href="https://mbook.kongfz.com/14155/4038507385/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/3cbfd-2088.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/3cbfd-2088.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">红色文献，，1949年山东解放区重改本，，大众哲学。</p>
                         <p class="m_t10 clearfix">
@@ -1336,7 +1335,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/22926/4038491743/">
                 <a href="https://mbook.kongfz.com/22926/4038491743/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/e46fc-8290.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/e46fc-8290.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">法诵朗</p>
                         <p class="m_t10 clearfix">
@@ -1358,7 +1357,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/20825/4038464165/">
                 <a href="https://mbook.kongfz.com/20825/4038464165/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/74db9-5980.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/74db9-5980.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">题解中心 几何学辞典 索引</p>
                         <p class="m_t10 clearfix">
@@ -1380,7 +1379,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/3854/4038444376/">
                 <a href="https://mbook.kongfz.com/3854/4038444376/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/2cd5f-9473.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/2cd5f-9473.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">【包邮】品佳 开明第三英文读本//林语堂著...丰子恺绘 .民国25年8月出版 开明....</p>
                         <p class="m_t10 clearfix">
@@ -1402,7 +1401,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/263490/4038439501/">
                 <a href="https://mbook.kongfz.com/263490/4038439501/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/9ea7a-1771.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/9ea7a-1771.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">国立复旦大学投考指南、毕业证书文献一组</p>
                         <p class="m_t10 clearfix">
@@ -1424,7 +1423,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/428776/4038431609/">
                 <a href="https://mbook.kongfz.com/428776/4038431609/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/f66b0-7569.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/f66b0-7569.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">基本国语（上册）</p>
                         <p class="m_t10 clearfix">
@@ -1446,7 +1445,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/24921/4038404285/">
                 <a href="https://mbook.kongfz.com/24921/4038404285/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/b037b-8902.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/b037b-8902.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item ">
                         <p class="book-box-con-name">民国二十七年四月初版/工学小丛书《暖气工程》陆警钟著</p>
                         <p class="m_t10 clearfix">
@@ -1468,7 +1467,7 @@ padding-left: 10px;" ng-click="handleClickOpenApp()">在APP内打开
             <div class="book_item" url="https://mbook.kongfz.com/201238/4038403083/">
                 <a href="https://mbook.kongfz.com/201238/4038403083/" class="flex_box">
                     <div class="book_item_img">
-                        <img class="imglazy" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/img/23a52-1843.jpg" kfz-img-err="/search/image/none.jpg"></div>
+                        <img class="imglazy" src="{{$commonAssetUrl}}/kongfz/m/img/23a52-1843.jpg" kfz-img-err="/search/image/none.jpg"></div>
                     <div class="book-box-con flex_box_item last">
                         <p class="book-box-con-name">《鲒埼亭集》（九）</p>
                         <p class="m_t10 clearfix">
@@ -1631,16 +1630,16 @@ if (model && model.area == 'shop') { % ><a href = "javascript:;"class = "option"
         function(k, v) { % ><li data - key = "<%=v%>" > <span class = "s_icon_ass" > </span><%=v%></li > <%
         }); % ></ul></div > <%
     } % ></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/zepto.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/angular.min.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/backtop.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/97/track.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/search_common.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/services.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/search_shop.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/jweixin-1.2.0.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/wxshare.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/tongji.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/zepto.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/angular.min.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/backtop.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/97/track.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/search_common.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/services.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/search_shop.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/wxshare.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/tongji.js"></script>
 </body>
 
 </html>

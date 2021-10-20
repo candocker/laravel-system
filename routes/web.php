@@ -22,7 +22,7 @@ $routes = [
         'routes' => ['', 'listinfo', 'list/{code}/{page?}', 'show-{id}', 'test'],
         'list/{code}/{page?}' => ['action' => 'listinfo'],
     ],*/
-    'book' => [
+    'culture' => [
         'routes' => ['', 'category', '{code}'],
         '{code}' => ['action' => 'view'],
     ],

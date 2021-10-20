@@ -15,3 +15,6 @@ $middlewareAuth = [
 
 Route::middleware($middleware)->get('/infocms/deal-calligrapher', '\ModuleInfocms\Controllers\RubbingController@dealCalligrapher');
 //Route::middleware($middlewareAuth)->any('/infocms/records/my-record', '\ModuleInfocms\Controllers\RecordController@myRecord');
+
+Route::middleware($middleware)->get('/infocms/book/tmp', '\ModuleInfocms\Controllers\RubbingController@tmp');
+Route::middleware($middleware)->get('/infocms/book/category', '\ModuleInfocms\Controllers\RubbingController@category');
