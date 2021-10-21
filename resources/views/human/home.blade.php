@@ -278,11 +278,11 @@
         "img8": "http:\/\/img8.kfzimg.com\/",
         "img9": "http:\/\/img9.kfzimg.com\/"
     };</script>
-<link rel="stylesheet" href="{{$commonAssetUrl}}/kongfz/m/css/96e3a-1867.css"></head>
+<link rel="stylesheet" href="{{$commonAssetUrl}}/kongfz/m/css/96e3a-1867.css">
 
 <link href="{{$commonAssetUrl}}/kongfz/m/css/f8aa8-2448.css" rel="stylesheet">
-<link href="{{$commonAssetUrl}}/kongfz/m/css/ed5fa-6372.css" rel="stylesheet"></head>
 
+</head>
 <body style="background-color: #7F8F97;display: none">
 <!--头部开始-->
 <div class="wrap-head-box">
@@ -618,7 +618,9 @@
             <div class="cart-fail-word">加入购物车失败</div></div>
     </div>
 </div>
+<div id='index_box'>
 @include('modules.common._footer', ['data' => ''])
+</div>
 <script src="{{$commonAssetUrl}}/kongfz/m/js/jweixin-1.3.2.js"></script>
 <script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/swan-2.0.21.js"></script>
 <script type="text/javascript">window.wxshare_data = {

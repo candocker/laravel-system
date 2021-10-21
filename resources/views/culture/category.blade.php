@@ -1,4 +1,3 @@
-<?php class Yii { public static function getAlias($var) { return "http://39.106.102.45/filesys/spider/pages"; } } ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +8,7 @@
 <title>商品分类大全_图书分类目录_孔夫子旧书网</title>
 <meta name="keyword" content="商品分类,商品分类大全,图书分类,图书分类目录">
 <meta name="description" content="孔夫子旧书网是国内专业的古旧书交易平台；目前已汇集了全国上万家网上书店与书摊，展示多达9000万种图书书籍，包含大量极具收藏价值的古旧珍本（明清、民国古籍善本、小人书、珍本期刊、名人墨迹、民国珍本、绝版书等）。孔网为广大书友提供二手图书买卖与收藏品交易市场；开二手书店、网上买书、网上卖书、珍品拍卖，首选孔夫子旧书网。">
-<link href="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/css/ed5fa-6372.css" rel="stylesheet"></head>
+<link href="{{$commonAssetUrl}}/kongfz/m/css/ed5fa-6372.css" rel="stylesheet"></head>
 <link href="{{$commonAssetUrl}}/kongfz/m/css/f8aa8-2448.css" rel="stylesheet">
 
 <body>
@@ -146,9 +145,9 @@
             "s_operation": "https://operation.kongfz.com/"
         }
     }</script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/runtime.4aa80e0b54e9029b63f7.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/zepto.4aa80e0b54e9029b63f7.js"></script>
-<script type="text/javascript" src="<?= Yii::getAlias('@tasseturl'); ?>/kongfz/m/js/category.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/runtime.4aa80e0b54e9029b63f7.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/zepto.4aa80e0b54e9029b63f7.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/kongfz/m/js/category.js"></script>
 </body>
 
 </html>

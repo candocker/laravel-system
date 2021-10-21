@@ -153,7 +153,7 @@
 
 <div class="top" style="display: block;"></div>
 
-@include('culture.modules.common._footer', ['data' => ''])
+@include('modules.common._footer', ['data' => ''])
 @include('culture.modules._template-js', ['data' => ''])
 <script>var baseInfo = {
         site: {
