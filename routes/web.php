@@ -23,8 +23,12 @@ $routes = [
         'list/{code}/{page?}' => ['action' => 'listinfo'],
     ],*/
     'culture' => [
-        'routes' => ['', 'category', 'book-detail', 'book-home', 'book-list', 'channel', 'collection', 'figure', 'shelf', 'store', '{code}'],
-        '{code}' => ['action' => 'view'],
+        'routes' => ['', 'lx-sort', 'jd-sort', 'jd-sort-{sort}', 'book-detail', 'book-home', 'book-list', 'channel', 'collection', 'figure', 'shelf', 'store', '{code}'],
+        'jd-sort' => ['action' => 'category'],
+        'jd-sort-{sort}' => ['action' => 'category'],
+        'sf-sort' => ['action' => 'category'],
+        'sf-sort-{sort}' => ['action' => 'category'],
+        //'{code}' => ['action' => 'view'],
     ],
     'human' => [
         'routes' => ['', '{code}'],

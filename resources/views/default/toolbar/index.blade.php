@@ -11,11 +11,8 @@
 <link rel="stylesheet" href="http://39.106.102.45/common/asset-third/promotion/css/d4ccd-6570.css" data-minify="1">
 <link rel="stylesheet" id="head_iconfont-css" href="http://39.106.102.45/common/asset-third/promotion/css/60d81-1277.css" type="text/css" media="all"> 
 <script type="text/javascript" src="http://39.106.102.45/common/asset-third/promotion/js/jquery.js"></script> 
-<link rel="icon" href="http://39.106.102.45/common/asset-third/promotion/img/9d0a0-8665.png" sizes="32x32">
-<link rel="icon" href="http://39.106.102.45/common/asset-third/promotion/img/9d0a0-8665.png" sizes="192x192">
-<link rel="apple-touch-icon-precomposed" href="http://39.106.102.45/common/asset-third/promotion/img/9d0a0-8665.png">
-<meta name="msapplication-TileImage" content="http://39.106.102.45/common/asset-third/promotion/img/9d0a0-8665.png">
-<link rel="shortcut icon" href="http://39.106.102.45/common/asset-third/promotion/img/4fd0e-8287.png" type="image/x-icon">
+<link rel="icon" href="http://39.106.102.45/common/static/icon.png" sizes="32x32">
+<link rel="icon" href="http://39.106.102.45/common/static/icon.pnga" sizes="192x192">
 </head>
 <body class="body-home body-website">
 {{--@include('modules.toolbar._top', $datas)
