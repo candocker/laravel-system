@@ -120,6 +120,7 @@ return [
     //'petDomain' => env('PET_DOMAIN', ''),
     'humanDomain' => env('HUMAN_DOMAIN', ''),
     'cultureDomain' => env('CULTURE_DOMAIN', ''),
+    'navigationDomain' => env('NAVIGATION_DOMAIN', ''),
     //'bookDomain' => env('BOOK_DOMAIN', ''),
     'topicDomain' => env('TOPIC_DOMAIN', ''),
     'calligraphyDomain' => env('CALLIGRAPHY_DOMAIN', ''),

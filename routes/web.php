@@ -34,6 +34,9 @@ $routes = [
         'routes' => ['', '{code}'],
         '{code}' => ['action' => 'view'],
     ],
+    'navigation' => [
+        'routes' => ['', 'rank'],
+    ],
 ];
 $currentHost = false;
 $currentHost = $_SERVER['HTTP_HOST'] ?? false;

@@ -30,6 +30,9 @@ class AppServiceProvider extends ServiceProvider
         \ModulePassport\Models\Resource::observe(\ModulePassport\Observers\ResourceObserver::class);
         \ModulePassport\Models\Permission::observe(\ModulePassport\Observers\PermissionObserver::class);
         //\ModuleCulture\Models\Category::observe(\ModuleCulture\Observers\CategoryObserver::class);
+        \ModuleCulture\Models\Figure::observe(\ModuleCulture\Observers\FigureObserver::class);
+        \ModuleCulture\Models\Book::observe(\ModuleCulture\Observers\BookObserver::class);
+        \ModuleCulture\Models\Affair::observe(\ModuleCulture\Observers\AffairObserver::class);
         \ModuleCulture\Models\Record::observe(\ModuleCulture\Observers\RecordObserver::class);
 
         \Validator::extend('mobile', 'Framework\Baseapp\Rules\Mobile@passes');
