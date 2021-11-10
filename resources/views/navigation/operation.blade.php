@@ -1,22 +1,7 @@
-<!doctype html>
-<html lang="zh">
-
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width" initial-scale="1" />
-<meta name="Keywords" content="果汁运营，新媒体运营，果汁排行榜，果汁导航，果汁搜索，设计导航，guozhivip.com，网址导航" />
-<meta name="description" content="【果汁运营】是果汁导航旗下的优质新媒体运营、产品资源导航平台，为广大产品、新媒体运营人员提供便利。" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/5309a-2462.css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/9d871-8047.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/9acb7-9767.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/396df-8579.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/eff9f-4672.css">
-<link rel="Shortcut Icon" href="{{$commonAssetUrl}}/nav/img/bff05-1694.ico" type="image/x-icon" />
-<title>果汁运营 - 新媒体运营资源导航</title>
-<!--本站禁止抄袭上线，请尊重原创，抄袭可耻！--></head>
-
-<body onresize="document.activeElement.scrollIntoView(false);">
+@extends('layouts.main')
+@section('header')@include('navigation.header/_operation', [])@endsection
+@section('bodyClass')onresize="document.activeElement.scrollIntoView(false);"@endsection
+@section('content')
 <div class="cont">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="http://guozhivip.com/pod/" style="color: #fff" title="新媒体运营资源导航">
@@ -626,13 +611,4 @@
     } else {
         top.location = self.location;
     }</script>
-<!--tj-->
-<script>var _hmt = _hmt || []; (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?994d49e6bca67e6ef5346c9cbf41e1f2";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();</script>
-</body>
-
-</html>
+@endsection

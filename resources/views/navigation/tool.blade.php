@@ -1,39 +1,8 @@
-<!doctype html>
-<html lang="zh">
-
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width" initial-scale="1" />
-<meta name="Keywords" content="果汁工具，在线工具，果汁导航，免费在线工具大全，设计工具，便民查询，开发工具，站长工具" />
-<meta name="description" content="【果汁工具】是果汁导航旗下的优质在线工具平台，涵盖了便民查询、常用计算、图片工具、开发工具、设计工具、文字工具、站长工具等各个领域的优质工具。" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/83324-2762.css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/47fb0-1387.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/de771-1005.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/8e86f-7184.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/02fef-6476.css">
-<link rel="Shortcut Icon" href="{{$commonAssetUrl}}/nav/img/d0c88-9954.ico" type="image/x-icon" />
-<title>果汁工具 - 免费好用的在线工具大全</title>
-<!--本站禁止抄袭上线，请尊重原创，抄袭可耻！--></head>
+@extends('layouts.main')
+@section('header')@include('navigation.header/_tool', [])@endsection
+@section('content')
 <div class="cont">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="http://guozhivip.com/tool/">
-        <img src="{{$commonAssetUrl}}/nav/img/f8f5c-5716.png" width="32" height="32" class="d-inline-block align-top" alt="果汁工具" title="免费好用的在线工具大全" />果汁工具</a>
-    <ul class="nav justify-content-end">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">更多</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="http://guozhivip.com/so/" target="_blank">果汁搜索</a>
-                <a class="dropdown-item" href="http://guozhivip.com/rank/" target="_blank">果汁排行榜</a>
-                <a class="dropdown-item" href="http://guozhivip.com/lab/" target="_blank">果汁实验室</a>
-                <a class="dropdown-item" href="http://guozhivip.com/design/" target="_blank">果汁设计</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="http://guozhivip.com/tc/" target="_blank">联系/吐槽/捐助</a></div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="http://guozhivip.com/">果汁导航</a></li>
-    </ul>
-</nav>
+@include('navigation.common._nav', ['data' => ''])
 <div class="container so">
     <h2>免费好用的在线工具大全</h2>
     <form class="input-group" action="https://www.baidu.com/s" target="_blank" method="get">
@@ -581,37 +550,7 @@
         <a href="https://zhanzhang.toutiao.com/" target="_blank">
             <img src="{{$commonAssetUrl}}/nav/img/5e866-2171.png" class="ico">头条搜索站长平台</a></div>
 </div>
-<footer>
-    <hr style="border-top: 1px solid #eee;margin-top: 40px;">
-    <ul class="copyright">
-        <li>
-            <p>
-                <a href="http://guozhivip.com/tc/" target="_blank">
-                    <i class="fa fa-heart" style="color: #FFB6C1"></i>捐助</a>&nbsp;&nbsp;&nbsp;
-                <a href="https://support.qq.com/products/27320" target="_blank">吐槽建议</a>&nbsp;&nbsp;&nbsp;
-                <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=0_Hg5Obq6uXg4uuToqL9sLy_" title="邮箱：guozhinav@qq.com" target="_blank">联系合作</a>
-                <br>
-                <a href="https://space.bilibili.com/306508238" target="_blank" title="站长B站">
-                    <img src="{{$commonAssetUrl}}/nav/img/c9a4d-6631.png" class="ico" alt="B站" /></a>&nbsp;&nbsp;&nbsp;
-                <a href="https://docs.qq.com/doc/DQXNORkRMT3dRcGlz" target="_blank" title="微信公众号：果汁指南">
-                    <img src="{{$commonAssetUrl}}/nav/img/68b08-3439.png" class="ico" alt="微信公众号" /></a>&nbsp;&nbsp;&nbsp;
-                <a href="https://www.zhihu.com/people/bo-he-feng-03/activities" target="_blank" title="站长知乎">
-                    <img src="{{$commonAssetUrl}}/nav/img/0d962-5202.png" class="ico" alt="知乎" /></a>&nbsp;&nbsp;&nbsp;
-                <a href="https://weibo.com/guozhivip?is_all=1" target="_blank" title="站长微博">
-                    <img src="{{$commonAssetUrl}}/nav/img/c64e2-2851.png" class="ico" alt="微博" /></a>&nbsp;&nbsp;&nbsp;
-                <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5kgTpGb">
-                    <img border="0" src="{{$commonAssetUrl}}/nav/img/ca34c-6670.png" alt="果汁官方交流群" title="果汁交流群：245229401"></a></p>
-            <span class="cp">Copyright © 2016-
-                <span id="show"></span>
-                <a href="http://guozhivip.com/">果汁导航</a>旗下 All Rights Reserved.
-                <a href="http://beian.miit.gov.cn/" target="_blank">陕ICP备20012493号-2</a></span>
-        </li>
-        <li class="erwm">
-            <div class="ma"></div>手机扫码访问</li>
-        <li class="erwm pub">
-            <div class="ma pubimg"></div>官方公众号</li>
-    </ul>
-</footer>
+@include('navigation.common._footer', ['data' => ''])
 </div>
 <ul class="subnav list-group" id="navs">
 <li>
@@ -659,77 +598,5 @@
 <script type='text/javascript' src='{{$commonAssetUrl}}/nav/js/31/bootstrap.min.js'></script>
 <script charset="gbk" src="{{$commonAssetUrl}}/nav/js/opensug.js"></script>
 <script type="text/javascript" src="{{$commonAssetUrl}}/nav/js/41/jquery.anchorscroll.min.js"></script>
-<script type="text/javascript">$(document).ready(function() {
-    // Anchor Scroll
-    $('.anchor-scroll').anchorScroll({
-        scrollSpeed: 800 // scroll speed
-    });
-
-    $('.arrow-up').anchorScroll({
-        scrollSpeed: 1400,
-        // scroll speed
-        onScroll: function() {
-            $(".fill-bg").fadeIn("slow");
-            $(".popup").text("Scrolling...");
-        },
-        scrollEnd: function() {
-            $(".fill-bg").delay(1000).fadeOut("slow");
-            $(".popup").text("Done!");
-        }
-    });
-});</script>
-<!--tm-->
-<script type="text/javascript">window.onload = function() {
-    showTime();
-}
-function showTime() {
-    var now = new Date();
-    var year = now.getFullYear();
-    document.getElementById("show").innerHTML = "" + year;
-    t = setTimeout('showTime()', 1000)
-}</script>
-<!--pb-->
-<script>document.oncontextmenu = function(event) {
-    if (window.event) {
-        event = window.event;
-    }
-    try {
-        var the = event.srcElement;
-        if (! ((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
-            return false;
-        }
-        return true;
-    } catch(e) {
-        return false;
-    }
-}</script>
-<script>document.onkeydown = function() {
-
-    if (window.event && window.event.keyCode == 123) {
-        alert("Hi,欢迎来到果汁！");
-        event.keyCode = 0;
-        event.returnValue = false;
-    }
-    if (window.event && window.event.keyCode == 13) {
-        window.event.keyCode = 505;
-    }
-    if (window.event && window.event.keyCode == 8) {
-        alert(str + "\n请使用Del键进行字符的删除操作！");
-        window.event.returnValue = false;
-    }
-}</script>
-<script type="text/javascript">if (self == top) {
-    var theBody = document.getElementsByTagName('body')[0];
-    theBody.style.display = "block";
-} else {
-    top.location = self.location;
-}</script>
-<script>var _hmt = _hmt || []; (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?f52f936c9d01321888906f1ba5624031";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-})();</script>
-</body>
-
-</html>
+@include('navigation.common._footer-js', ['data' => ''])
+@endsection

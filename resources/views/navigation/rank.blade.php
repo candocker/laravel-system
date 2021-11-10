@@ -1,21 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width" initial-scale="1" />
-<meta name="Keywords" content="果汁排行榜，果汁导航，果汁搜索，果汁资源导航，guozhivip.com，网址导航" />
-<meta name="description" content="【果汁排行榜】是果汁导航旗下一键式快速查询各类排行榜的网站，网站囊括了热搜、热议、电影、音乐、摄影、游戏、财富等各大领域权威排名榜单。" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/0789c-5787.css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/a3b25-8256.css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/42eab-6451.css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/f9583-5828.css" />
-<link rel="Shortcut Icon" type="image/x-icon" href="{{$commonAssetUrl}}/nav/img/bff05-1694.ico" />
-<title>果汁排行榜 - 各类榜单排名大全</title>
-<!--本站禁止抄袭上线，烦请尊重原创，抄袭可耻！--></head>
-
-<body>
+@extends('layouts.main')
+@section('header')@include('navigation.header._rank', ['view' => ''])@endsection
+@section('content')
 <div class="top">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -990,13 +975,4 @@
     } else {
         top.location = self.location;
     }</script>
-<!--tj-->
-<script>var _hmt = _hmt || []; (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?30d8a4234bc6b1b631d9cec51faa165c";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();</script>
-</body>
-
-</html>
+@endsection

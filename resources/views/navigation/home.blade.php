@@ -1,7 +1,5 @@
 @extends('layouts.main')
-@section('dynamicMeta')@include('navigation.cssjs._meta-home', [])@endsection
-@section('jscss')@include('navigation.cssjs._cssjs-home', ['view' => ''])@endsection
-@section('bodyClass')class="pc blockstyle2 "@endsection
+@section('header')@include('navigation.header/_home', [])@endsection
 @section('content')
 <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">

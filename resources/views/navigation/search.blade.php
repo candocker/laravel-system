@@ -1,21 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!--本站禁止抄袭，抄袭可耻-->
-
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width" initial-scale="1" />
-<meta name="Keywords" content="果汁导航，果汁搜索，网址导航，资源导航，设计导航，guozhivip.com，果汁排行榜，网址大全" />
-<meta name="description" content="【果汁搜索】是果汁导航旗下的优质资源搜索平台，涵盖了日常生活、娱乐、科技、知识等各个领域便捷搜索。" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/9fe01-8889.css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/8a40b-2218.css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/7ef48-5329.css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/5af3c-1908.css" />
-<link rel="Shortcut Icon" href="{{$commonAssetUrl}}/nav/img/bff05-1694.ico" type="image/x-icon" />
-<title>果汁搜索 - 果汁导航旗下全能搜索</title></head>
-
-<body>
+@extends('layouts.main')
+@section('header')@include('navigation.header._search', ['view' => ''])@endsection
+@section('content')
 <div class="mob">
     <div class="mobbc">
         <img src="{{$commonAssetUrl}}/nav/img/cd01a-1683.png" class="logo" alt="logo" /></div>
@@ -487,6 +472,4 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();</script>
-</body>
-
-</html>
+@endsection

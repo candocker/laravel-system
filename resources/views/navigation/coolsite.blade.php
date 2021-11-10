@@ -1,22 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width" initial-scale="1" />
-<meta name="Keywords" content="果汁实验室，小众网站，果汁排行榜，果汁导航，guozhivip.com，设计资源，网址导航" />
-<meta name="description" content="【果汁实验室】是果汁导航旗下子站，专注于发现国内外优质、实用、有趣的网络资源。" />
-<link href="{{$commonAssetUrl}}/nav/css/46be0-3854.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/95e01-5178.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/631c6-2461.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/43617-7400.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/07842-1602.css">
-<link rel="Shortcut Icon" href="{{$commonAssetUrl}}/nav/img/bff05-1694.ico" type="image/x-icon" />
-<title>果汁实验室 - 发现国内外优质网站</title></head>
-
-<body>
-<!--本站严禁抄袭上线，抄袭可耻！-->
+@extends('layouts.main')
+@section('header')@include('navigation.header/_coolsite', [])@endsection
+@section('content')
 <div class="tn">
     <nav class="navbar navbar-light bg-light navbar-expand-lg">
         <a class="navbar-brand" href="http://guozhivip.com/lab/">
@@ -925,6 +909,4 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();</script>
-</body>
-
-</html>
+@endsection
