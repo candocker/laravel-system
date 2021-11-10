@@ -43,3 +43,5 @@ Route::middleware($middleware)->get('/culture/book/collection', '\ModuleCulture\
 Route::middleware($middleware)->get('/culture/book/figure', '\ModuleCulture\Controllers\RubbingController@figure');
 Route::middleware($middleware)->get('/culture/book/shelf', '\ModuleCulture\Controllers\RubbingController@shelf');
 Route::middleware($middleware)->get('/culture/book/store', '\ModuleCulture\Controllers\RubbingController@store');
+
+Route::middleware($middleware)->get('/infocms/deal-calligrapher', '\ModuleCulture\Controllers\RubbingController@dealCalligrapher');

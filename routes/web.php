@@ -35,7 +35,7 @@ $routes = [
         '{code}' => ['action' => 'view'],
     ],
     'navigation' => [
-        'routes' => ['', 'rank'],
+        'routes' => ['', 'rank', 'search', 'tool', 'operation', 'coolsite'],
     ],
 ];
 $currentHost = false;

@@ -13,5 +13,4 @@ $middlewareAuth = [
     Framework\Baseapp\Middleware\UserCenterMiddleware::class,
 ];
 
-Route::middleware($middleware)->get('/infocms/deal-calligrapher', '\ModuleInfocms\Controllers\RubbingController@dealCalligrapher');
 //Route::middleware($middlewareAuth)->any('/infocms/records/my-record', '\ModuleInfocms\Controllers\RecordController@myRecord');

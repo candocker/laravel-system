@@ -2,7 +2,6 @@
 <html lang="zh">
 
 <head>
-<!-- 网站版权为果汁所有，抄袭可耻，禁止抄袭！-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="sogou_site_verification" content="JVYfKkLYFA" />
 <meta property="qc:admins" content="104421172467572016106375" />
@@ -16,8 +15,7 @@
 <link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/92d53-7932.css?v=1" />
 <link rel="Shortcut Icon" type="image/x-icon" href="{{$commonAssetUrl}}/nav/img/bff05-1694.ico" />
 <title>果汁导航 - 上网从这里开始！</title>
-<!-- 网站版权为果汁所有，抄袭可耻，禁止抄袭！--></head>
-
+</head>
 <body>
 <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -151,7 +149,7 @@
                         var now = new Date();
                         var year = now.getFullYear();
                         var month = now.getMonth() + 1;
-                        var day = now.getDate() var currentime = '<span class="special">' + year + '年' + month + '月' + day + '日 ' + weekDayLabels[now.getDay()] + '</span><br>'document.write(currentime)</script></a>
+                        var day = now.getDate(); var currentime = '<span class="special">' + year + '年' + month + '月' + day + '日 ' + weekDayLabels[now.getDay()] + '</span><br>';document.write(currentime)</script></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link tq">
@@ -1756,19 +1754,21 @@
             return false;
         }
     }</script>
-<script type="text/javascript">urls.onchange = function checkUrl(urlString) {
+<script type="text/javascript">
+
+    urls.onchange=function checkUrl(urlString){
         var urlString = document.getElementById('urls').value;
-        if (urlString != "") {
-            var reg = /^(?:http(s)?:\/\/)[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/ ? # [\]@ ! \$ & '\*\+,;=.]+$/;
-if(!reg.test(urlString)){
-  alert("您输入的网址不符合规范，请重新输入");
-  $("#adds").attr("disabled", true);
-}else{
-  $("#adds").attr("disabled", false);
-}
-  }
-}
-'</script>
+        if(urlString!=""){
+        var reg=/^(?:http(s)?:\/\/)[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/;
+        if(!reg.test(urlString)){
+          alert("您输入的网址不符合规范，请重新输入");
+      $("#adds").attr("disabled", true);
+        }else{
+          $("#adds").attr("disabled", false);
+        }
+          }
+    }
+</script>
 <script type="text/javascript">var h = $(window).height();
     $(window).resize(function() {
         if ($(window).height() < h) {
