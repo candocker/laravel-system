@@ -35,7 +35,7 @@ $routes = [
         '{code}' => ['action' => 'view'],
     ],
     'navigation' => [
-        'routes' => ['', 'rank', 'search', 'tool', 'operation', 'coolsite', 'sub-{code}'],
+        'routes' => ['', 'rank', 'search', 'tool', 'operation', 'coolsite', 'sub-{sort}'],
         'sub-{sort}' => ['action' => 'subnav'],
     ],
 ];
