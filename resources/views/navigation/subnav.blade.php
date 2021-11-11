@@ -1,7 +1,7 @@
 @extends('layouts.main')
-@section('header')@include('navigation.header/_tool', [])@endsection
+@section('header')@include('navigation.header/_' . $datas['currentSort'], [])@endsection
 @section('content')
-@include('navigation.common._header', ['data' => ''])
+@include('navigation.common._header-' . $datas['currentSort'], ['data' => ''])
 @include('navigation.modules._datas', ['datas' => $datas])
 <div class="tui">
 <a href="https://wj.qq.com/s2/3881997/233a/" target="_blank" title="网站推荐/提交、吐槽反馈">

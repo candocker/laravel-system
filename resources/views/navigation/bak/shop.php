@@ -1,55 +1,6 @@
-<!doctype html>
-<html lang="zh">
-
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width" initial-scale="1" />
-<meta name="Keywords" content="果汁惠购，特价好物，秒杀购物，京东淘宝拼多多，果汁导航，guozhivip.com" />
-<meta name="description" content="【果汁惠购】是果汁导航旗下的便宜优质实惠网购信息平台，主打官网便宜购，发现特价好物，快速秒杀抢好货。" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/f0dbc-6993.css" />
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/ace19-7885.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/67662-8195.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/95fd0-1648.css">
-<link rel="stylesheet" type="text/css" href="{{$commonAssetUrl}}/nav/css/a07e5-5673.css">
 <link rel="Shortcut Icon" href="{{$commonAssetUrl}}/nav/img/b5a13-3589.ico" type="image/x-icon" />
 <title>果汁惠购 - 发现特价好物</title>
 <!--本站禁止抄袭上线，请尊重原创，抄袭可耻！--></head>
-<div class="cont">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="http://guozhivip.com/hg">
-        <img src="{{$commonAssetUrl}}/nav/img/744f7-4446.png" width="32" height="32" class="d-inline-block align-top" alt="果汁惠购" title="官网便宜购" />果汁惠购</a>
-    <ul class="nav justify-content-end">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">更多</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="http://guozhivip.com/tool/" target="_blank">果汁工具</a>
-                <a class="dropdown-item" href="http://guozhivip.com/rank/" target="_blank">果汁排行榜</a>
-                <a class="dropdown-item" href="http://guozhivip.com/lab/" target="_blank">果汁实验室</a>
-                <a class="dropdown-item" href="http://guozhivip.com/so/" target="_blank">果汁搜索</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="http://guozhivip.com/tc/" target="_blank">联系/吐槽/捐助</a></div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="http://guozhivip.com/">主页</a></li>
-    </ul>
-</nav>
-<div class="container so">
-    <h2>官网便宜购，发现特价好物</h2>
-    <form class="input-group" action="https://search.jd.com/Search?enc=utf-8&keyword=" target="_blank" method="get">
-        <style type="text/css">.bdsug_copy{display:none}</style>
-        <input name="ie" type="hidden" value="utf-8">
-        <input type="text" class="form-control" id="search" name="search" size="30" baiduSug="1" placeholder="京东搜索一下">
-        <div class="input-group-append" id="button-addon4">
-            <input class="btn btn-outline-secondary" type="submit" id="jd" value="京东搜索" />
-            <!--<a href="http://guozhivip.com/so/"><input class="btn btn-outline-secondary soo" type="button" value="果汁搜索" /></a>--></div>
-    </form>
-    <!--<h6 class="mob-hs">
-    <a href="https://m.ui.cn/works/?tag=3&subcatid=0&catid=0" target="_blank">热门作品</a>&nbsp;
-    <a href="https://gracg.com/works?type=hot" target="_blank">插画作品</a>&nbsp;
-    <a href="https://m.zhisheji.com/paihang/hot" target="_blank">人气设计</a></h6>-->
-</div>
-</div>
 <div class="container content" data-spy="scroll" data-target="#navs" data-offset="0">
 <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
     <div class="col send">

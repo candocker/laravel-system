@@ -145,7 +145,7 @@
                 var now = new Date();
                 var year = now.getFullYear();
                 var month = now.getMonth() + 1;
-                var day = now.getDate() var currentime = '<span class="special">' + year + '年' + month + '月' + day + '日 ' + weekDayLabels[now.getDay()] + '</span><br>'document.write(currentime)</script></a>
+                var day = now.getDate(); var currentime = '<span class="special">' + year + '年' + month + '月' + day + '日 ' + weekDayLabels[now.getDay()] + '</span><br>';document.write(currentime)</script></a>
     </li>
     <li class="tqq">
         <iframe allowtransparency="true" frameborder="0" width="180" height="32" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=3&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=180&h=32&align=center"></iframe>
@@ -444,32 +444,10 @@
             return false;
         }
     }</script>
-<script>document.onkeydown = function() {
-
-        if (window.event && window.event.keyCode == 123) {
-            alert("Hi,欢迎来到果汁！");
-            event.keyCode = 0;
-            event.returnValue = false;
-        }
-        if (window.event && window.event.keyCode == 13) {
-            window.event.keyCode = 505;
-        }
-        if (window.event && window.event.keyCode == 8) {
-            alert(str + "\n请使用Del键进行字符的删除操作！");
-            window.event.returnValue = false;
-        }
-    }</script>
 <script type="text/javascript">if (self == top) {
         var theBody = document.getElementsByTagName('body')[0];
         theBody.style.display = "block";
     } else {
         top.location = self.location;
     }</script>
-<!--tj-->
-<script>var _hmt = _hmt || []; (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?5f411789bd81cb4c4782ab342318e1d2";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();</script>
 @endsection
