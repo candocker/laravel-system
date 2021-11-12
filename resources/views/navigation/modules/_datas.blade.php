@@ -27,12 +27,4 @@ $classDatas = ['one', 'two', 'three', 'four', 'five', 'six'];
         @endforeach 
     </div>
     @endforeach 
-    @include('navigation.common._footer', ['data' => ''])
 </div>
-<ul class="subnav list-group" id="navs">
-    @foreach ($datas['sorts'] as $pIndex => $pData)
-    <li>
-        <a href="#{{$pData['code']}}" class="anchor-scroll"><i class="fa {{$pData['icon']}}"></i> {{$pData['name']}}</a>
-    </li>
-    @endforeach 
-</ul>

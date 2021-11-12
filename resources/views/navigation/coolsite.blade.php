@@ -33,42 +33,7 @@
     </div>
 </div>
 @endforeach
-<div class="container sub">
-    <footer>
-        <p class="tip">
-            <i class="fa fa-bullhorn" style="color: #FF7F50"></i>部分外文网站访问速度较慢，属正常现象，请知悉</p>
-        <hr style="border-top: 1px dashed #ddd;margin-top: 10px;">
-        <ul class="copyright">
-            <li>
-                <p>
-                    <b>果汁实验室，发现国内外优质、实用、有趣资源</b>
-                    <br>
-                    <a href="http://guozhivip.com/tc/" target="_blank">
-                        <i class="fa fa-heart" style="color: #FFB6C1"></i>捐助</a>&nbsp;&nbsp;&nbsp;
-                    <a href="https://support.qq.com/products/27320" target="_blank">吐槽建议</a>&nbsp;&nbsp;&nbsp;
-                    <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=0_Hg5Obq6uXg4uuToqL9sLy_" title="邮箱：guozhinav@qq.com" target="_blank">联系合作</a>
-                    <br>
-                    <a href="https://space.bilibili.com/306508238" target="_blank" title="站长B站">
-                        <img src="{{$commonAssetUrl}}/nav/img/46a12-6675.png" class="ico" alt="B站" /></a>&nbsp;&nbsp;&nbsp;
-                    <a href="https://docs.qq.com/doc/DQXNORkRMT3dRcGlz" target="_blank" title="微信公众号：果汁指南">
-                        <img src="{{$commonAssetUrl}}/nav/img/10521-8628.png" class="ico" alt="微信公众号" /></a>&nbsp;&nbsp;&nbsp;
-                    <a href="https://www.zhihu.com/people/bo-he-feng-03/activities" target="_blank" title="站长知乎">
-                        <img src="{{$commonAssetUrl}}/nav/img/35432-3024.png" class="ico" alt="知乎" /></a>&nbsp;&nbsp;&nbsp;
-                    <a href="https://weibo.com/guozhivip?is_all=1" target="_blank" title="站长微博">
-                        <img src="{{$commonAssetUrl}}/nav/img/3fe69-5398.png" class="ico" alt="微博" /></a>&nbsp;&nbsp;&nbsp;
-                    <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5kgTpGb">
-                        <img border="0" src="{{$commonAssetUrl}}/nav/img/72761-3588.png" alt="果汁官方交流群" title="果汁交流群：245229401"></a></p>
-                <span class="cp">Copyright © 2016-
-                    <span id="showt"></span>
-                    <a href="http://guozhivip.com/">果汁导航</a>旗下 All Rights Reserved.
-                    <a href="http://beian.miit.gov.cn/" target="_blank">陕ICP备20012493号-2</a></span>
-            </li>
-            <li class="erwm">
-                <div class="ma"></div>
-                <p style="margin-top: 2px;">官方公众号</p></li>
-        </ul>
-    </footer>
-</div>
+@include('navigation.common._footer-simple', ['data' => ''])
 <a href="javascript:;" id="btn" title="返回顶部" class="bts tui">
     <i class="fa fa-chevron-up"></i>
 </a>

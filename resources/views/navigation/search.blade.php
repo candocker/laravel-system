@@ -245,22 +245,6 @@
                 <img src="{{$commonAssetUrl}}/nav/img/791ac-8203.png" class="ico">有点意思</a></div>
     </div>
 </div>
-<footer>
-    <div class="copyright">
-        <div class="ewm"></div>
-        <p class="dsc">手机版</p>
-        <p style="color: #777;">
-            <i class="fa fa-quote-left"></i>&nbsp;
-            <script src="http://guozhivip.com/so/apii/api.php"></script></p>
-        <p class="link">推荐：
-            <a href="http://guozhivip.com/" target="_blank">果汁导航</a>-
-            <a href="http://guozhivip.com/rank/" target="_blank">果汁排行榜</a>-
-            <a href="http://guozhivip.com/tool/" target="_blank">果汁工具</a>-
-            <a href="http://guozhivip.com/lab/" target="_blank">果汁实验室</a></p>Copyright © 2016-
-        <span id="show"></span>
-        <a href="http://guozhivip.com/">果汁导航</a>旗下 All Rights Reserved.
-        <a href="http://beian.miit.gov.cn/state/outPortal/loginPortal.action" target="_blank">陕ICP备20012493号-2</a></div>
-</footer>
 <a href="https://support.qq.com/products/27320/faqs/49713" class="tc jq" target="_blank" title="小技巧">
     <i class="fa fa-lightbulb-o"></i>
 </a>
@@ -268,6 +252,7 @@
 <a href="http://guozhivip.com/tc/" class="tc" target="_blank" title="联系/吐槽/捐助">
     <i class="fa fa-commenting-o"></i>
 </a>
+@include('navigation.common._footer-simple', ['data' => ''])
 <script type='text/javascript' src="{{$commonAssetUrl}}/nav/js/jquery-3.1.0.min.js"></script>
 <script type='text/javascript' src='{{$commonAssetUrl}}/nav/js/80/bootstrap.min.js'></script>
 <script type='text/javascript' src="{{$commonAssetUrl}}/nav/js/jquery-migrate-3.0.0.min.js"></script>

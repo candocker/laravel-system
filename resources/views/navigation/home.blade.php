@@ -72,7 +72,7 @@
     @include('navigation.modules._home-footer-recommend', ['data' => ''])
 </div>
 @include('navigation.modules._home-footer-mobile', ['data' => ''])
-@include('navigation.modules._home-footer', ['data' => ''])
+@include('navigation.common._footer-simple', ['data' => ''])
 @include('navigation.modules._home-float', ['data' => ''])
 @include('navigation.modules._home-js', ['data' => ''])
 @endsection

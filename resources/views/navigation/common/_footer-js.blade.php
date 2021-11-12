@@ -1,4 +1,5 @@
-<script type="text/javascript">$(document).ready(function() {
+<script type="text/javascript">
+$(document).ready(function() {
     // Anchor Scroll
     $('.anchor-scroll').anchorScroll({
         scrollSpeed: 800 // scroll speed
@@ -16,9 +17,11 @@
             $(".popup").text("Done!");
         }
     });
-});</script>
+});
+</script>
 <!--tm-->
-<script type="text/javascript">window.onload = function() {
+<script type="text/javascript">
+window.onload = function() {
     showTime();
 }
 function showTime() {
@@ -26,9 +29,11 @@ function showTime() {
     var year = now.getFullYear();
     document.getElementById("show").innerHTML = "" + year;
     t = setTimeout('showTime()', 1000)
-}</script>
+}
+</script>
 <!--pb-->
-<script>document.oncontextmenu = function(event) {
+<script>
+document.oncontextmenu = function(event) {
     if (window.event) {
         event = window.event;
     }
@@ -41,10 +46,19 @@ function showTime() {
     } catch(e) {
         return false;
     }
-}</script>
-<script>document.onkeydown = function() {
+}
+</script>
+<script type="text/javascript">
+if (self == top) {
+    var theBody = document.getElementsByTagName('body')[0];
+    theBody.style.display = "block";
+} else {
+    top.location = self.location;
+}
+</script>
+<script>
+document.onkeydown = function() {
     return ;
-
     if (window.event && window.event.keyCode == 123) {
         alert("Hi,欢迎来到果汁！");
         event.keyCode = 0;
@@ -57,10 +71,5 @@ function showTime() {
         alert(str + "\n请使用Del键进行字符的删除操作！");
         window.event.returnValue = false;
     }
-}</script>
-<script type="text/javascript">if (self == top) {
-    var theBody = document.getElementsByTagName('body')[0];
-    theBody.style.display = "block";
-} else {
-    top.location = self.location;
-}</script>
+}
+</script>
