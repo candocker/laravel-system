@@ -1,8 +1,8 @@
 @extends('layouts.main')
-@section('header')@include('navigation.header/_home', [])@endsection
+@section('header')@include('navigation.common/_pagecss', ['view' => 'home'])@endsection
 @section('content')
-@include('navigation.modules._home-signupin', ['data' => ''])
-@include('navigation.modules._home-addsite', ['data' => ''])
+{{--@include('navigation.modules._home-signupin', ['data' => ''])
+@include('navigation.modules._home-addsite', ['data' => ''])--}}
 @include('navigation.modules._home-header', ['data' => ''])
 @include('navigation.modules._home-recommend', ['data' => ''])
 <div class="container content" data-spy="scroll" data-target="#list-example" data-offset="0">
@@ -74,6 +74,5 @@
 @include('navigation.modules._home-footer-mobile', ['data' => ''])
 @include('navigation.modules._home-footer', ['data' => ''])
 @include('navigation.modules._home-float', ['data' => ''])
-<!-- 抄袭可耻，禁止抄袭 -->
 @include('navigation.modules._home-js', ['data' => ''])
 @endsection

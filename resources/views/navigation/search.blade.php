@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('header')@include('navigation.header._search', ['view' => ''])@endsection
+@section('header')@include('navigation.common/_pagecss', ['view' => 'search'])@endsection
 @section('content')
 <div class="mob">
     <div class="mobbc">

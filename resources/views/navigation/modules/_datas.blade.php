@@ -11,7 +11,7 @@ $classDatas = ['one', 'two', 'three', 'four', 'five', 'six'];
     </div>
     @foreach ($datas['sorts'] as $pIndex => $pData)
     <h5 class="tit fst" id="{{$pData['code']}}">
-        <b><i class="fa {{$pData['icon']}}"></i> {{$pData['name']}}</b>
+        <b><i class="fa {{$pData['icon']}}" style="{{$pData['icon_color']}}"></i> {{$pData['name']}}</b>
         <!--<span class="remark"><a href="" target="_blank"  style="color: #f60"><i class="fa fa-diamond"></i>115网盘会员</a></span>-->
         <!--<span class="remark"><a href="http://guozhivip.com" target="_blank"  style="color: #f60"><i class="fa fa-jpy"></i>代理推广收益</a></span>-->
         <span class="remark">{{$pData['description']}}</span>

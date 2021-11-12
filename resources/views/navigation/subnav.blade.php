@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('header')@include('navigation.header/_' . $datas['currentSort'], [])@endsection
+@section('header')@include('navigation.common/_pagecss', ['view' => $datas['currentSort']])@endsection
 @section('content')
 @include('navigation.common._header-' . $datas['currentSort'], ['data' => ''])
 @include('navigation.modules._datas', ['datas' => $datas])

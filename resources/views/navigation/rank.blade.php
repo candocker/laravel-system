@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('header')@include('navigation.header._rank', ['view' => ''])@endsection
+@section('header')@include('navigation.common/_pagecss', ['view' => 'rank'])@endsection
 @section('content')
 <div class="top">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
