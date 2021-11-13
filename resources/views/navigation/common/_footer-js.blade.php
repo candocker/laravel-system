@@ -1,3 +1,4 @@
+@if ($view && !in_array($view, ['search']))
 <script type="text/javascript">
 $(document).ready(function() {
     // Anchor Scroll
@@ -19,6 +20,7 @@ $(document).ready(function() {
     });
 });
 </script>
+@endif
 <!--tm-->
 <script type="text/javascript">
 window.onload = function() {
