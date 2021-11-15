@@ -1,4 +1,4 @@
-@if ($view && !in_array($view, ['search']))
+@if (isset($view) && !in_array($view, ['search']))
 <script type="text/javascript">
 $(document).ready(function() {
     // Anchor Scroll

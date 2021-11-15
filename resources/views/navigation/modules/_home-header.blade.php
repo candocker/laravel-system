@@ -1,15 +1,11 @@
 <div class="top-cont">
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="http://guozhivip.com/">
-            <img src="{{$commonAssetUrl}}/nav/img/d9a9c-4402.png" width="32" height="32" class="d-inline-block align-top" alt="果汁导航" title="果汁导航，精选优质实用网络资源" /> 果汁导航</a>
+            <!--<img src="{{$commonAssetUrl}}/nav/img/d9a9c-4402.png" width="32" height="32" class="d-inline-block align-top" alt="导航" title="导航，精选优质实用网络资源" />--> 可定制导航
+        </a>
         <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link date" href="https://qq.ip138.com/day/" target="_blank" title="点击查看日历">
-                    <script>var weekDayLabels = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
-                        var now = new Date();
-                        var year = now.getFullYear();
-                        var month = now.getMonth() + 1;
-                        var day = now.getDate(); var currentime = '<span class="special">' + year + '年' + month + '月' + day + '日 ' + weekDayLabels[now.getDay()] + '</span><br>';document.write(currentime)</script></a>
+                <a class="nav-link date" href="https://qq.ip138.com/day/" target="_blank" title="点击查看日历"><span id="showTime"></span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link tq">
@@ -336,3 +332,21 @@
         </div>
     </div>
 </div>
+<script>
+window.onload = function() {
+    showHomeTime();
+}
+function showHomeTime() {
+    var weekDayLabels = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var day = now.getDate(); 
+    var currentime = '<span class="special">' + year + '年' + month + '月' + day + '日 ' + weekDayLabels[now.getDay()] + '</span><br>';
+    alert('dddd');
+    console.log(document.getElementById("showTime"), 'dddddddddddd');
+    document.write(currentime)
+    document.getElementById("showTime").innerHTML = currenttime;
+    t = setTimeout('showHomeTime()', 1000)
+}
+</script>

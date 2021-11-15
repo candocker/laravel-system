@@ -1,7 +1,7 @@
 <script type='text/javascript' src='{{$commonAssetUrl}}/nav/js/52/jquery-1.11.1.min.js'></script>
 <script type='text/javascript' src='{{$commonAssetUrl}}/nav/js/83/popper.min.js'></script>
 <script type='text/javascript' src='{{$commonAssetUrl}}/nav/js/73/bootstrap.min.js'></script>
-<script type="text/javascript" src="{{$commonAssetUrl}}/nav/js/back.js"></script>
+<script type="text/javascript" src="{{$commonAssetUrl}}/nav/js/back.js?v=1"></script>
 <script type="text/javascript" src="{{$commonAssetUrl}}/nav/js/95/jquery.anchorscroll.min.js"></script>
 <script type="text/javascript" src="{{$commonAssetUrl}}/nav/js/search.js"></script>
 <script charset="gbk" src="{{$commonAssetUrl}}/nav/js/opensug.js"></script>

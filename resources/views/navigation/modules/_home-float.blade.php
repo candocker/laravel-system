@@ -30,3 +30,17 @@
         <i class="fa fa-meh-o"></i>&nbsp;
         <i class="fa fa-lightbulb-o"></i></a>
 </div>
+
+<a href="javascript:;" id="btn" title="返回顶部" class="bts">
+    <i class="fa fa-chevron-up"></i>
+</a>
+<a href="javascript:;" class="saoyisao bts" title="手机扫一扫">
+    <i class="fa fa-qrcode"></i>
+</a>
+<a href="https://docs.qq.com/doc/DQWJhS3hXTHVIY0Zm" class="mobtip bts">
+    <i class="fa fa-lightbulb-o"></i>
+</a>
+<div class="erweima">
+    <img src="{{$commonAssetUrl}}/nav/img/75922-2823.png" alt="果汁导航手机版" />
+    <p>果汁导航手机版</p>
+</div>
