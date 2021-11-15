@@ -1,7 +1,6 @@
 <div class="cont">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="http://guozhivip.com/">
-        <img src="{{$commonAssetUrl}}/nav/img/49372-2250.png" width="32" height="32" class="d-inline-block align-top" alt="果汁导航" title="果汁导航游戏专栏" />果汁导航</a>
     <ul class="nav justify-content-end">
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">更多</a>

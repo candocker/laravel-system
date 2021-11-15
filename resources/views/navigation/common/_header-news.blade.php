@@ -1,22 +1,4 @@
 <div class="cont">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="http://guozhivip.com/">
-        <img src="{{$commonAssetUrl}}/nav/img/b3b98-5587.png" width="32" height="32" class="d-inline-block align-top" alt="果汁导航" title="果汁导航新闻专栏" />果汁导航</a>
-    <ul class="nav justify-content-end">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">更多</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="http://guozhivip.com/tool/" target="_blank">果汁工具</a>
-                <a class="dropdown-item" href="http://guozhivip.com/rank/" target="_blank">果汁排行榜</a>
-                <a class="dropdown-item" href="http://guozhivip.com/so/" target="_blank">果汁搜索</a>
-                <a class="dropdown-item" href="http://guozhivip.com/lab/" target="_blank">果汁实验室</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="http://guozhivip.com/tc/" target="_blank">联系/吐槽/捐助</a></div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="http://guozhivip.com/">返回</a></li>
-    </ul>
-</nav>
 <div class="container so">
     <h2>新闻专栏</h2>
     <form class="input-group" action="https://www.baidu.com/s" target="_blank" method="get">

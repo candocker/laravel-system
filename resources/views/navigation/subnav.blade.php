@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('header')@include('navigation.common/_pagecss', ['view' => $datas['currentSort']])@endsection
 @section('content')
-@include('navigation.common._header-' . $datas['currentSort'], ['data' => ''])
+{{--@include('navigation.common._header-' . $datas['currentSort'], ['data' => ''])--}}
+@include('navigation.common._header', ['data' => ''])
 @include('navigation.modules._datas', ['datas' => $datas])
 @include('navigation.common._footer-simple', ['data' => ''])
 <script type='text/javascript' src='{{$commonAssetUrl}}/nav/js/52/jquery-1.11.1.min.js'></script>
