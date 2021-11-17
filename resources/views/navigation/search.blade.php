@@ -39,7 +39,7 @@ $buttons = ['success', 'warning', 'default', 'danger', 'info'];
     <div class="cmd">
         <ul>
             @foreach ($datas['searchHots'] as $pKey => $pData)
-            <li class="{{$pKey}}"><a href="{$pData['url']}}">{{$pData['name']}}</a></li>
+            <li class="{{$pData['class_style']}}"><a href="{{$pData['url']}}">{{$pData['name']}}</a></li>
             @endforeach
         </ul>
     </div>
@@ -90,8 +90,8 @@ $buttons = ['success', 'warning', 'default', 'danger', 'info'];
     <div class="row row-cols-3 row-cols-sm-4 row-cols-md-6 row-cols-lg-6">
         @foreach ($datas['pcDatas'] as $pData)
         <div class="col">
-            <a href="{{$pData['website']}}" target="_blank">
-                @if ($pData['extfield']) <img src="{{$commonAssetUrl}}/{{$pData['extfield']}}" class="ico"> @endif
+            <a href="{{$pData['url']}}" target="_blank">
+                @if ($pData['logo_path']) <img src="{{$commonAssetUrl}}/{{$pData['logo_path']}}" class="ico"> @endif
                 {{$pData['name']}}
             </a>
         </div>

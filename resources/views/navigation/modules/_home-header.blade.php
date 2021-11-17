@@ -28,9 +28,9 @@
                     <div class="row row-cols-4 row-cols-sm-4 row-cols-md-4 row-cols-lg-4">
                         @foreach ($tData as $pKey => $pData)
                         <div class="col">
-                            <a href="/sub-{{$pKey}}" target="_blank">
-                                <img src="{{$commonAssetUrl}}{{$pData['picture']}}" />
-                                <p>{{$pData['name']}}</p>
+                            <a href="{{$pData['url']}}" target="_blank">
+                                <img src="{{$commonAssetUrl}}{{$pData['icon_path']}}" />
+                                <p>{{$pData['name_short']}}</p>
                             </a>
                         </div>
                         @endforeach

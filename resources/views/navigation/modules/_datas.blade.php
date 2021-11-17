@@ -5,7 +5,7 @@ $classDatas = ['one', 'two', 'three', 'four', 'five', 'six'];
     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
         @foreach ($datas['recommendDatas']['navDatas'] as $pIndex => $pData)
         <div class="col send">
-            <a class="{{$classDatas[$pIndex]}}" href="{{$pData['website']}}" target="_blank">{{$pData['name']}}</a>
+            <a class="{{$classDatas[$pIndex]}}" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
         </div>
         @endforeach 
     </div>
@@ -19,8 +19,8 @@ $classDatas = ['one', 'two', 'three', 'four', 'five', 'six'];
     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
         @foreach ($pData['navDatas'] as $subIndex => $subData)
         <div class="col">
-            <a href="{{$subData['website']}}" target="_blank">
-                @if ($subData['extfield']) <img src="{{$commonAssetUrl}}/{{$subData['extfield']}}" class="ico"> @endif
+            <a href="{{$subData['url']}}" target="_blank">
+                @if ($subData['logo_path']) <img src="{{$commonAssetUrl}}/{{$subData['logo_path']}}" class="ico"> @endif
                 {{$subData['name']}}
             </a>
         </div>
