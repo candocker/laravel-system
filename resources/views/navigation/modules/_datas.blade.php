@@ -3,7 +3,7 @@ $classDatas = ['one', 'two', 'three', 'four', 'five', 'six'];
 @endphp
 <div class="container content" data-spy="scroll" data-target="#navs" data-offset="0">
     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
-        @foreach ($datas['recommendDatas']['navDatas'] as $pIndex => $pData)
+        @foreach ($datas['recommendDatas'] as $pIndex => $pData)
         <div class="col send">
             <a class="{{$classDatas[$pIndex]}}" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
         </div>

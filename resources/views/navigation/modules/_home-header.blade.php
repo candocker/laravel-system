@@ -95,24 +95,21 @@
             </form>
         </div>
         <h6 class="tit">
-            <a href="https://docs.qq.com/doc/DQWJhS3hXTHVIY0Zm" target="_blank">
-                <i class="fa fa-lightbulb-o"></i>必看</a>&nbsp;&nbsp;
-            <a href="https://music.163.com/#/discover/toplist" target="_blank">听歌榜</a>&nbsp;&nbsp;
-            <a href="https://web.mypitaya.com/?bd_source=guozhivip" target="_blank" style="color: #f80">火龙果写作</a>&nbsp;&nbsp;
-            <a href="https://www.iqiyi.com/ranks1/home" target="_blank">热播剧</a>&nbsp;&nbsp;
-            <a href="https://u.jd.com/3LUVeuO" target="_blank" style="color: #f50">京东双11</a>&nbsp;&nbsp;
-            <a href="https://s.click.taobao.com/9j9Tofu" target="_blank" style="color: #f70">天猫双11</a>&nbsp;&nbsp;
-            <a href="https://huaban.com/favorite/beauty/" target="_blank">颜如玉</a>&nbsp;&nbsp;
-            <a href="http://guozhivip.com/hg/" target="_blank" style="color: #f80">特价好物</a>&nbsp;&nbsp;
-            <a href="https://www.vmovier.com/hot#rotate-nav" target="_blank">短片</a></h6>
+            @foreach ($datas['homeFocus'] as $pData)
+            <a href="{{$pData['url']}}" target="_blank" style="{{$pData['icon_color']}}">
+                @if ($pData['icon']) <i class="fa fa-lightbulb-o"></i> @endif 
+                {{$pData['name']}}
+            </a>&nbsp;&nbsp;
+            @endforeach
+        </h6>
         <div class="mob-tj">
             @foreach ($datas['mobileDatas'] as $subData)
             <div class="row">
                 @foreach ($subData as $pData)
                 <div class="col">
                     <a href="{{$pData['url']}}">
-                        <span><i class="fa {{$pData['icon']}}" style="{{$pData['iColor']}}"></i></span>
-                        <p>{{$pData['name']}}</p>
+                        <span><i class="fa {{$pData['icon']}}" style="{{$pData['icon_color']}}"></i></span>
+                        <p>{{$pData['title']}}</p>
                     </a>
                 </div>
                 @endforeach 

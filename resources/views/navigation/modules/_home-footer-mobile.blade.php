@@ -3,8 +3,8 @@
         @foreach ($datas as $pData)
         <div class="col">
             <a href="{{$pData['url']}}">
-                <span><i class="fa {{$pData['icon']}}" style="{{$pData['iColor']}}"></i></span>
-                <p>{{$pData['name']}}</p>
+                <span><i class="fa {{$pData['icon']}}" style="{{$pData['icon_color']}}"></i></span>
+                <p>{{$pData['title']}}</p>
             </a>
         </div>
         @endforeach 

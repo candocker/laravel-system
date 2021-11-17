@@ -20,8 +20,8 @@
             <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-3">
                 @foreach ($pData['navDatas'] as $subIndex => $subData)
                 <div class="col">
-                    <a href="{{$subData['website']}}" target="_blank" class="cy">
-                        @if ($subData['extfield']) <img src="{{$commonAssetUrl}}{{$subData['extfield']}}" class="img"> @endif
+                    <a href="{{$subData['url']}}" target="_blank" class="cy">
+                        @if ($subData['logo_path']) <img src="{{$commonAssetUrl}}{{$subData['logo_path']}}" class="img"> @endif
                         {{$subData['name']}}
                     </a>
                 </div>

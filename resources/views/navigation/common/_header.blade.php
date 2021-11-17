@@ -35,34 +35,29 @@
                 <!--<a href="/search"><input class="btn btn-outline-secondary soo" type="button" value="聚合搜索" /></a>-->
             </div>
         </form>
+        @if ($datas['focusDatas'])
         <h6 class="mob-hs">
             @foreach ($datas['focusDatas'] as $pData)
             <a href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>&nbsp;
             @endforeach
-            <!---tvfilm-->
-    <!--<a href="https://m.douban.com/tv/" target="_blank">热播剧</a>&nbsp;
-    <a href="https://m.douban.com/movie/" target="_blank">热门电影</a>&nbsp;
-    <a href="https://piaofang.maoyan.com/box-office?ver=normal" target="_blank">票房榜</a>&nbsp;
-    <a href="https://m.bilibili.com/ranking">B站热门</a>&nbsp;
-    <a href="https://tuchong.com/video/" target="_blank">短视频</a>-->
-
-            <!---shop-->
-    <!--<a href="https://m.ui.cn/works/?tag=3&subcatid=0&catid=0" target="_blank">热门作品</a>&nbsp;
-    <a href="https://gracg.com/works?type=hot" target="_blank">插画作品</a>&nbsp;
-    <a href="https://m.zhisheji.com/paihang/hot" target="_blank">人气设计</a>-->
-            <!---picture-->
-        <!--<a href="https://pic.sogou.com/pic/emo/index.jsp" target="_blank">找表情</a>&nbsp;
-        <a href="https://huaban.com/search/?q=%E6%9D%8E%E6%B2%81" target="_blank">搜壁纸</a>&nbsp;
-        <a href="https://h.bilibili.com/ywh/h5/home#/draw" target="_blank">二次元插画</a>-->
-
-            <!---design-->
-        <!--<a href="https://m.ui.cn/works/?tag=3&subcatid=0&catid=0" target="_blank">热门作品</a>&nbsp;
-        <a href="https://gracg.com/works?type=hot" target="_blank">插画作品</a>&nbsp;
-        <a href="https://m.zhisheji.com/paihang/hot" target="_blank">人气设计</a>-->
         </h6>
-
-
-
+        @endif
+        @if ($datas['mobileLists'])
+        <div class="tj">
+            @foreach ($datas['mobileLists'] as $subData)
+            <div class="row">
+                @foreach ($subData as $pData)
+                <div class="col">
+                    <a href="{{$pData['url']}}">
+                        <img src="{{$commonAssetUrl}}{{$pData['logo_path']}}">
+                        <p>{{$pData['title']}}</p>
+                    </a>
+                </div>
+                @endforeach 
+            </div>
+            @endforeach 
+        </div>
+        @endif
     </div>
 </div>
 {{--<img src="{{$commonAssetUrl}}/nav/img/f8f5c-5716.png" title="免费好用的在线工具大全" />果汁工具
