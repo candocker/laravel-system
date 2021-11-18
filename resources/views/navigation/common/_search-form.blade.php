@@ -10,6 +10,7 @@ $sorts = [
     'news' => '新闻专栏',
     'study' => '教育资源专栏',
     'readnav' => '小说·电子书·文库',
+    'operation' => 'Make work more efficient',
 ];
 $currentTitle = $sorts[$currentSort];
 $actions = [

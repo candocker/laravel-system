@@ -16,9 +16,9 @@
         </div>-->
         @foreach ($pData['navDatas'] as $subIndex => $subData)
         <div class="col">
-            <a href="{{$subData['website']}}" class="card-link" target="_blank">
+            <a href="{{$subData['url']}}" class="card-link" target="_blank">
                 <div class="card-tit">
-                    <img src="{{$commonAssetUrl}}{{$subData['extfield']}}">
+                    <img src="{{$commonAssetUrl}}{{$subData['logo_path']}}">
                     <span class="name">{{$subData['name']}}</span>
                 </div>
                 <div class="card-desc">{{$subData['description']}}</div>

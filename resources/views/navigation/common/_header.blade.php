@@ -1,6 +1,40 @@
 <div class="cont" style="overflow: visible">
+    @if ($datas['currentSort'] == 'operation')
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="http://guozhivip.com/tool/">{{$datas['bigSort']['name']}}</a>
+        <a class="navbar-brand" href="{{$datas['bigSort']['url']}}" style="color: #fff" title="新媒体运营资源导航">
+            <!--<img src="{{$commonAssetUrl}}/nav/img/e0a62-6012.png" width="30" height="30" class="d-inline-block align-top" alt="果汁运营" />-->{{$datas['bigSort']['name']}}
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/rank" target="_blank">热榜</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/" target="_blank">导航</a>
+                </li>
+                <li class="nav-item dropdown" style="z-index:20000">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        @foreach ($datas['categorys'] as $pData)
+                        <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
+                        @endforeach
+                        <!--<div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/tc/" target="_blank">联系/吐槽/捐助</a>-->
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="https://weixin.sogou.com/weixin" method="get" target="_blank">
+                <input type="hidden" name="type" value="2" autocomplete="off">
+                <input class="form-control mr-sm-2" aria-label="Search" type="text" name="query" class="s" id="sogouInput" autocomplete="off" placeholder="搜文章/公众号" baiduSug="1">
+                <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="搜狗微信" id="sogou" /></form>
+        </div>
+    </nav>
+    @else
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{$datas['bigSort']['url']}}">{{$datas['bigSort']['name']}}</a>
         <ul class="nav justify-content-end">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">更多</a>
@@ -16,10 +50,11 @@
             <li class="nav-item"><a class="nav-link" href="/search">搜索</a></li>
         </ul>
     </nav>
+    @endif
     <div class="container so">
         @include('navigation.common._search-form', ['currentSort' => $datas['currentSort']])
         @if ($datas['focusDatas'])
-        <h6 class="mob-hs">
+        <h6 @if ($datas['currentSort'] == 'operation') class="hs" @else class="mob-hs" @endif>
             @foreach ($datas['focusDatas'] as $pData)
             <a href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>&nbsp;
             @endforeach
