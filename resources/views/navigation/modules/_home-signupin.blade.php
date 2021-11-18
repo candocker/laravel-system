@@ -49,8 +49,9 @@
                     <div class="form-group">
                         <input type="text" class="form-control" id="authcode" name="authcode" placeholder="请输入下图 4 位验证码" value="" minlength="4" maxlength="4" required="required"></div>
                     <div class="form-group">
-                        <img src="php/captcha.php?r=12618444" id="captcha_img" width="100" height="30">
-                        <a href="javascript:void(0)" onclick="document.getElementById('captcha_img').src='php/captcha.php?r='+Math.random()">看不清换一个</a></div>
+                        <!--<img src="/captcha?r=12618444" id="captcha_img" width="100" height="30">
+                        <a href="javascript:void(0)" onclick="document.getElementById('captcha_img').src='/captcha?r='+Math.random()">看不清换一个</a>-->
+                    </div>
                     <button type="submit" class="btn btn-primary" id="sign" name="submit">注 册</button>
                     <small class="form-text text-muted">已有账号，
                         <a href="#" id="gotoLogin" style="color: #f90">去登录</a></small>

@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('header')@include('navigation.common/_pagecss', ['view' => $datas['currentSort']])@endsection
 @section('content')
 {{--@include('navigation.common._header-' . $datas['currentSort'], ['data' => ''])--}}

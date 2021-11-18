@@ -104,7 +104,8 @@
         <p class="dsc">手机版</p>
         <p style="color: #777;">
             <i class="fa fa-quote-left"></i>&nbsp;
-            <script src="http://guozhivip.com/so/apii/api.php"></script></p>
+            <script src="http://guozhivip.com/so/apii/api.php"></script>
+        </p>
         <p class="link">推荐：
             <a href="http://guozhivip.com/" target="_blank">果汁导航</a>-
             <a href="http://guozhivip.com/rank/" target="_blank">果汁排行榜</a>-

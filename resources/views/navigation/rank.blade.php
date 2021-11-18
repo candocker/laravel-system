@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('header')@include('navigation.common/_pagecss', ['view' => 'rank'])@endsection
 @section('content')
 <div class="top">

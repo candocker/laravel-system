@@ -2,6 +2,7 @@
 $buttons = ['success', 'warning', 'default', 'danger', 'info'];
 @endphp
 @extends('layouts.main')
+@section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('header')@include('navigation.common/_pagecss', ['view' => 'search'])@endsection
 @section('content')
 <div class="mob">
