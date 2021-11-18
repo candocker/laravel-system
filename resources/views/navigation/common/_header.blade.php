@@ -17,24 +17,7 @@
         </ul>
     </nav>
     <div class="container so">
-        <h2>免费好用的在线工具大全</h2>
-        <!--<h2><span style="color: #f90;">免费影视专栏</span></h2>
-        <h2>官网便宜购，发现特价好物</h2>
-        <h2><span style="color: #fff;">免费图片专栏</span></h2>
-        <h2>精选优质设计资源大全</h2>
-        -->
-        <form class="input-group" action="https://www.baidu.com/s" target="_blank" method="get">
-        <!--<form class="input-group" action="https://search.jd.com/Search?enc=utf-8&keyword=" target="_blank" method="get">shop-->
-            <style type="text/css">.bdsug_copy{display:none}</style>
-            <input name="ie" type="hidden" value="utf-8">
-            <input type="text" class="form-control" id="inword" name="word" size="30" baiduSug="1" placeholder="随时百度一下" aria-describedby="button-addon4">
-            <!--<input type="text" class="form-control" id="search" name="search" size="30" baiduSug="1" placeholder="京东搜索一下">shop-->
-            <div class="input-group-append" id="button-addon4">
-                <input class="btn btn-outline-secondary" type="submit" value="百度一下" />
-                <!--<input class="btn btn-outline-secondary" type="submit" id="jd" value="京东搜索" />shop-->
-                <!--<a href="/search"><input class="btn btn-outline-secondary soo" type="button" value="聚合搜索" /></a>-->
-            </div>
-        </form>
+        @include('navigation.common._search-form', ['currentSort' => $datas['currentSort']])
         @if ($datas['focusDatas'])
         <h6 class="mob-hs">
             @foreach ($datas['focusDatas'] as $pData)
