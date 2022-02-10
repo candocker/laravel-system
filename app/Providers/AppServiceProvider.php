@@ -27,10 +27,13 @@ class AppServiceProvider extends ServiceProvider
         //
         View::share('commonAssetUrl', config('app.assetUrl'));
         \ModulePassport\Models\AttachmentPath::observe(\ModulePassport\Observers\AttachmentPathObserver::class);
+        \ModulePassport\Models\Attachment::observe(\ModulePassport\Observers\AttachmentObserver::class);
         \ModulePassport\Models\Resource::observe(\ModulePassport\Observers\ResourceObserver::class);
         \ModulePassport\Models\Permission::observe(\ModulePassport\Observers\PermissionObserver::class);
         //\ModuleCulture\Models\Category::observe(\ModuleCulture\Observers\CategoryObserver::class);
+
         \ModuleCulture\Models\Figure::observe(\ModuleCulture\Observers\FigureObserver::class);
+        \ModuleCulture\Models\FigureResume::observe(\ModuleCulture\Observers\FigureResumeObserver::class);
         \ModuleCulture\Models\Book::observe(\ModuleCulture\Observers\BookObserver::class);
         \ModuleCulture\Models\Affair::observe(\ModuleCulture\Observers\AffairObserver::class);
         \ModuleCulture\Models\Record::observe(\ModuleCulture\Observers\RecordObserver::class);

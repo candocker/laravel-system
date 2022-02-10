@@ -47,6 +47,7 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapInfocmsRoutes();
         $this->mapBigdataRoutes();
         $this->mapApiRoutes();
+        $this->mapThirdRoutes();
     }
 
     /**
@@ -69,6 +70,21 @@ class RouteServiceProvider extends ServiceProvider
         Route::prefix('')
             ->middleware('api')
             ->group(base_path('routes/infocms.php'));
+    }
+
+    /**
+     * Define the "third" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapThirdRoutes()
+    {
+        Route::prefix('')
+            ->middleware('api')
+            //->namespace($this->namespace)
+            ->group(base_path('routes/third.php'));
     }
 
     /**

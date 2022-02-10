@@ -7,39 +7,44 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="http://guozhivip.com/" title="全面，简约，优质实用的资源导航平台" target="_blank">
-                        <i class="fa fa-paper-plane"></i>导航</a>
+                    <a class="nav-link" href="/" title="全面，简约，优质实用的资源导航平台" target="_blank">
+                        <i class="fa fa-paper-plane"></i> 导航
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://guozhivip.com/so/" title="全能搜索神器" target="_blank">
-                        <i class="fa fa-search"></i>搜索</a>
+                    <a class="nav-link" href="/search" title="聚合搜索" target="_blank">
+                        <i class="fa fa-search"></i> 搜索
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://guozhivip.com/tool/" title="免费好用的在线工具大全" target="_blank">
-                        <i class="fa fa-wrench"></i>工具</a>
+                    <a class="nav-link" href="/sub-tool" title="免费好用的在线工具大全" target="_blank">
+                        <i class="fa fa-wrench"></i> 工具
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://guozhivip.com/lab/" title="发现国内外优质实用的资源" target="_blank">
-                        <i class="fa fa-eye"></i>实验室</a>
+                    <a class="nav-link" href="/coolsite" title="发现国内外优质实用的资源" target="_blank">
+                        <i class="fa fa-eye"></i> 实验室
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://guozhivip.com/pod/" title="运营、产品、设计资源导航" target="_blank">
-                        <i class="fa fa-pencil-square"></i>运营</a>
+                    <a class="nav-link" href="/sub-operation" title="运营、产品、设计资源导航" target="_blank">
+                        <i class="fa fa-pencil-square"></i> 运营
+                    </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="http://guozhivip.com/zhinan/" target="_blank">果汁指南</a>
-                        <a class="dropdown-item" href="http://guozhivip.com/design/" target="_blank">果汁设计</a>
-                        <a class="dropdown-item" href="http://guozhivip.com/yy/" target="_blank">每日一言</a>
-                        <a class="dropdown-item" href="http://guozhivip.com/eat/" target="_blank">今天吃啥呀</a>
-                        <a class="dropdown-item" href="http://guozhivip.com/tc/" target="_blank">联系/吐槽/捐助</a></div>
+                        @foreach ($datas['categorys'] as $pData)
+                        <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
+                        @endforeach
+                    </div>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="logo">
-        <img src="{{$commonAssetUrl}}/nav/img/90bc6-7690.png" title="掌握权威、热门、优质信息，高效生活！"></div>
+        <!--<img src="{{$commonAssetUrl}}/nav/img/90bc6-7690.png" title="掌握权威、热门、优质信息，高效生活！">-->
+    </div>
     <div class="container so">
         <form class="input-group" action="https://www.baidu.com/s" target="_blank" method="get">
             <style type="text/css">.bdsug_copy{display:none}</style>
@@ -47,17 +52,19 @@
             <input type="text" class="form-control" id="inword" name="word" size="30" baiduSug="1" placeholder="随时百度一下" aria-describedby="button-addon4">
             <div class="input-group-append" id="button-addon4">
                 <input class="btn btn-outline-secondary" type="submit" value="百度一下" />
-                <!--<a href="http://guozhivip.com/so/"><input class="btn btn-outline-secondary soo" type="button" value="果汁搜索" /></a>--></div>
+                <!--<a href="http://guozhivip.com/so/"><input class="btn btn-outline-secondary soo" type="button" value="果汁搜索" /></a>-->
+            </div>
         </form>
         <h6 class="hot">
-            <i class="fa fa-lightbulb-o" style="color: #f80"></i>&nbsp;
+            <!--<i class="fa fa-lightbulb-o" style="color: #f80"></i>&nbsp;-->
             <a href="https://www.douyin.com/" target="_blank">抖音</a>&nbsp;
             <a href="https://www.kuaishou.com/" target="_blank">快手</a>&nbsp;
             <a href="https://u.jd.com/3MUJlL9" style="color: #f60" target="_blank">京东双11</a>&nbsp;
             <a href="https://top.baidu.com/board?tab=realtime" target="_blank">今日新鲜事</a>&nbsp;
             <a href="https://s.click.taobao.com/DY43eeu" style="color: #f70" target="_blank">天猫双11</a>&nbsp;
             <a href="http://q.10jqka.com.cn/" target="_blank">股市行情</a>&nbsp;
-            <a href="https://t.vip.com/BVBGjIBlt28" style="color: #f80" target="_blank">唯品会特卖</a></h6>
+            <a href="https://t.vip.com/BVBGjIBlt28" style="color: #f80" target="_blank">唯品会特卖</a>
+        </h6>
     </div>
     <div class="container cd">
         <div class="row">
@@ -876,7 +883,6 @@
     <img src="{{$commonAssetUrl}}/nav/img/b50cf-8503.jpg" alt="果汁官方公众号" />
     <p>果汁官方公众号</p>
 </div>
-<!-- 抄袭可耻，禁止以任何形式抄袭! -->
 <script type='text/javascript' src='{{$commonAssetUrl}}/nav/js/18/jquery-1.11.1.min.js'></script>
 <script type='text/javascript' src='{{$commonAssetUrl}}/nav/js/68/popper.min.js'></script>
 <script type='text/javascript' src='{{$commonAssetUrl}}/nav/js/36/bootstrap.min.js'></script>

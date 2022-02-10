@@ -12,11 +12,15 @@
         @foreach ($datas['sorts'] as $pIndex => $pData)
         <div class="col subs">
             <h5 class="tit">
-                <i class="fa {{$pData['icon']}}" style="color: #7CCD7C;"></i>{{$pData['name']}}
-                <a href="https://m.bilibili.com/ranking" class="rd">
-                    <img src="{{$commonAssetUrl}}/nav/img/93824-4007.png" class="simg">热门视频</a>
-                <a href="https://www.douyin.com/" class="yule tg" target="_blank" style="margin-left: 13px">抖音</a>
-                <a href="https://www.kuaishou.com/" class="yule tg" target="_blank" style="margin-left: 12px">快手</a>
+                <i class="fa {{$pData['icon']}}" style="color: #7CCD7C;"></i> {{$pData['name']}}
+                @if ($pData['focusDatas'])
+                @foreach ($pData['focusDatas'] as $focusData)
+                <a href="{{$focusData['url']}}" class="yule tg" target="_blank" style="margin-left: 13px">{{$focusData['title']}}</a>
+                @endforeach
+                @endif
+                <!--<a href="https://m.bilibili.com/ranking" class="rd"><img src="{{$commonAssetUrl}}/nav/img/93824-4007.png" class="simg">热门视频</a>
+                <a href="https://www.kuaishou.com/" class="yule tg" target="_blank" style="margin-left: 12px">快手</a>-->
+                @if ($pData['url']) <a href="{{$pData['url']}}" style="color: #999" title="{{$pData['name']}}">更多> </a>@endif
             </h5>
             <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-3">
                 @foreach ($pData['navDatas'] as $subIndex => $subData)

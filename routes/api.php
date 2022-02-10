@@ -53,6 +53,17 @@ Route::middleware($middlewareBackend)->get('/passport/my-routes', '\ModulePasspo
 Route::get('/passport/oss-{action}', '\ModulePassport\Controllers\CommonController@oss');
 Route::get('/passport/test', '\ModulePassport\Controllers\TestController@test');
 
+Route::get('/article/{id}', '\ModuleInfocms\Controllers\TestController@article');
+Route::get('/diagram/{id}', '\ModuleInfocms\Controllers\TestController@article');
+Route::get('/article', '\ModuleInfocms\Controllers\TestController@articleList');
+Route::get('/tag', '\ModuleInfocms\Controllers\TestController@tag');
+Route::get('/option', '\ModuleInfocms\Controllers\TestController@tmp');
+Route::get('/announcement', '\ModuleInfocms\Controllers\TestController@announce');
+Route::get('/auth/admin', '\ModuleInfocms\Controllers\TestController@admin');
+Route::get('/category', '\ModuleInfocms\Controllers\TestController@category');
+Route::get('/comment', '\ModuleInfocms\Controllers\TestController@comment');
+Route::get('/disqus/config', '\ModuleInfocms\Controllers\TestController@desqus');
+
 
 
 /*Route::middleware('auth:api')->get('/user', function (Request $request) {
