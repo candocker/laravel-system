@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e05f7c8a75eca4d6b4336f1de6f7ef9b",
+    "content-hash": "674ab9a6c9b1696c0b256d1854bf5cef",
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
@@ -564,49 +564,6 @@
             "time": "2021-07-02T07:53:27+00:00"
         },
         {
-            "name": "candocker/infocms",
-            "version": "dev-laravel",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/candocker/infocms.git",
-                "reference": "d38eb5714a9a75f3dced2047820bb88353177c51"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/candocker/infocms/zipball/d38eb5714a9a75f3dced2047820bb88353177c51",
-                "reference": "d38eb5714a9a75f3dced2047820bb88353177c51",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.3.0"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "ModuleInfocms\\": "app/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A application of infocms",
-            "keywords": [
-                "application",
-                "infocms",
-                "permission",
-                "php",
-                "resource",
-                "role",
-                "user"
-            ],
-            "support": {
-                "issues": "https://github.com/candocker/infocms/issues",
-                "source": "https://github.com/candocker/infocms/tree/laravel"
-            },
-            "time": "2021-06-12T06:16:43+00:00"
-        },
-        {
             "name": "candocker/merchant",
             "version": "dev-main",
             "source": {
@@ -812,6 +769,47 @@
                 "source": "https://github.com/candocker/third/tree/main"
             },
             "time": "2021-08-24T08:43:35+00:00"
+        },
+        {
+            "name": "candocker/website",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/candocker/website.git",
+                "reference": "0adc1e14adea779e990bbb0ba6b6e779b8fc7b31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/candocker/website/zipball/0adc1e14adea779e990bbb0ba6b6e779b8fc7b31",
+                "reference": "0adc1e14adea779e990bbb0ba6b6e779b8fc7b31",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3.0"
+            },
+            "default-branch": true,
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "ModuleWebsite\\": "app/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A application of website",
+            "keywords": [
+                "application",
+                "php",
+                "resource",
+                "website"
+            ],
+            "support": {
+                "issues": "https://github.com/candocker/website/issues",
+                "source": "https://github.com/candocker/website/tree/main"
+            },
+            "time": "2022-02-10T06:32:52+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -10933,12 +10931,12 @@
         "candocker/bench": 20,
         "candocker/bigdata": 20,
         "candocker/culture": 20,
-        "candocker/infocms": 20,
         "candocker/merchant": 20,
         "candocker/passport": 20,
         "candocker/paytrade": 20,
         "candocker/shop": 20,
         "candocker/third": 20,
+        "candocker/website": 20,
         "swoolecan/laravel-baseapp": 20
     },
     "prefer-stable": true,
