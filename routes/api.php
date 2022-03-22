@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Route;
 
 use Framework\Baseapp\Helpers\ResourceContainer;
 
+$middlewareCors = [
+    'api',
+    'cors',
+];
+
 $middlewareAuth = [
     'auth:api',
     'cors',
@@ -53,16 +58,35 @@ Route::middleware($middlewareBackend)->get('/passport/my-routes', '\ModulePasspo
 Route::get('/passport/oss-{action}', '\ModulePassport\Controllers\CommonController@oss');
 Route::get('/passport/test', '\ModulePassport\Controllers\TestController@test');
 
-Route::get('/article/{id}', '\ModuleInfocms\Controllers\TestController@article');
-Route::get('/diagram/{id}', '\ModuleInfocms\Controllers\TestController@article');
-Route::get('/article', '\ModuleInfocms\Controllers\TestController@articleList');
-Route::get('/tag', '\ModuleInfocms\Controllers\TestController@tag');
-Route::get('/option', '\ModuleInfocms\Controllers\TestController@tmp');
-Route::get('/announcement', '\ModuleInfocms\Controllers\TestController@announce');
-Route::get('/auth/admin', '\ModuleInfocms\Controllers\TestController@admin');
-Route::get('/category', '\ModuleInfocms\Controllers\TestController@category');
-Route::get('/comment', '\ModuleInfocms\Controllers\TestController@comment');
-Route::get('/disqus/config', '\ModuleInfocms\Controllers\TestController@desqus');
+
+//Route::get('/article', '\ModuleWebsite\Controllers\TestController@articleList');
+Route::get('/blog/article', '\ModuleWebsite\Controllers\BlogController@articleList');
+//Route::get('/blog/article/calendar', '\ModuleWebsite\Controllers\TestController@acalendar');
+Route::get('/blog/article/calendar', '\ModuleWebsite\Controllers\BlogController@articleCalendar');
+//Route::get('/blog/article/hottest', '\ModuleWebsite\Controllers\TestController@ahot');
+Route::get('/blog/article/hottest', '\ModuleWebsite\Controllers\BlogController@articleHottest');
+Route::get('/blog/article/{id}/context', '\ModuleWebsite\Controllers\TestController@articleContext');
+//Route::get('/blog/article/{id}', '\ModuleWebsite\Controllers\TestController@article');
+Route::get('/blog/article/{id}', '\ModuleWebsite\Controllers\BlogController@articleDetail');
+//Route::get('/blog/tag/all', '\ModuleWebsite\Controllers\TestController@tag');
+Route::get('/blog/tag', '\ModuleWebsite\Controllers\BlogController@tag');
+//Route::get('/tag', '\ModuleWebsite\Controllers\TestController@tag');
+Route::get('/blog/tag/hottest', '\ModuleWebsite\Controllers\BlogController@tagHottest');
+//Route::get('/option', '\ModuleWebsite\Controllers\TestController@tmp');
+//Route::get('/option', '\ModuleWebsite\Controllers\TestController@option');
+Route::get('/blog/option', '\ModuleWebsite\Controllers\BlogController@option');
+
+Route::get('/comment', '\ModuleWebsite\Controllers\TestController@comment');
+Route::get('/disqus/comment', '\ModuleWebsite\Controllers\TestController@dcomment');
+Route::get('/disqus/config', '\ModuleWebsite\Controllers\TestController@disqus');
+Route::get('/disqus/user-info', '\ModuleWebsite\Controllers\TestController@userinfo');
+
+//Route::get('/diagram/{id}', '\ModuleWebsite\Controllers\TestController@article');
+Route::get('/archive', '\ModuleWebsite\Controllers\TestController@archive');
+Route::get('/expansion/statistic', '\ModuleWebsite\Controllers\TestController@statistic');
+Route::get('/announcement', '\ModuleWebsite\Controllers\TestController@announce');
+Route::get('/auth/admin', '\ModuleWebsite\Controllers\TestController@admin');
+Route::get('/category', '\ModuleWebsite\Controllers\TestController@category');
 
 
 

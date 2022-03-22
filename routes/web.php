@@ -23,13 +23,14 @@ $routes = [
         'list/{code}/{page?}' => ['action' => 'listinfo'],
     ],*/
     'culture' => [
-        'routes' => ['', 'lx-sort', 'jd-sort', 'jd-sort-{sort}', 'book-detail', 'book-home', 'book-list', 'channel', 'collection', 'figure', 'shelf', 'store', '{code}', 'graphic', 'graphic-{sort}'],
+        'routes' => ['', 'lx-sort', 'jd-sort', 'jd-sort-{sort}', 'book-detail', 'book-home', 'book-list', 'channel', 'collection', 'figure', 'shelf', 'store', 'graphic', 'graphic-{sort}-{extcode}', 'graphic-{sort}', '{code}'],
         'jd-sort' => ['action' => 'category'],
         'jd-sort-{sort}' => ['action' => 'category'],
         'sf-sort' => ['action' => 'category'],
         'sf-sort-{sort}' => ['action' => 'category'],
         'graphic' => ['controller' => 'graphic', 'action' => 'home'],
         'graphic-{sort}' => ['controller' => 'graphic', 'action' => 'home'],
+        'graphic-{sort}-{extcode}' => ['controller' => 'graphic', 'action' => 'home'],
         //'{code}' => ['action' => 'view'],
     ],
     'human' => [
@@ -46,8 +47,9 @@ $currentHost = $_SERVER['HTTP_HOST'] ?? false;
 if ($currentHost) {
     $siteCode = explode('.', $currentHost)[0];
     $siteCode = explode('-', $siteCode)[0];
-    $currentHost = in_array($siteCode, array_keys($routes)) ? $siteCode : false;
+    $currentHost = in_array($siteCode, array_merge(['www'], array_keys($routes))) ? $siteCode : false;
 }
+$currentHost = $currentHost == 'www' ? 'navigation' : $currentHost;
 //var_dump($currentHost);
 foreach ($routes as $domain => $domainRoutes) {
     //if ($currentHost !== false && $currentHost != $domain) {
@@ -61,8 +63,8 @@ foreach ($routes as $domain => $domainRoutes) {
     });
 }
 
-Route::get('/tool', '\ModuleInfocms\Controllers\Web\ToolController@tool')->name('tool.tool');
-Route::get('/toolbar_{sort}', '\ModuleInfocms\Controllers\Web\ToolController@tool')->name('tool.tool');
+Route::get('/tool', '\ModuleWebsite\Controllers\ToolController@tool')->name('tool.tool');
+Route::get('/toolbar_{sort}', '\ModuleWebsite\Controllers\ToolController@tool')->name('tool.tool');
 /*Route::get('/movies/{id}', 'MoviesController@show')->name('movies.show');
 Route::get('/tv/{id}', 'TvController@show')->name('tv.show');
 Route::get('/actors', 'ActorsController@index')->name('actors.index');
