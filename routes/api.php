@@ -65,7 +65,8 @@ Route::get('/blog/article', '\ModuleWebsite\Controllers\BlogController@articleLi
 Route::get('/blog/article/calendar', '\ModuleWebsite\Controllers\BlogController@articleCalendar');
 //Route::get('/blog/article/hottest', '\ModuleWebsite\Controllers\TestController@ahot');
 Route::get('/blog/article/hottest', '\ModuleWebsite\Controllers\BlogController@articleHottest');
-Route::get('/blog/article/{id}/context', '\ModuleWebsite\Controllers\TestController@articleContext');
+//Route::get('/blog/article/{id}/context', '\ModuleWebsite\Controllers\TestController@articleContext');
+Route::get('/blog/article/{id}/context', '\ModuleWebsite\Controllers\BlogController@articleRelate');
 //Route::get('/blog/article/{id}', '\ModuleWebsite\Controllers\TestController@article');
 Route::get('/blog/article/{id}', '\ModuleWebsite\Controllers\BlogController@articleDetail');
 //Route::get('/blog/tag/all', '\ModuleWebsite\Controllers\TestController@tag');

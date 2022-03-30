@@ -25,9 +25,8 @@ class Cors
         $response->header('Access-Control-Allow-Headers', 'Origin, Content-Type, Cookie, Accept');
         $response->header('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, OPTIONS, DELETE');
         $response->header('Access-Control-Allow-Headers', 'DNT,X-Mx-ReqToken,Keep-Alive,Accept,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization,Content-Disposition,Referer');
-\Log::info('cors-' . $request->server('HTTP_ORIGIN'));
         //$response->header('Access-Control-Allow-Credentials', 'false');
-        //$response->header('Access-Control-Allow-Credentials', 'true');
+        $response->header('Access-Control-Allow-Credentials', 'true');
         return $response;
     }
 }

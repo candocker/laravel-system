@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        View::share('commonAssetUrl', config('app.assetUrl'));
+        View::share('commonAssetUrl', config('app.domains.assetUrl'));
         \ModulePassport\Models\AttachmentPath::observe(\ModulePassport\Observers\AttachmentPathObserver::class);
         \ModulePassport\Models\Attachment::observe(\ModulePassport\Observers\AttachmentObserver::class);
         \ModulePassport\Models\Resource::observe(\ModulePassport\Observers\ResourceObserver::class);

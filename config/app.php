@@ -12,6 +12,24 @@ return [
     'faker_locale' => 'en_US',
     'key' => env('APP_KEY'),
     'inTest' => env('INTEST', false),
+    'icp91zuiai' => '京ICP备13015487号-1',
+
+    'domains' => [
+        'uploadUrl' => env('UPLOAD_URL', null),
+        'assetUrl' => env('ASSET_URL', ''),
+        'human' => env('HUMAN_DOMAIN', ''),
+        'classical' => env('CLASSICAL_DOMAIN', ''),
+        'culture' => env('CULTURE_DOMAIN', ''),
+        'navigation' => env('NAVIGATION_DOMAIN', ''),
+
+        //'subjectDomain' => env('SUBJECT_DOMAIN', ''),
+        //'brandDomain' => env('BRAND_DOMAIN', ''),
+        //'guideDomain' => env('GUIDE_DOMAIN', ''),
+        //'petDomain' => env('PET_DOMAIN', ''),
+        //'bookDomain' => env('BOOK_DOMAIN', ''),
+        //'topicDomain' => env('TOPIC_DOMAIN', ''),
+        //'calligraphyDomain' => env('CALLIGRAPHY_DOMAIN', ''),
+    ],
 
     'cipher' => 'AES-256-CBC',
 
@@ -111,18 +129,5 @@ return [
         'Captcha' => Mews\Captcha\Facades\Captcha::class,
 
     ],
-
-    'uploadUrl' => env('UPLOAD_URL', null),
-    'assetUrl' => env('ASSET_URL', ''),
-    //'subjectDomain' => env('SUBJECT_DOMAIN', ''),
-    //'brandDomain' => env('BRAND_DOMAIN', ''),
-    //'guideDomain' => env('GUIDE_DOMAIN', ''),
-    //'petDomain' => env('PET_DOMAIN', ''),
-    'humanDomain' => env('HUMAN_DOMAIN', ''),
-    'cultureDomain' => env('CULTURE_DOMAIN', ''),
-    'navigationDomain' => env('NAVIGATION_DOMAIN', ''),
-    //'bookDomain' => env('BOOK_DOMAIN', ''),
-    'topicDomain' => env('TOPIC_DOMAIN', ''),
-    'calligraphyDomain' => env('CALLIGRAPHY_DOMAIN', ''),
 
 ];
