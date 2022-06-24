@@ -24,6 +24,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $domain = $_SERVER['HTTP_HOST'] ?? '';
+        if ($domain) {
+            $infos = explode('.', $domain);
+            $baseDomain = array_pop($infos);
+            $baseDomain = array_pop($infos);
+            $icpStr = config('app.icp' . $baseDomain);
+            View::share('currentIcp', $icpStr);
+            View::share('currentDomain', "http://{$domain}");
+        }
         //
         View::share('commonAssetUrl', config('app.domains.assetUrl'));
         \ModulePassport\Models\AttachmentPath::observe(\ModulePassport\Observers\AttachmentPathObserver::class);

@@ -13,14 +13,16 @@ return [
     'key' => env('APP_KEY'),
     'inTest' => env('INTEST', false),
     'icp91zuiai' => '京ICP备13015487号-1',
+    'icpcanliang.wang' => '京ICP备13015487号-5',
+    'allow_origins' => ['http://admin.canliang.wang', 'http://blog.91zuiai.com', 'http://book.91zuiai.com', 'http://localhost:8080', 'http://localhost:9528'],
 
     'domains' => [
         'uploadUrl' => env('UPLOAD_URL', null),
         'assetUrl' => env('ASSET_URL', ''),
-        'human' => env('HUMAN_DOMAIN', ''),
         'classical' => env('CLASSICAL_DOMAIN', ''),
         'culture' => env('CULTURE_DOMAIN', ''),
         'navigation' => env('NAVIGATION_DOMAIN', ''),
+        'human' => env('HUMAN_DOMAIN', ''),
 
         //'subjectDomain' => env('SUBJECT_DOMAIN', ''),
         //'brandDomain' => env('BRAND_DOMAIN', ''),

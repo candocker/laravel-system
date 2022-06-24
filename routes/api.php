@@ -56,40 +56,7 @@ Route::middleware($middlewareAuth)->post('/passport/refresh-token', '\ModulePass
 Route::middleware($middlewareBackend)->get('/passport/my-routes', '\ModulePassport\Controllers\EntranceController@myRoutes');
 
 Route::get('/passport/oss-{action}', '\ModulePassport\Controllers\CommonController@oss');
-Route::get('/passport/test', '\ModulePassport\Controllers\TestController@test');
-
-
-//Route::get('/article', '\ModuleWebsite\Controllers\TestController@articleList');
-Route::get('/blog/article', '\ModuleWebsite\Controllers\BlogController@articleList');
-//Route::get('/blog/article/calendar', '\ModuleWebsite\Controllers\TestController@acalendar');
-Route::get('/blog/article/calendar', '\ModuleWebsite\Controllers\BlogController@articleCalendar');
-//Route::get('/blog/article/hottest', '\ModuleWebsite\Controllers\TestController@ahot');
-Route::get('/blog/article/hottest', '\ModuleWebsite\Controllers\BlogController@articleHottest');
-//Route::get('/blog/article/{id}/context', '\ModuleWebsite\Controllers\TestController@articleContext');
-Route::get('/blog/article/{id}/context', '\ModuleWebsite\Controllers\BlogController@articleRelate');
-//Route::get('/blog/article/{id}', '\ModuleWebsite\Controllers\TestController@article');
-Route::get('/blog/article/{id}', '\ModuleWebsite\Controllers\BlogController@articleDetail');
-//Route::get('/blog/tag/all', '\ModuleWebsite\Controllers\TestController@tag');
-Route::get('/blog/tag', '\ModuleWebsite\Controllers\BlogController@tag');
-//Route::get('/tag', '\ModuleWebsite\Controllers\TestController@tag');
-Route::get('/blog/tag/hottest', '\ModuleWebsite\Controllers\BlogController@tagHottest');
-//Route::get('/option', '\ModuleWebsite\Controllers\TestController@tmp');
-//Route::get('/option', '\ModuleWebsite\Controllers\TestController@option');
-Route::get('/blog/option', '\ModuleWebsite\Controllers\BlogController@option');
-
-Route::get('/comment', '\ModuleWebsite\Controllers\TestController@comment');
-Route::get('/disqus/comment', '\ModuleWebsite\Controllers\TestController@dcomment');
-Route::get('/disqus/config', '\ModuleWebsite\Controllers\TestController@disqus');
-Route::get('/disqus/user-info', '\ModuleWebsite\Controllers\TestController@userinfo');
-
-//Route::get('/diagram/{id}', '\ModuleWebsite\Controllers\TestController@article');
-Route::get('/archive', '\ModuleWebsite\Controllers\TestController@archive');
-Route::get('/expansion/statistic', '\ModuleWebsite\Controllers\TestController@statistic');
-Route::get('/announcement', '\ModuleWebsite\Controllers\TestController@announce');
-Route::get('/auth/admin', '\ModuleWebsite\Controllers\TestController@admin');
-Route::get('/category', '\ModuleWebsite\Controllers\TestController@category');
-
-
+Route::any('/passport/test', '\ModulePassport\Controllers\TestController@test');
 
 /*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

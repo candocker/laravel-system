@@ -43,11 +43,19 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         $this->mapWebRoutes();
+        $this->mapWebsiteRoutes();
         $this->mapCultureRoutes();
-        $this->mapInfocmsRoutes();
+        //$this->mapInfocmsRoutes();
         $this->mapBigdataRoutes();
         $this->mapApiRoutes();
         $this->mapThirdRoutes();
+    }
+
+    protected function mapWebsiteRoutes()
+    {
+        Route::prefix('')
+            ->middleware('api')
+            ->group(base_path('routes/website.php'));
     }
 
     /**
@@ -130,6 +138,7 @@ class RouteServiceProvider extends ServiceProvider
 			    return ;
             }
         }*/
-        Route::prefix('')->namespace($this->namespace . '\Web')->group(base_path('routes/web.php'));
+        Route::prefix('')->namespace($this->namespace)->group(base_path('routes/web.php'));
+        //Route::prefix('')->namespace($this->namespace . '\Web')->group(base_path('routes/web.php'));
     }
 }
