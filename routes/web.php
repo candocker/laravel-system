@@ -10,29 +10,41 @@ $routes = [
         //'routes' => ['list/{code}/{page?}'],
         //'list/{code}/{page?}' => ['action' => 'listinfo'],
 
-        'routes' => ['', 'lx-sort', 'jd-sort', 'jd-sort-{sort}', 'book-detail', 'book-home', 'book-list', 'channel', 'collection', 'figure', 'shelf', 'store', 'graphic', 'graphic-{sort}-{extcode}', 'graphic-{sort}', '{code}'],
-        'jd-sort' => ['action' => 'category'],
-        'jd-sort-{sort}' => ['action' => 'category'],
-        'sf-sort' => ['action' => 'category'],
-        'sf-sort-{sort}' => ['action' => 'category'],
-        'graphic' => ['controller' => 'graphic', 'action' => 'home'],
-        'graphic-{sort}' => ['controller' => 'graphic', 'action' => 'home'],
-        'graphic-{sort}-{extcode}' => ['controller' => 'graphic', 'action' => 'home'],
-        //'{code}' => ['action' => 'view'],
+        /*'routes' => ['', 'graphic', 'graphic-{sort}-{extcode}', 'graphic-{sort}', 'timeline', 'timeline-{sort}-{extcode}', 'timeline-{sort}', '{code}'],
+        'graphic' => ['action' => 'graphic'],
+        'graphic-{sort}' => ['action' => 'graphic'],
+        'graphic-{sort}-{extcode}' => ['action' => 'graphic'],
+        'timeline' => ['action' => 'timeline'],
+        'timeline-{sort}' => ['action' => 'timeline'],
+        'timeline-{sort}-{extcode}' => ['action' => 'timeline'],*/
+
+        'routes' => ['', 'human-{code}', 'book-{code}', 'dynasty-{code}', 'series', 'series-{sort}-{volumeId}', 'series-{sort}', 'luxun-works', 'luxun-resume', 'dev-view', 'dev-view'],
+        'series' => ['action' => 'series'],
+        'series-{sort}' => ['action' => 'series'],
+        'series-{sort}-{volumeId}' => ['action' => 'series'],
+        'dev-view' => ['action' => 'view'],
+        'human-{code}' => ['action' => 'human'],
+        'dynasty-{code}' => ['action' => 'dynasty'],
+        'book-{code}' => ['action' => 'book'],
+        '{code}' => ['action' => 'home'],
     ],
-    'human' => [
+    'css' => [
         'routes' => ['', '{code}'],
         '{code}' => ['action' => 'view'],
     ],
+    /*'human' => [
+        'routes' => ['', '{code}'],
+        '{code}' => ['action' => 'view'],
+    ],*/
 
     'classical' => [
-        'routes' => ['', 'shijing', 'shijing-{code}', 'zhouyi', 'zhouyi-{code}', 'book-{code}', 'show-{bookCode}-{chapterCode}'],
-        'shijing' => ['controller' => 'classical', 'action' => 'scripturesPoetry'],
-        'shijing-{code}' => ['controller' => 'classical', 'action' => 'detailPoetry'],
-        'zhouyi' => ['controller' => 'classical', 'action' => 'scripturesZhou'],
-        'zhouyi-{code}' => ['controller' => 'classical', 'action' => 'detailZhou'],
+        'routes' => ['', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'test', 'new', 'newbook-{code}', 'newshow-{bookCode}-{chapterCode}'],
         'book-{code}' => ['controller' => 'classical', 'action' => 'bookCatalogue'],
         'show-{bookCode}-{chapterCode}' => ['controller' => 'classical', 'action' => 'show'],
+
+        'new' => ['controller' => 'classical', 'action' => 'newhome'],
+        'newbook-{code}' => ['controller' => 'classical', 'action' => 'newbookCatalogue'],
+        'newshow-{bookCode}-{chapterCode}' => ['controller' => 'classical', 'action' => 'newshow'],
     ],
     'navigation' => [
         'routes' => ['', 'rank', 'search', 'tool', 'operation', 'coolsite', 'sub-{sort}'],
@@ -71,7 +83,6 @@ foreach ($routes as $domain => $domainRoutes) {
         }
     });
 }
-
 
 /*Route::get('/tv/{id}', 'TvController@show')->name('tv.show');
 Route::get('/actors/page/{page?}', 'ActorsController@index');*/

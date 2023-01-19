@@ -41,7 +41,7 @@ foreach ($routes as $app => $aRoutes) {
 Route::match(['OPTIONS', 'GET', 'POST', 'HEAD'], '/', '\App\Http\Controllers\IndexController@index');
 Route::get('/passport/captcha', '\ModulePassport\Controllers\CommonController@captcha');
 Route::get('/passport/validate-captcha', '\ModulePassport\Controllers\CommonController@validateCaptcha');
-Route::post('/passport/send-code', '\ModulePassport\Controllers\CommonController@sendCode');
+Route::middleware($middlewareCors)->post('/passport/send-code', '\ModulePassport\Controllers\CommonController@sendCode');
 Route::get('/passport/validate-code', '\ModulePassport\Controllers\CommonController@validateCode');
 
 Route::addRoute(['GET', 'POST'], '/passport/logout', '\ModulePassport\Controllers\EntranceController@logout');

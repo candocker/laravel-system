@@ -17,12 +17,15 @@
         "candocker/shop": "dev-main",
         "candocker/third": "dev-main",
         "candocker/website": "dev-main",
+        "elasticquent/elasticquent": "^1.0",
         "grandt/phpepub": "4.0.7.1",
         "jacobcyl/ali-oss-storage": "^2.1",
         "maatwebsite/excel": "^3.1",
+        "overtrue/chinese-calendar": "^1.0",
         "overtrue/laravel-wechat": "^6.0",
         "overtrue/pinyin": "~4.0",
         "swoolecan/laravel-baseapp": "dev-main",
+        "symfony/dom-crawler": "^5.4",
         "symfony/translation": "^5.3"
     },
     "autoload": {
