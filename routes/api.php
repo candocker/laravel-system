@@ -50,6 +50,7 @@ Route::post('/passport/signup', '\ModulePassport\Controllers\EntranceController@
 Route::post('/passport/signupin', '\ModulePassport\Controllers\EntranceController@signupin');
 Route::post('/passport/token', '\ModulePassport\Controllers\EntranceController@token');
 Route::post('/passport/signin', '\ModulePassport\Controllers\EntranceController@signin');
+//Route::post('/passport/manager/token', '\ModulePassport\Controllers\EntranceController@managerToken'); // 扩展使用管理员登录job
 
 Route::middleware($middlewareAuth)->get('/passport/myinfo', '\ModulePassport\Controllers\UserController@myinfo');
 Route::middleware($middlewareAuth)->post('/passport/refresh-token', '\ModulePassport\Controllers\EntranceController@refresh');

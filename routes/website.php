@@ -35,6 +35,7 @@ Route::get('/expansion/statistic', '\ModuleWebsite\Controllers\BlogController@st
 Route::get('/announcement', '\ModuleWebsite\Controllers\BlogController@announce');
 Route::get('/auth/admin', '\ModuleWebsite\Controllers\BlogController@admin');
 Route::get('/category', '\ModuleWebsite\Controllers\BlogController@category');
+Route::get('/tag/all', '\ModuleWebsite\Controllers\BlogController@tagAll');
 
 Route::get('/client/{model}/{action}', '\ModuleWebsite\Controllers\ClientController@home');
 Route::any('/client1/{model}/{action}', '\ModuleWebsite\Controllers\ClientController@index');

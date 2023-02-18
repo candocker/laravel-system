@@ -6,11 +6,13 @@
     "type": "project",
     "require": {
         "php": "^7.4",
+        "algolia/algoliasearch-client-php": "^3.3",
         "aliyuncs/oss-sdk-php": "^2.4",
         "arcanedev/log-viewer": "~8.1.0",
         "candocker/bench": "dev-main",
         "candocker/bigdata": "dev-main",
         "candocker/culture": "dev-main",
+        "candocker/infocms": "dev-main",
         "candocker/merchant": "dev-main",
         "candocker/passport": "dev-laravel",
         "candocker/paytrade": "dev-main",
@@ -26,7 +28,8 @@
         "overtrue/pinyin": "~4.0",
         "swoolecan/laravel-baseapp": "dev-main",
         "symfony/dom-crawler": "^5.4",
-        "symfony/translation": "^5.3"
+        "symfony/translation": "^5.3",
+        "tamayo/laravel-scout-elastic": "^8.1"
     },
     "autoload": {
         "psr-4": {
