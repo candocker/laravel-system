@@ -30,7 +30,8 @@ $routes = app()->make(ResourceContainer::class)->initRouteDatas();
 foreach ($routes as $app => $aRoutes) {
     foreach ($aRoutes as $resourceCode => $rRoutes) {
         foreach ($rRoutes as $routeCode => $routeData) {
-            Route::group($middlewareBackend, function() use ($routeData, $app) {
+            //Route::group(['middleware' => $middlewareBackend], function() use ($routeData, $app) {
+            Route::middleware($middlewareBackend)->group(function() use ($routeData, $app) {
                 //echo implode(',', $routeData['method']) . '==' . '/' . $app . $routeData['path'] . '==' . $routeData['callback'] . "\n";
                 Route::match($routeData['method'], '/' . $app . $routeData['path'], $routeData['callback'])->name($routeData['code']);
             });

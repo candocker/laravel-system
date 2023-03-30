@@ -56,8 +56,13 @@ class AppServiceProvider extends ServiceProvider
         \ModuleCulture\Models\Figure::observe(\ModuleCulture\Observers\FigureObserver::class);
         \ModuleCulture\Models\FigureResume::observe(\ModuleCulture\Observers\FigureResumeObserver::class);
         \ModuleCulture\Models\Book::observe(\ModuleCulture\Observers\BookObserver::class);
-        \ModuleCulture\Models\Affair::observe(\ModuleCulture\Observers\AffairObserver::class);
         \ModuleCulture\Models\Record::observe(\ModuleCulture\Observers\RecordObserver::class);
+
+        \ModuleInfocms\Models\Topic::observe(\ModuleInfocms\Observers\TopicObserver::class);
+        \ModuleInfocms\Models\Group::observe(\ModuleInfocms\Observers\GroupObserver::class);
+        \ModuleInfocms\Models\Subject::observe(\ModuleInfocms\Observers\SubjectObserver::class);
+        \ModuleInfocms\Models\Category::observe(\ModuleInfocms\Observers\CategoryObserver::class);
+        \ModuleInfocms\Models\MaterialSource::observe(\ModuleInfocms\Observers\MaterialSourceObserver::class);
 
         \Validator::extend('mobile', 'Framework\Baseapp\Rules\Mobile@passes');
         \Validator::replacer('mobile', function($message, $attribute, $rule, $parameters) {

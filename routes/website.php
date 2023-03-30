@@ -13,6 +13,7 @@ $middlewareAuth = [
     //Framework\Baseapp\Middleware\UserCenterMiddleware::class,
 ];
 
+Route::get('/web-resource', '\ModuleWebsite\Controllers\BlogController@webResource');
 
 Route::get('/blog/article', '\ModuleWebsite\Controllers\BlogController@articleList');
 Route::get('/blog/article/calendar', '\ModuleWebsite\Controllers\BlogController@articleCalendar');
@@ -21,21 +22,36 @@ Route::get('/blog/article/{id}/context', '\ModuleWebsite\Controllers\BlogControl
 Route::get('/blog/article/{id}', '\ModuleWebsite\Controllers\BlogController@articleDetail');
 Route::get('/blog/tag', '\ModuleWebsite\Controllers\BlogController@tag');
 Route::get('/blog/tag/hottest', '\ModuleWebsite\Controllers\BlogController@tagHottest');
-//Route::get('/option', '\ModuleWebsite\Controllers\BlogController@tmp');
 Route::get('/blog/option', '\ModuleWebsite\Controllers\BlogController@option');
 
-Route::get('/comment', '\ModuleWebsite\Controllers\BlogController@comment');
-Route::get('/disqus/comment', '\ModuleWebsite\Controllers\BlogController@dcomment');
-Route::get('/disqus/config', '\ModuleWebsite\Controllers\BlogController@disqus');
-Route::get('/disqus/user-info', '\ModuleWebsite\Controllers\BlogController@userinfo');
+Route::get('/article', '\ModuleWebsite\Controllers\BlogtmpController@articleList');
+Route::get('/article/calendar', '\ModuleWebsite\Controllers\BlogtmpController@articleCalendar');
+Route::get('/article/hottest', '\ModuleWebsite\Controllers\BlogtmpController@articleHottest');
+Route::get('/article/{id}/context', '\ModuleWebsite\Controllers\BlogtmpController@articleRelate');
+Route::get('/article/{id}', '\ModuleWebsite\Controllers\BlogtmpController@articleDetail');
+Route::get('/tag', '\ModuleWebsite\Controllers\BlogtmpController@tag');
+Route::get('/tag/hottest', '\ModuleWebsite\Controllers\BlogtmpController@tagHottest');
+//Route::get('/option', '\ModuleWebsite\Controllers\BlogtmpController@tmp');
 
-//Route::get('/diagram/{id}', '\ModuleWebsite\Controllers\BlogController@article');
-Route::get('/archive', '\ModuleWebsite\Controllers\BlogController@archive');
-Route::get('/expansion/statistic', '\ModuleWebsite\Controllers\BlogController@statistic');
-Route::get('/announcement', '\ModuleWebsite\Controllers\BlogController@announce');
-Route::get('/auth/admin', '\ModuleWebsite\Controllers\BlogController@admin');
-Route::get('/category', '\ModuleWebsite\Controllers\BlogController@category');
-Route::get('/tag/all', '\ModuleWebsite\Controllers\BlogController@tagAll');
+Route::get('/comment', '\ModuleWebsite\Controllers\BlogtmpController@comment');
+Route::get('/disqus/comment', '\ModuleWebsite\Controllers\BlogtmpController@dcomment');
+Route::get('/disqus/config', '\ModuleWebsite\Controllers\BlogtmpController@disqus');
+Route::get('/disqus/user-info', '\ModuleWebsite\Controllers\BlogtmpController@userinfo');
+
+//Route::get('/diagram/{id}', '\ModuleWebsite\Controllers\BlogtmpController@article');
+Route::get('/archive', '\ModuleWebsite\Controllers\BlogtmpController@archive');
+Route::get('/expansion/statistic', '\ModuleWebsite\Controllers\BlogtmpController@statistic');
+Route::get('/announcement', '\ModuleWebsite\Controllers\BlogtmpController@announce');
+Route::get('/auth/admin', '\ModuleWebsite\Controllers\BlogtmpController@admin');
+Route::get('/category', '\ModuleWebsite\Controllers\BlogtmpController@category');
+Route::get('/tag/all', '\ModuleWebsite\Controllers\BlogtmpController@tagAll');
+
+
+Route::any('/client1/setting/home', '\ModuleWebsite\Controllers\ClientController@settingHome');
+Route::any('/client1/bbs/list_subject', '\ModuleWebsite\Controllers\ClientController@subjectDatas');
+Route::any('/client1/bbs/setting_forum', '\ModuleWebsite\Controllers\ClientController@groupDatas');
 
 Route::get('/client/{model}/{action}', '\ModuleWebsite\Controllers\ClientController@home');
-Route::any('/client1/{model}/{action}', '\ModuleWebsite\Controllers\ClientController@index');
+Route::any('/client1/{model}/{action}', '\ModuleWebsite\Controllers\ClienttmpController@index');
+
+Route::any('/remote/{type}-data', '\ModuleWebsite\Controllers\ClientController@dealRemoteUrls');

@@ -38,13 +38,10 @@ $routes = [
     ],*/
 
     'classical' => [
-        'routes' => ['', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'test', 'new', 'newbook-{code}', 'newshow-{bookCode}-{chapterCode}'],
+        'routes' => ['', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'test'],
         'book-{code}' => ['controller' => 'classical', 'action' => 'bookCatalogue'],
         'show-{bookCode}-{chapterCode}' => ['controller' => 'classical', 'action' => 'show'],
-
-        'new' => ['controller' => 'classical', 'action' => 'newhome'],
-        'newbook-{code}' => ['controller' => 'classical', 'action' => 'newbookCatalogue'],
-        'newshow-{bookCode}-{chapterCode}' => ['controller' => 'classical', 'action' => 'newshow'],
+        'test' => ['controller' => 'classical', 'action' => 'test'],
     ],
     'navigation' => [
         'routes' => ['', 'rank', 'search', 'tool', 'operation', 'coolsite', 'sub-{sort}'],
