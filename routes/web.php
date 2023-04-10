@@ -33,7 +33,8 @@ $routes = [
         '{code}' => ['action' => 'view'],
     ],
     'css' => [
-        'routes' => ['', '{code}'],
+        'routes' => ['', 'check-package', '{code}'],
+        'check-package' => ['action' => 'checkPackage'],
         '{code}' => ['action' => 'view'],
     ],
     /*'human' => [
