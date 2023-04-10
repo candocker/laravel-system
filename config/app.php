@@ -24,6 +24,7 @@ return [
         'navigation' => env('NAVIGATION_DOMAIN', ''),
         'human' => env('HUMAN_DOMAIN', ''),
         'css' => env('CSS_DOMAIN', ''),
+        'gather' => env('GATHER_DOMAIN', ''),
 
         //'subjectDomain' => env('SUBJECT_DOMAIN', ''),
         //'brandDomain' => env('BRAND_DOMAIN', ''),
@@ -67,8 +68,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
-        Laravel\Socialite\SocialiteServiceProvider::class,
+        //Collective\Html\HtmlServiceProvider::class,
+        //Laravel\Socialite\SocialiteServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -85,8 +86,8 @@ return [
         //App\Providers\TelescopeServiceProvider::class,
         App\Providers\BladeServiceProvider::class,
         App\Providers\ObserverServiceProvider::class,
-        Mews\Captcha\CaptchaServiceProvider::class,
-        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        //Mews\Captcha\CaptchaServiceProvider::class,
+        //Prettus\Repository\Providers\RepositoryServiceProvider::class,
 
 
     ],

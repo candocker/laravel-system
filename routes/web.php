@@ -11,14 +11,11 @@ $routes = [
         //'list/{code}/{page?}' => ['action' => 'listinfo'],
 
         /*'routes' => ['', 'graphic', 'graphic-{sort}-{extcode}', 'graphic-{sort}', 'timeline', 'timeline-{sort}-{extcode}', 'timeline-{sort}', '{code}'],
-        'graphic' => ['action' => 'graphic'],
-        'graphic-{sort}' => ['action' => 'graphic'],
-        'graphic-{sort}-{extcode}' => ['action' => 'graphic'],
         'timeline' => ['action' => 'timeline'],
         'timeline-{sort}' => ['action' => 'timeline'],
         'timeline-{sort}-{extcode}' => ['action' => 'timeline'],*/
 
-        'routes' => ['', 'human-{code}', 'book-{code}', 'dynasty-{code}', 'series', 'series-{sort}-{volumeId}', 'series-{sort}', 'luxun-works', 'luxun-resume', 'dev-view', 'dev-view'],
+        'routes' => ['', 'timeline', 'human-{code}', 'book-{code}', 'dynasty-{code}', 'series', 'series-{sort}-{volumeId}', 'series-{sort}', 'luxun-works', 'luxun-resume', 'dev-view', 'dev-view'],
         'series' => ['action' => 'series'],
         'series-{sort}' => ['action' => 'series'],
         'series-{sort}-{volumeId}' => ['action' => 'series'],
@@ -27,6 +24,13 @@ $routes = [
         'dynasty-{code}' => ['action' => 'dynasty'],
         'book-{code}' => ['action' => 'book'],
         '{code}' => ['action' => 'home'],
+
+        'timeline' => ['action' => 'timeline'],
+    ],
+    'gather' => [
+        'routes' => ['', 'series-{bigsort}-{sort}', '{code}'],
+        'series-{bigsort}-{sort}' => ['action' => 'series'],
+        '{code}' => ['action' => 'view'],
     ],
     'css' => [
         'routes' => ['', '{code}'],
