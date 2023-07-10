@@ -16,6 +16,7 @@
         "candocker/shop": "dev-main",
         "candocker/third": "dev-main",
         "candocker/website": "dev-main",
+        "erusev/parsedown": "^1.7",
         "swoolecan/laravel-baseapp": "dev-main"
     },
     "autoload": {

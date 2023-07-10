@@ -6,51 +6,50 @@ use Framework\Baseapp\Helpers\ResourceContainer;
 $resourceContainer = app()->make(ResourceContainer::class);
 
 $routes = [
-    'culture' => [
+    'read' => [
+        'routes' => ['', 'read-classical', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'series-{bigsort}-{sort}'],//, 'book-gather-{code}'],
+
+        'read-{sort}' => ['action' => 'readJoin'],
+        'readlist-{sort}-{code}' => ['action' => 'readJoinList'],
+        'readshow-{sort}-{code}-{chpaterCode}' => ['action' => 'readJoinShow'],
+        'book-{code}' => ['action' => 'bookCatalogue'],
+        'show-{bookCode}-{chapterCode}' => ['action' => 'bookShow'],
+
+        'series-{bigsort}-{sort}' => ['action' => 'series'],
+        //'book-gather-{code}' => ['action' => 'bookGather'],
+    ],
+
+    'navigation' => [
+        'routes' => ['', 'rank', 'search', 'tool', 'operation', 'coolsite', 'sub-{sort}'],
+        'sub-{sort}' => ['action' => 'subnav'],
+    ],
+    'subject' => [
+        'routes' => ['', 'human-luxun-{code}', 'chinese-classics-{code}', 'history-graphic-{code}', 'human-graphic-{code}', 'dynasty-graphic-{code}'],
+        'human-luxun-{code}' => ['action' => 'humanLuxun'],
+        'chinese-classics-{code}' => ['action' => 'chineseClassics'],
+        'history-graphic-{code}' => ['action' => 'history'],
+        'human-graphic-{code}' => ['action' => 'human'],
+        'dynasty-graphic-{code}' => ['action' => 'dynasty'],
+        //'-graphic-{code}' => ['action' => ''],
+    ],
+    'info' => [
+        'routes' => ['', 'show-{id}', '{bigsort}-{sort}'],
+        'show-{id}' => ['action' => 'show'],
+        '{bigsort}-{sort}' => ['action' => 'categoryList'],
+    ],
+
+    'try' => [
         //'routes' => ['list/{code}/{page?}'],
         //'list/{code}/{page?}' => ['action' => 'listinfo'],
 
-        /*'routes' => ['', 'graphic', 'graphic-{sort}-{extcode}', 'graphic-{sort}', 'timeline', 'timeline-{sort}-{extcode}', 'timeline-{sort}', '{code}'],
-        'timeline' => ['action' => 'timeline'],
-        'timeline-{sort}' => ['action' => 'timeline'],
-        'timeline-{sort}-{extcode}' => ['action' => 'timeline'],*/
-
-        'routes' => ['', 'timeline', 'human-{code}', 'book-{code}', 'dynasty-{code}', 'series', 'series-{sort}-{volumeId}', 'series-{sort}', 'luxun-works', 'luxun-resume', 'dev-view', 'dev-view'],
+        'routes' => ['', 'testcss', 'check-package', 'timeline', 'series', 'series-{sort}-{volumeId}', 'series-{sort}', 'dev-view', 'test', '{code}'],
         'series' => ['action' => 'series'],
         'series-{sort}' => ['action' => 'series'],
         'series-{sort}-{volumeId}' => ['action' => 'series'],
         'dev-view' => ['action' => 'view'],
-        'human-{code}' => ['action' => 'human'],
-        'dynasty-{code}' => ['action' => 'dynasty'],
-        'book-{code}' => ['action' => 'book'],
-        '{code}' => ['action' => 'home'],
-
         'timeline' => ['action' => 'timeline'],
-    ],
-    'gather' => [
-        'routes' => ['', 'series-{bigsort}-{sort}', '{code}'],
-        'series-{bigsort}-{sort}' => ['action' => 'series'],
-        '{code}' => ['action' => 'view'],
-    ],
-    'css' => [
-        'routes' => ['', 'check-package', '{code}'],
-        'check-package' => ['action' => 'checkPackage'],
-        '{code}' => ['action' => 'view'],
-    ],
-    /*'human' => [
-        'routes' => ['', '{code}'],
-        '{code}' => ['action' => 'view'],
-    ],*/
 
-    'classical' => [
-        'routes' => ['', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'test'],
-        'book-{code}' => ['controller' => 'classical', 'action' => 'bookCatalogue'],
-        'show-{bookCode}-{chapterCode}' => ['controller' => 'classical', 'action' => 'show'],
-        'test' => ['controller' => 'classical', 'action' => 'test'],
-    ],
-    'navigation' => [
-        'routes' => ['', 'rank', 'search', 'tool', 'operation', 'coolsite', 'sub-{sort}'],
-        'sub-{sort}' => ['action' => 'subnav'],
+        '{code}' => ['action' => 'view'],
     ],
 ];
 $currentHost = $_SERVER['HTTP_HOST'] ?? false;

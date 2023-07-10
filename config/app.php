@@ -19,19 +19,14 @@ return [
     'domains' => [
         'uploadUrl' => env('UPLOAD_URL', null),
         'assetUrl' => env('ASSET_URL', ''),
-        'classical' => env('CLASSICAL_DOMAIN', ''),
-        'culture' => env('CULTURE_DOMAIN', ''),
-        'navigation' => env('NAVIGATION_DOMAIN', ''),
-        'human' => env('HUMAN_DOMAIN', ''),
-        'css' => env('CSS_DOMAIN', ''),
-        'gather' => env('GATHER_DOMAIN', ''),
 
-        //'subjectDomain' => env('SUBJECT_DOMAIN', ''),
-        //'brandDomain' => env('BRAND_DOMAIN', ''),
-        //'guideDomain' => env('GUIDE_DOMAIN', ''),
-        //'petDomain' => env('PET_DOMAIN', ''),
+        'navigation' => env('NAVIGATION_DOMAIN', ''),
+        'read' => env('READ_DOMAIN', ''),
+        'info' => env('INFO_DOMAIN', ''),
+        'subject' => env('SUBJECT_DOMAIN', ''),
+        'try' => env('TRY_DOMAIN', ''),
+
         //'bookDomain' => env('BOOK_DOMAIN', ''),
-        //'topicDomain' => env('TOPIC_DOMAIN', ''),
         //'calligraphyDomain' => env('CALLIGRAPHY_DOMAIN', ''),
     ],
 
