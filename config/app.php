@@ -14,7 +14,7 @@ return [
     'inTest' => env('INTEST', false),
     'icp91zuiai' => '京ICP备13015487号-1',
     'icpcanliang.wang' => '京ICP备13015487号-5',
-    'allow_origins' => ['http://admin.canliang.wang', 'http://blog.91zuiai.com', 'http://book.91zuiai.com', 'http://localhost:8080', 'http://md.91zuiai.com', 'http://localhost:9528', 'http://localhost:8081', 'http://cms.canliang.wang', 'http://applet.91zuiai.com', 'http://192.168.203.9:9528', 'http://192.168.203.9:8080'],
+    'allow_origins' => ['http://admin.canliang.wang', 'http://blog.canliang.wang', 'http://book.canliang.wang', 'http://localhost:8080', 'http://md.canliang.wang', 'http://localhost:9528', 'http://localhost:8081', 'http://cms.canliang.wang', 'http://applet.canliang.wang', 'http://192.168.203.9:9528', 'http://192.168.203.9:8080'],
 
     'domains' => [
         'uploadUrl' => env('UPLOAD_URL', null),

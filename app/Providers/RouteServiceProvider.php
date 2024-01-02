@@ -45,7 +45,8 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
         $this->mapWebsiteRoutes();
         $this->mapCultureRoutes();
-        //$this->mapInfocmsRoutes();
+        $this->mapInfocmsRoutes();
+        $this->mapBenchRoutes();
         $this->mapBigdataRoutes();
         $this->mapApiRoutes();
         $this->mapThirdRoutes();
@@ -71,6 +72,13 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             //->namespace($this->namespace)
             ->group(base_path('routes/culture.php'));
+    }
+
+    protected function mapBenchRoutes()
+    {
+        Route::prefix('')
+            ->middleware('api')
+            ->group(base_path('routes/bench.php'));
     }
 
     protected function mapInfocmsRoutes()

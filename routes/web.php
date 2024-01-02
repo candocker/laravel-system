@@ -24,13 +24,12 @@ $routes = [
         'sub-{sort}' => ['action' => 'subnav'],
     ],
     'subject' => [
-        'routes' => ['', 'human-luxun-{code}', 'chinese-classics-{code}', 'history-graphic-{code}', 'human-graphic-{code}', 'dynasty-graphic-{code}'],
-        'human-luxun-{code}' => ['action' => 'humanLuxun'],
+        'routes' => ['', 'human', 'foreign-history', 'chinese-history', 'chinese-classics', 'foreign-civilization', 'human-{code}', 'foreign-history-{code}', 'chinese-history-{code}', 'chinese-classics-{code}', 'foreign-civilization-{code}'],
+        'human-{code}' => ['action' => 'human'],
+        'foreign-history-{code}' => ['action' => 'foreignHistory'],
+        'chinese-history-{code}' => ['action' => 'chineseHistory'],
         'chinese-classics-{code}' => ['action' => 'chineseClassics'],
-        'history-graphic-{code}' => ['action' => 'history'],
-        'human-graphic-{code}' => ['action' => 'human'],
-        'dynasty-graphic-{code}' => ['action' => 'dynasty'],
-        //'-graphic-{code}' => ['action' => ''],
+        'foreign-civilization-{code}' => ['action' => 'foreignCivilization'],
     ],
     'info' => [
         'routes' => ['', 'show-{id}', '{bigsort}-{sort}'],
