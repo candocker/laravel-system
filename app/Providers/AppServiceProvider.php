@@ -61,6 +61,7 @@ class AppServiceProvider extends ServiceProvider
         \ModuleInfocms\Models\Topic::observe(\ModuleInfocms\Observers\TopicObserver::class);
         \ModuleInfocms\Models\Group::observe(\ModuleInfocms\Observers\GroupObserver::class);
         \ModuleInfocms\Models\Subject::observe(\ModuleInfocms\Observers\SubjectObserver::class);
+        \ModuleInfocms\Models\SubjectSort::observe(\ModuleInfocms\Observers\SubjectSortObserver::class);
         \ModuleInfocms\Models\Category::observe(\ModuleInfocms\Observers\CategoryObserver::class);
         \ModuleInfocms\Models\MaterialSource::observe(\ModuleInfocms\Observers\MaterialSourceObserver::class);
 

@@ -50,6 +50,7 @@ Route::addRoute(['GET', 'POST'], '/passport/logout', '\ModulePassport\Controller
 Route::post('/passport/signup', '\ModulePassport\Controllers\EntranceController@signup');
 Route::post('/passport/signupin', '\ModulePassport\Controllers\EntranceController@signupin');
 Route::post('/passport/token', '\ModulePassport\Controllers\EntranceController@token');
+Route::post('/passport/find-password', '\ModulePassport\Controllers\EntranceController@findPassword');
 Route::post('/passport/signin', '\ModulePassport\Controllers\EntranceController@signin');
 //Route::post('/passport/manager/token', '\ModulePassport\Controllers\EntranceController@managerToken'); // 扩展使用管理员登录job
 

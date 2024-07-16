@@ -14,3 +14,5 @@ $middlewareAuth = [
 ];
 
 Route::any('/bench/spider-point', '\ModuleBench\Controllers\SpiderinfoController@spiderPoint');
+
+Route::any('/bench/page-spider-operation', '\ModuleBench\Controllers\PageController@operation');

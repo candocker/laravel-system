@@ -17,6 +17,7 @@
         "candocker/third": "dev-main",
         "candocker/website": "dev-main",
         "erusev/parsedown": "^1.7",
+        "propaganistas/laravel-phone": "^5.2",
         "swoolecan/laravel-baseapp": "dev-main"
     },
     "autoload": {

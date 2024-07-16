@@ -53,5 +53,16 @@ Route::any('/client1/bbs/setting_forum', '\ModuleWebsite\Controllers\ClientContr
 
 Route::get('/client/{model}/{action}', '\ModuleWebsite\Controllers\ClientController@home');
 Route::any('/client1/{model}/{action}', '\ModuleWebsite\Controllers\ClienttmpController@index');
+Route::any('/thirddata/{app}/{model}/{action}', '\ModuleWebsite\Controllers\ClientController@thirddata');
 
 Route::any('/remote/{type}-data', '\ModuleWebsite\Controllers\ClientController@dealRemoteUrls');
+
+
+Route::any('/knowledge/global-setting', '\ModuleWebsite\Controllers\ClientController@globalSetting');
+Route::any('/knowledge/seckill-data', '\ModuleWebsite\Controllers\ClientController@seckillData');
+Route::any('/knowledge/home-data-mobile', '\ModuleWebsite\Controllers\ClientController@homeDataMobile');
+Route::any('/knowledge/classify', '\ModuleWebsite\Controllers\ClientController@classifyDatas');
+Route::any('/knowledge/course-detail', '\ModuleWebsite\Controllers\ClientController@courseDetail');
+Route::any('/knowledge/course/list', '\ModuleWebsite\Controllers\ClientController@courseList');
+
+Route::any('/knowledge/{model}/{action}', '\ModuleWebsite\Controllers\ClientController@knowledgeData');

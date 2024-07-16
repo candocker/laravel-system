@@ -32,8 +32,14 @@ return [
             'sendTimes' => 5, // 同一个手机号每天发送频率
             'expire' => 300, // 验证码有效时间
         ],
+        'findPassword' => [
+            'length' => 4,
+            'sleep' => 5,
+            'sendTimes' => 40,
+            'expire' => 60 * 5 * 6,
+        ],
         'signin' => [
-            'length' => 5,
+            'length' => 4,
             'sleep' => 5,
             'sendTimes' => 40,
             'expire' => 60 * 5 * 6,
