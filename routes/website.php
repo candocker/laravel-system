@@ -64,5 +64,16 @@ Route::any('/knowledge/home-data-mobile', '\ModuleWebsite\Controllers\ClientCont
 Route::any('/knowledge/classify', '\ModuleWebsite\Controllers\ClientController@classifyDatas');
 Route::any('/knowledge/course-detail', '\ModuleWebsite\Controllers\ClientController@courseDetail');
 Route::any('/knowledge/course/list', '\ModuleWebsite\Controllers\ClientController@courseList');
+Route::any('/knowledge/hot/course', '\ModuleWebsite\Controllers\ClientController@hotCourseList');
 
 Route::any('/knowledge/{model}/{action}', '\ModuleWebsite\Controllers\ClientController@knowledgeData');
+
+Route::any('/cats/lv2/statistics', '\ModuleWebsite\Controllers\ClientController@booktest1');
+
+
+Route::middleware($middleware)->get('/book-system/sort-book', '\ModuleWebsite\Controllers\BookhouseController@readerSortBooks');
+Route::middleware($middleware)->get('/book-system/book-info', '\ModuleWebsite\Controllers\BookhouseController@readerBookInfo');
+Route::middleware($middleware)->get('/book-system/chapter-detail', '\ModuleWebsite\Controllers\BookhouseController@readerChapterDetail');
+
+Route::middleware($middleware)->get('/book-system/foreign-sort', '\ModuleWebsite\Controllers\BookhouseController@foreignSorts');
+Route::middleware($middleware)->get('/book-system/get-table-data', '\ModuleWebsite\Controllers\BookhouseController@getTableDatas');

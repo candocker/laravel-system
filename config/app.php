@@ -27,6 +27,7 @@ return [
         'http://localhost:8080',
         'http://localhost:8081',
         'http://localhost:8082',
+        'http://localhost:8083',
         'http://localhost:8084',
         'http://localhost:8888',
         'http://localhost:9528',
@@ -39,6 +40,7 @@ return [
         'navigation' => env('NAVIGATION_DOMAIN', ''),
         'read' => env('READ_DOMAIN', ''),
         'info' => env('INFO_DOMAIN', ''),
+        'bookhouse' => env('BOOKHOUSE_DOMAIN', ''),
         'subject' => env('SUBJECT_DOMAIN', ''),
         'try' => env('TRY_DOMAIN', ''),
 

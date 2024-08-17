@@ -6,6 +6,13 @@ use Framework\Baseapp\Helpers\ResourceContainer;
 $resourceContainer = app()->make(ResourceContainer::class);
 
 $routes = [
+    'bookhouse' => [
+        'routes' => ['/home.html', '/{bookCode}/list.html', '/{bookCode}/{chapterCode}.html'],
+
+        '/home.html' => ['action' => 'home'],
+        '/{bookCode}/list.html' => ['action' => 'bookList'],
+        '/{bookCode}/{chapterCode}.html' => ['action' => 'bookDetail'],
+    ],
     'read' => [
         'routes' => ['', 'read-classical', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'series-{bigsort}-{sort}'],//, 'book-gather-{code}'],
 
@@ -23,19 +30,11 @@ $routes = [
         'routes' => ['', 'rank', 'search', 'tool', 'operation', 'coolsite', 'sub-{sort}'],
         'sub-{sort}' => ['action' => 'subnav'],
     ],
-    'subject' => [
-        'routes' => ['', 'human', 'foreign-history', 'chinese-history', 'chinese-classics', 'foreign-civilization', 'human-{code}', 'foreign-history-{code}', 'chinese-history-{code}', 'chinese-classics-{code}', 'foreign-civilization-{code}'],
-        'human-{code}' => ['action' => 'human'],
-        'foreign-history-{code}' => ['action' => 'foreignHistory'],
-        'chinese-history-{code}' => ['action' => 'chineseHistory'],
-        'chinese-classics-{code}' => ['action' => 'chineseClassics'],
-        'foreign-civilization-{code}' => ['action' => 'foreignCivilization'],
-    ],
-    'info' => [
+    /*'info' => [
         'routes' => ['', 'show-{id}', '{bigsort}-{sort}'],
         'show-{id}' => ['action' => 'show'],
         '{bigsort}-{sort}' => ['action' => 'categoryList'],
-    ],
+    ],*/
 
     'try' => [
         //'routes' => ['list/{code}/{page?}'],
