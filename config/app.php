@@ -18,6 +18,7 @@ return [
         'http://admin.canliang.wang',
         'http://blog.canliang.wang',
         'http://book.canliang.wang',
+        'http://bookold.canliang.wang',
         'http://md.canliang.wang',
         'http://cms.canliang.wang',
         'http://applet.canliang.wang',
