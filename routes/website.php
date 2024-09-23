@@ -36,6 +36,7 @@ Route::any('/knowledge/{model}/{action}', '\ModuleWebsite\Controllers\ClientCont
 
 Route::any('/cats/lv2/statistics', '\ModuleWebsite\Controllers\ClientController@booktest1');
 
+Route::middleware($middleware)->get('/book-system/deal-book', '\ModuleWebsite\Controllers\ReadController@dealBook');
 
 Route::middleware($middleware)->get('/book-system/sort-book', '\ModuleWebsite\Controllers\BookhouseController@readerSortBooks');
 Route::middleware($middleware)->get('/book-system/book-info', '\ModuleWebsite\Controllers\BookhouseController@readerBookInfo');

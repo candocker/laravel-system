@@ -7,22 +7,36 @@ $resourceContainer = app()->make(ResourceContainer::class);
 
 $routes = [
     'bookhouse' => [
-        'routes' => ['/home.html', '/{bookCode}/list.html', '/{bookCode}/{chapterCode}.html'],
+        'routes' => [
+            '/', '/{bookCode}/list.html', '/{bookCode}/{chapterCode}.html',
+            '/record-{rtype}.html', '/record-list/{rtype}-{rcode}.html', '/record-detail/{rtype}-{rcode}-{rdetail}.html',
+            '/wiki-detail-{type}-{code}.html',
+            '/gather-{type}.html',
+        ],
 
-        '/home.html' => ['action' => 'home'],
+        '/record-{rtype}.html' => ['action' => 'recordHome'],
+        '/record-list/{rtype}-{rcode}.html' => ['action' => 'recordList'],
+        '/record-detail/{rtype}-{rcode}-{rdetail}.html' => ['action' => 'recordDetail'],
+
+        '/' => ['action' => 'home'],
         '/{bookCode}/list.html' => ['action' => 'bookList'],
         '/{bookCode}/{chapterCode}.html' => ['action' => 'bookDetail'],
+
+        '/wiki-detail-{type}-{code}.html' => ['action' => 'wikiDetail'],
+        '/gather-{type}.html' => ['action' => 'gatherData'],
     ],
     'read' => [
-        'routes' => ['', 'read-classical', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'series-{bigsort}-{sort}'],//, 'book-gather-{code}'],
+        'routes' => ['', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}'],
+        //'routes' => ['', 'read-classical', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'series-{bigsort}-{sort}'],//, 'book-gather-{code}'],
 
+        '' => ['action' => 'readClassical'],
         'read-{sort}' => ['action' => 'readJoin'],
         'readlist-{sort}-{code}' => ['action' => 'readJoinList'],
         'readshow-{sort}-{code}-{chpaterCode}' => ['action' => 'readJoinShow'],
         'book-{code}' => ['action' => 'bookCatalogue'],
         'show-{bookCode}-{chapterCode}' => ['action' => 'bookShow'],
 
-        'series-{bigsort}-{sort}' => ['action' => 'series'],
+        //'series-{bigsort}-{sort}' => ['action' => 'series'],
         //'book-gather-{code}' => ['action' => 'bookGather'],
     ],
 
