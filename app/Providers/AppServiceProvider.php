@@ -53,7 +53,7 @@ class AppServiceProvider extends ServiceProvider
         \ModulePassport\Models\Permission::observe(\ModulePassport\Observers\PermissionObserver::class);
         //\ModuleCulture\Models\Category::observe(\ModuleCulture\Observers\CategoryObserver::class);
 
-        \ModuleCulture\Models\Figure::observe(\ModuleCulture\Observers\FigureObserver::class);
+        /*\ModuleCulture\Models\Figure::observe(\ModuleCulture\Observers\FigureObserver::class);
         \ModuleCulture\Models\FigureResume::observe(\ModuleCulture\Observers\FigureResumeObserver::class);
         \ModuleCulture\Models\Book::observe(\ModuleCulture\Observers\BookObserver::class);
         \ModuleCulture\Models\Record::observe(\ModuleCulture\Observers\RecordObserver::class);
@@ -63,7 +63,7 @@ class AppServiceProvider extends ServiceProvider
         \ModuleInfocms\Models\Subject::observe(\ModuleInfocms\Observers\SubjectObserver::class);
         \ModuleInfocms\Models\SubjectSort::observe(\ModuleInfocms\Observers\SubjectSortObserver::class);
         \ModuleInfocms\Models\Category::observe(\ModuleInfocms\Observers\CategoryObserver::class);
-        \ModuleInfocms\Models\MaterialSource::observe(\ModuleInfocms\Observers\MaterialSourceObserver::class);
+        \ModuleInfocms\Models\MaterialSource::observe(\ModuleInfocms\Observers\MaterialSourceObserver::class);*/
 
         \Validator::extend('mobile', 'Framework\Baseapp\Rules\Mobile@passes');
         \Validator::replacer('mobile', function($message, $attribute, $rule, $parameters) {

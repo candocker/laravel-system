@@ -43,35 +43,16 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         $this->mapWebRoutes();
-        $this->mapWebsiteRoutes();
-        $this->mapCultureRoutes();
-        $this->mapInfocmsRoutes();
+        $this->mapKnowledgeRoutes();
         $this->mapBenchRoutes();
-        $this->mapBigdataRoutes();
         $this->mapApiRoutes();
-        $this->mapThirdRoutes();
     }
 
-    protected function mapWebsiteRoutes()
+    protected function mapKnowledgeRoutes()
     {
         Route::prefix('')
             ->middleware('api')
-            ->group(base_path('routes/website.php'));
-    }
-
-    /**
-     * Define the "culture" routes for the application.
-     *
-     * These routes are typically stateless.
-     *
-     * @return void
-     */
-    protected function mapCultureRoutes()
-    {
-        Route::prefix('')
-            ->middleware('api')
-            //->namespace($this->namespace)
-            ->group(base_path('routes/culture.php'));
+            ->group(base_path('routes/knowledge.php'));
     }
 
     protected function mapBenchRoutes()
@@ -79,43 +60,6 @@ class RouteServiceProvider extends ServiceProvider
         Route::prefix('')
             ->middleware('api')
             ->group(base_path('routes/bench.php'));
-    }
-
-    protected function mapInfocmsRoutes()
-    {
-        Route::prefix('')
-            ->middleware('api')
-            ->group(base_path('routes/infocms.php'));
-    }
-
-    /**
-     * Define the "third" routes for the application.
-     *
-     * These routes are typically stateless.
-     *
-     * @return void
-     */
-    protected function mapThirdRoutes()
-    {
-        Route::prefix('')
-            ->middleware('api')
-            //->namespace($this->namespace)
-            ->group(base_path('routes/third.php'));
-    }
-
-    /**
-     * Define the "bigdata" routes for the application.
-     *
-     * These routes are typically stateless.
-     *
-     * @return void
-     */
-    protected function mapBigdataRoutes()
-    {
-        Route::prefix('')
-            ->middleware('api')
-            //->namespace($this->namespace)
-            ->group(base_path('routes/bigdata.php'));
     }
 
     /**
@@ -135,15 +79,15 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function mapWebRoutes()
     {
-		/*if (!app()->runningInConsole()) {
+        /*if (!app()->runningInConsole()) {
             $siteCode = explode('.', $_SERVER['HTTP_HOST'])[0];
             $siteCode = explode('-', $siteCode)[0];
             $siteCode = in_array($siteCode, ['brand', 'subject']) ? 'guide' : $siteCode;
             //var_dump($siteCode);
             if (in_array($siteCode, ['pet', 'culture', 'guide', 'human', 'topic'])) {
-		        $namespace = 'App\Http\Controllers\\' . ucfirst($siteCode);
+                $namespace = 'App\Http\Controllers\\' . ucfirst($siteCode);
                 Route::namespace($namespace)->group(base_path("routes/{$siteCode}.php"));
-			    return ;
+                return ;
             }
         }*/
         Route::prefix('')->namespace($this->namespace)->group(base_path('routes/web.php'));

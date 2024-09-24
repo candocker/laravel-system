@@ -13,4 +13,4 @@ $middlewareAuth = [
     Framework\Baseapp\Middleware\UserCenterMiddleware::class,
 ];
 
-//Route::middleware($middlewareAuth)->any('/infocms/records/my-record', '\ModuleInfocms\Controllers\RecordController@myRecord');
+//Route::any('/knowledge/spider-point', '\ModuleKnowledge\Controllers\SpiderinfoController@spiderPoint');

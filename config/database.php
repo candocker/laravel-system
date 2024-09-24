@@ -5,7 +5,7 @@ use Illuminate\Support\Str;
 return [
     'default' => env('DB_CONNECTION', 'mysql'),
 
-    'connections' => array_merge(initDatabaseData(['mysql', 'infocms', 'shop', 'paytrade', 'third', 'bench', 'bigdata', 'culture', 'ledu', 'lerp', 'serp', 'sedu', 'runtime']), [
+    'connections' => array_merge(initDatabaseData(['mysql', 'knowledge', 'bench', 'runtime']), [
 
         'sqlite' => [
             'driver' => 'sqlite',

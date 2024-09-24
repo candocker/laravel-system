@@ -14,8 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         'Framework\Baseapp\Commands\GenResourceCommand',
-        'ModuleBigdata\Commands\DataSyncCommand',
-        'ModuleCulture\Commands\GeneratorEpubCommand',
+        //'ModuleBigdata\Commands\DataSyncCommand',
+        //'ModuleCulture\Commands\GeneratorEpubCommand',
     ];
 
     /**

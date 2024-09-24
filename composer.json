@@ -7,15 +7,8 @@
     "require": {
         "php": "^8.2",
         "candocker/bench": "dev-main",
-        "candocker/bigdata": "dev-main",
-        "candocker/culture": "dev-main",
-        "candocker/infocms": "dev-laravel",
-        "candocker/merchant": "dev-main",
+        "candocker/knowledge": "dev-main",
         "candocker/passport": "dev-laravel",
-        "candocker/paytrade": "dev-main",
-        "candocker/shop": "dev-main",
-        "candocker/third": "dev-main",
-        "candocker/website": "dev-main",
         "erusev/parsedown": "^1.7",
         "propaganistas/laravel-phone": "^5.2",
         "swoolecan/laravel-baseapp": "dev-main"
@@ -62,5 +55,11 @@
     "prefer-stable": true,
     "require-dev": {
         "arcanedev/log-viewer": "*"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
     }
 }
