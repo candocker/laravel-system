@@ -6,7 +6,7 @@ use Framework\Baseapp\Helpers\ResourceContainer;
 $resourceContainer = app()->make(ResourceContainer::class);
 
 $routes = [
-    'bookhouse' => [
+    'knowledge' => [
         'routes' => [
             '/', '/{bookCode}/list.html', '/{bookCode}/{chapterCode}.html',
             '/record-{rtype}.html', '/record-list/{rtype}-{rcode}.html', '/record-detail/{rtype}-{rcode}-{rdetail}.html',

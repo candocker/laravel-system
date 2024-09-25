@@ -13,4 +13,5 @@ $middlewareAuth = [
     Framework\Baseapp\Middleware\UserCenterMiddleware::class,
 ];
 
+Route::middleware($middleware)->get('/knowledge/test', '\ModuleKnowledge\Controllers\TestController@test');
 //Route::any('/knowledge/spider-point', '\ModuleKnowledge\Controllers\SpiderinfoController@spiderPoint');

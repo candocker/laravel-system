@@ -40,13 +40,10 @@ return [
 
         'navigation' => env('NAVIGATION_DOMAIN', ''),
         'read' => env('READ_DOMAIN', ''),
-        'info' => env('INFO_DOMAIN', ''),
-        'bookhouse' => env('BOOKHOUSE_DOMAIN', ''),
+        'knowledge' => env('KNOWLEDGE_DOMAIN', ''),
         'subject' => env('SUBJECT_DOMAIN', ''),
         'try' => env('TRY_DOMAIN', ''),
 
-        //'bookDomain' => env('BOOK_DOMAIN', ''),
-        //'calligraphyDomain' => env('CALLIGRAPHY_DOMAIN', ''),
     ],
 
     'bench' => [
