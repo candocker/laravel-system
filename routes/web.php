@@ -12,6 +12,9 @@ $routes = [
             '/record-{rtype}.html', '/record-list/{rtype}-{rcode}.html', '/record-detail/{rtype}-{rcode}-{rdetail}.html',
             '/wiki-detail-{type}-{code}.html',
             '/gather-{type}.html',
+            '/bookstore-{catalogCode}-{volumeId}',
+            '/bookstore-{catalog}',
+            '/bookstore',
         ],
 
         '/record-{rtype}.html' => ['action' => 'recordHome'],
@@ -24,6 +27,9 @@ $routes = [
 
         '/wiki-detail-{type}-{code}.html' => ['action' => 'wikiDetail'],
         '/gather-{type}.html' => ['action' => 'gatherData'],
+
+        '/bookstore-{catalog}' => ['action' => 'bookstore'],
+        '/bookstore-{catalogCode}-{volumeId}' => ['action' => 'bookstore'],
     ],
     'read' => [
         'routes' => ['', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}'],
