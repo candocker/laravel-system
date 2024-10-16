@@ -6,4 +6,5 @@ return [
     'epub_path' => env('KNOWLEDGE_EPUB_PATH', ''),
 
     'material_path' => env('MATERIAL_PATH', ''),
+    'knowledge_path' => env('KNOWLEDGE_PATH', ''),
 ];

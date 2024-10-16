@@ -10,11 +10,20 @@ $routes = [
         'routes' => [
             '/', '/{bookCode}/list.html', '/{bookCode}/{chapterCode}.html',
             '/record-{rtype}.html', '/record-list/{rtype}-{rcode}.html', '/record-detail/{rtype}-{rcode}-{rdetail}.html',
-            '/wiki-detail-{type}-{code}.html',
-            '/gather-{type}.html',
+            '/wiki-{type}-{code}.html',
+            '/test-view-{view}',
+
             '/bookstore-{catalogCode}-{volumeId}',
             '/bookstore-{catalog}',
             '/bookstore',
+
+            '/history-{subjectCode}-{groupCode}',
+            '/history-{subjectCode}',
+            '/history',
+
+            '/figure-{subjectCode}-{groupCode}',
+            '/figure-{subjectCode}',
+            '/figure',
         ],
 
         '/record-{rtype}.html' => ['action' => 'recordHome'],
@@ -25,11 +34,17 @@ $routes = [
         '/{bookCode}/list.html' => ['action' => 'bookList'],
         '/{bookCode}/{chapterCode}.html' => ['action' => 'bookDetail'],
 
-        '/wiki-detail-{type}-{code}.html' => ['action' => 'wikiDetail'],
-        '/gather-{type}.html' => ['action' => 'gatherData'],
+        '/wiki-{type}-{code}.html' => ['action' => 'wikiDetail'],
+        '/test-view-{view}' => ['action' => 'testView'],
 
         '/bookstore-{catalog}' => ['action' => 'bookstore'],
         '/bookstore-{catalogCode}-{volumeId}' => ['action' => 'bookstore'],
+
+        '/history-{subjectCode}' => ['action' => 'history'],
+        '/history-{subjectCode}-{groupCode}' => ['action' => 'history'],
+
+        '/figure-{subjectCode}' => ['action' => 'figure'],
+        '/figure-{subjectCode}-{groupCode}' => ['action' => 'figure'],
     ],
     'read' => [
         'routes' => ['', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}'],
