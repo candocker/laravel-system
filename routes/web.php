@@ -9,28 +9,32 @@ $routes = [
     'knowledge' => [
         'routes' => [
             '/', '/{bookCode}/list.html', '/{bookCode}/{chapterCode}.html',
-            '/record-{rtype}.html', '/record-list/{rtype}-{rcode}.html', '/record-detail/{rtype}-{rcode}-{rdetail}.html',
             '/wiki-{type}-{code}.html',
+            '/ask-{code}-{detail}.html',
+            '/ask-{code}.html',
             '/test-view-{view}',
+            '/view-develop-{view}',
+            '/ajax-{navCode}-{subNavCode}.html',
 
-            '/bookstore-{catalogCode}-{volumeId}',
-            '/bookstore-{catalog}',
-            '/bookstore',
+            //'/bookstore-{catalogCode}-{volumeId}',
+            //'/bookstore-{catalog}',
+            //'/bookstore',
 
             '/history-{subjectCode}-{groupCode}',
             '/history-{subjectCode}',
             '/history',
 
-            '/figure-{subjectCode}-{groupCode}',
+            /*'/figure-{subjectCode}-{groupCode}',
             '/figure-{subjectCode}',
-            '/figure',
+            '/figure',*/
+            //'/format-{navCode}-{subNavCode}',
+            '/{navCode}-{subNavCode}',
+
         ],
 
-        '/record-{rtype}.html' => ['action' => 'recordHome'],
-        '/record-list/{rtype}-{rcode}.html' => ['action' => 'recordList'],
-        '/record-detail/{rtype}-{rcode}-{rdetail}.html' => ['action' => 'recordDetail'],
+        '/ajax-{navCode}-{subNavCode}.html' => ['action' => 'ajaxRequest'],
 
-        '/' => ['action' => 'home'],
+        '/' => ['action' => 'entrance'],
         '/{bookCode}/list.html' => ['action' => 'bookList'],
         '/{bookCode}/{chapterCode}.html' => ['action' => 'bookDetail'],
 
@@ -40,11 +44,17 @@ $routes = [
         '/bookstore-{catalog}' => ['action' => 'bookstore'],
         '/bookstore-{catalogCode}-{volumeId}' => ['action' => 'bookstore'],
 
+        '/ask-{code}.html' => ['action' => 'askKnowledge'],
+        '/ask-{code}-{detail}.html' => ['action' => 'askKnowledgeDetail'],
+
         '/history-{subjectCode}' => ['action' => 'history'],
         '/history-{subjectCode}-{groupCode}' => ['action' => 'history'],
 
-        '/figure-{subjectCode}' => ['action' => 'figure'],
-        '/figure-{subjectCode}-{groupCode}' => ['action' => 'figure'],
+        /*'/figure-{subjectCode}' => ['action' => 'figure'],
+        '/figure-{subjectCode}-{groupCode}' => ['action' => 'figure'],*/
+
+        '/format-{navCode}-{subNavCode}' => ['action' => 'formatPointData'],
+        '/{navCode}-{subNavCode}' => ['action' => 'entrance'],
     ],
     'read' => [
         'routes' => ['', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}'],
