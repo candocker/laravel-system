@@ -58,12 +58,12 @@ $routes = [
     ],
     'read' => [
         'routes' => ['', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}'],
-        //'routes' => ['', 'read-classical', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'series-{bigsort}-{sort}'],//, 'book-gather-{code}'],
+        //'routes' => ['read-classical', 'series-{bigsort}-{sort}', 'book-gather-{code}'],
 
         '' => ['action' => 'readClassical'],
         'read-{sort}' => ['action' => 'readJoin'],
-        'readlist-{sort}-{code}' => ['action' => 'readJoinList'],
-        'readshow-{sort}-{code}-{chpaterCode}' => ['action' => 'readJoinShow'],
+        //'readlist-{sort}-{code}' => ['action' => 'readJoinList'],
+        //'readshow-{sort}-{code}-{chpaterCode}' => ['action' => 'readJoinShow'],
         'book-{code}' => ['action' => 'bookCatalogue'],
         'show-{bookCode}-{chapterCode}' => ['action' => 'bookShow'],
 
