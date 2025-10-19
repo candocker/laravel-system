@@ -57,7 +57,7 @@ $routes = [
         '/{navCode}-{subNavCode}' => ['action' => 'entrance'],
     ],
     'read' => [
-        'routes' => ['', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}'],
+        'routes' => ['', 'read-{sort}', 'readlist-{sort}-{code}', 'readshow-{sort}-{code}-{chpaterCode}', 'book-{code}', 'show-{bookCode}-{chapterCode}', 'deep-{deepCode}'],
         //'routes' => ['read-classical', 'series-{bigsort}-{sort}', 'book-gather-{code}'],
 
         '' => ['action' => 'readClassical'],
@@ -66,6 +66,7 @@ $routes = [
         //'readshow-{sort}-{code}-{chpaterCode}' => ['action' => 'readJoinShow'],
         'book-{code}' => ['action' => 'bookCatalogue'],
         'show-{bookCode}-{chapterCode}' => ['action' => 'bookShow'],
+        'deep-{deepCode}' => ['action' => 'bookDeep'],
 
         //'series-{bigsort}-{sort}' => ['action' => 'series'],
         //'book-gather-{code}' => ['action' => 'bookGather'],
